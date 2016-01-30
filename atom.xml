@@ -4,7 +4,7 @@
   <subtitle><![CDATA[tongxiaohao]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-28T08:06:18.000Z</updated>
+  <updated>2016-01-30T02:30:42.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[测试提交]]></title>
+    <link href="http://yoursite.com/2016/01/30/%E6%B5%8B%E8%AF%95%E6%8F%90%E4%BA%A4/"/>
+    <id>http://yoursite.com/2016/01/30/测试提交/</id>
+    <published>2016-01-30T02:29:13.000Z</published>
+    <updated>2016-01-30T02:30:42.000Z</updated>
+    <content type="html"><![CDATA[<p>#大标题</p>
+<p>##二级标题</p>
+<p><code>这里是代码块</code></p>
+<hr>
+<p>这是原来的文子</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>#大标题</p>
+<p>##二级标题</p>
+<p><code>这里是代码块</code></p>
+<hr>
+<p>这是原来的文子</p>
+]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[第一次测试提交]]></title>
