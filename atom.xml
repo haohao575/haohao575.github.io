@@ -4,7 +4,7 @@
   <subtitle><![CDATA[tongxiaohao]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-30T03:17:35.000Z</updated>
+  <updated>2016-01-30T03:51:24.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,76 +15,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/01/30/hello-world/"/>
-    <id>http://yoursite.com/2016/01/30/hello-world/</id>
-    <published>2016-01-30T03:17:36.000Z</published>
-    <updated>2016-01-30T03:17:35.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="tags_3A_hello_World"><a href="#tags_3A_hello_World" class="headerlink" title="tags: hello World"></a>tags: hello World</h2><p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+    <title><![CDATA[hello]]></title>
+    <link href="http://yoursite.com/2016/01/30/hello/"/>
+    <id>http://yoursite.com/2016/01/30/hello/</id>
+    <published>2016-01-30T03:47:29.000Z</published>
+    <updated>2016-01-30T03:51:24.000Z</updated>
+    <content type="html"><![CDATA[<p>大家好</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="tags_3A_hello_World"><a href="#tags_3A_hello_World" class="headerlink" title="tags: hello World"></a>tags: hello World</h2><p>Welcom]]>
+    <![CDATA[<p>大家好</p>
+]]>
     </summary>
     
-  </entry>
-  
-  <entry>
-    <title><![CDATA[测试提交]]></title>
-    <link href="http://yoursite.com/2016/01/30/%E6%B5%8B%E8%AF%95%E6%8F%90%E4%BA%A4/"/>
-    <id>http://yoursite.com/2016/01/30/测试提交/</id>
-    <published>2016-01-30T02:25:41.000Z</published>
-    <updated>2016-01-30T03:17:08.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="categories_3AiOS"><a href="#categories_3AiOS" class="headerlink" title="categories:iOS"></a>categories:iOS</h2><h1 id="u6D4B_u8BD5_u63D0_u4EA4"><a href="#u6D4B_u8BD5_u63D0_u4EA4" class="headerlink" title="测试提交"></a>测试提交</h1><h2 id="1_2Ctext"><a href="#1_2Ctext" class="headerlink" title="1,text"></a>1,text</h2><blockquote>
-<p>yinyong leixing 例如这样</p>
-</blockquote>
-<p><a href="/www.baidu.com">baidu</a></p>
-<p><code>这里是代码    的撒</code></p>
-<hr>
-<p>这里是原文标题</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<h2 id="categories_3AiOS"><a href="#categories_3AiOS" class="headerlink" title="categories:iOS"></a>categories:iOS</h2><h1 id="u6D4B_u8BD5_u]]>
-    </summary>
-    
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[第一次测试提交]]></title>
-    <link href="http://yoursite.com/2016/01/28/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B5%8B%E8%AF%95%E6%8F%90%E4%BA%A4/"/>
-    <id>http://yoursite.com/2016/01/28/第一次测试提交/</id>
-    <published>2016-01-28T08:06:18.000Z</published>
-    <updated>2016-01-30T03:17:22.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="iOS" scheme="http://yoursite.com/tags/iOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[My New Post]]></title>
-    <link href="http://yoursite.com/2016/01/28/My-New-Post/"/>
-    <id>http://yoursite.com/2016/01/28/My-New-Post/</id>
-    <published>2016-01-28T04:51:11.000Z</published>
-    <updated>2016-01-30T03:17:50.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="你好亚" scheme="http://yoursite.com/tags/%E4%BD%A0%E5%A5%BD%E4%BA%9A/"/>
+      <category term="大家好" scheme="http://yoursite.com/tags/%E5%A4%A7%E5%AE%B6%E5%A5%BD/"/>
     
   </entry>
   
