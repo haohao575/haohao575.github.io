@@ -4,7 +4,7 @@
   <subtitle><![CDATA[tongxiaohao]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-25T04:01:23.000Z</updated>
+  <updated>2016-03-25T05:03:11.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,13 +19,14 @@
     <link href="http://yoursite.com/2016/03/25/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%80%E8%AE%B2/"/>
     <id>http://yoursite.com/2016/03/25/基础C语言第一讲/</id>
     <published>2016-03-25T00:55:46.000Z</published>
-    <updated>2016-03-25T04:01:23.000Z</updated>
+    <updated>2016-03-25T05:03:11.000Z</updated>
     <content type="html"><![CDATA[<p></p><h1><br>    <center><br>        C语言第一讲《C语言基础》<br>    </center><br></h1><p></p>
 <p></p><h1>一,进制</h1><p></p>
 <p></p><h2>1, 进制概念 进位机制 逢多少进1</h2><br>十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”<p></p>
 <p>生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进1</p>
 <div align="center"><br><img src="../image/时钟.jpeg" width="100" height="100" alt="图片"><br><img src="../image/十进制.jpg" width="130" height="100" alt="图片"><br></div> 
 
+<p><img src="/../image/时钟.jpeg =100x100" alt=""></p>
 <p></p><h2>2,计算机的进制</h2><br>计算机使用的是二进制 逢2进1 所以位数只有0，1 例子 0，1，10，11，100<p></p>
 <p>因为目前的计算机电脑内部 只识别 是对的 还是 错的 所以 它表示的 就是1和0</p>
 <p></p><h2>3,进制规则</h2><br>N进制 在表示所有位中 显示的 只有 0～N-1 遇到N前一位加1<p></p>
