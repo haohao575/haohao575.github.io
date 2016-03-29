@@ -4,7 +4,7 @@
   <subtitle><![CDATA[tongxiaohao]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-03-25T08:06:14.000Z</updated>
+  <updated>2016-03-29T02:03:18.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2016/03/25/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%80%E8%AE%B2/"/>
     <id>http://yoursite.com/2016/03/25/基础C语言第一讲/</id>
     <published>2016-03-25T00:55:46.000Z</published>
-    <updated>2016-03-25T08:06:14.000Z</updated>
+    <updated>2016-03-29T02:03:18.000Z</updated>
     <content type="html"><![CDATA[<p></p><h1><center>C语言第一讲《C语言基础》</center></h1><p></p>
 <p></p><h1>一,进制</h1><p></p>
 <p></p><h2>1, 进制概念 进位机制 逢多少进1</h2><br>十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”<p></p>
@@ -47,19 +47,15 @@
 <pre><code>以上图片资源均来自百度。
 </code></pre><p></p><h1>二,程序的一般形式</h1><p></p>
 <p></p><h2>1,创建程序</h2><br>1),选择OS X 下面的Application 选择Command Line Tool （控制台模式）点下面的Next<p></p>
-<p><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br>2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建</p>
-<p><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png" width="682" height="392" alt="图片"></p>
-<p></p><h2>2,程序基本介绍</h2><p></p>
-<h3>1).注释</h3>
+<center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br>2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png" width="682" height="392" alt="图片"><br><br><h2>2,程序基本介绍</h2><br><h3>1).注释</h3><br><br>单行注释，多行注视<br><br>作用：提供思路，提示代码作用，程序并不执行 不注释你会忘记的会发现以前写的代码不知道是干什么的了<br>单行注视不可以换行 只是注释 //  后边到这一行的末尾 敲到回车时候就不是注释了<br>多行注释：/<em> 可以在这个之间 可以换行</em>/<br><center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png" width="682" height="392" alt="图片"><br></center>
 
-
-
-
-
-
-
-
-
+<p></p><h3>2).main 程序执行入口 又称主函数</h3><br>    如上图 这里我们介绍一个输出语句 printf(“你好！”); 这个就是在控制台输出<p></p>
+<p></p><h3>3).#import 与#include</h3><p></p>
+<pre><code>#import 与#include 引入文件与类库 如果要在本文件中使用其他文件 就必须引入其他文件 格式两种 &lt;&gt; , “” .&lt;&gt;使用系统类库文件 “” 使用创建文件
+</code></pre><p></p><h2>3,数据类型</h2><p></p>
+<p></p><h3>1).数据类型的分类</h3><br>    1).基本数据类型 ：字符类型char 1字节 整型 int 4字节 短整型 short 2字节 长整型 long 4    字节 或8字节 单精度浮点型 float 4字节 双精度浮点型 double 8字节<br>    2).构造类型 ：数组 枚举<br>    3).    指针类型；<br>    4).空类型 void<p></p>
+<p></p><h3>2).数据类型的单位</h3><br>    数据类型的单位 字节byte比特 最常用的是位 bits 位是最小的存储单位 1字节 == 8位（二进制位）== 2位十六进制位<p></p>
+<p></p><h3>数据类型的存储</h3><br>    不同的数据类型，存储的空间不同 空间决定了数据类型的存储数据的范围<br>    1).数据类型的存储空间与操作系统有关并不是统一的 但是有个原则: short&lt;=int&lt;=long&lt;=longlong<br>    2).sizeof()运算符，计算一个数据类型占用的空间 一定要记得是运算符而不是函数<br>    3).存储空间决定了存储数据的范围,不用背只需记得最长用到的 益处：超出了数据类型的取值范围<br>    常用的数据类型字节数请看分类里的介绍<p></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p></p><h1><center>C语言第一讲《C语言基础》</center></h1><p></p>
