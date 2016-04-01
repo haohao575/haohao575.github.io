@@ -334,7 +334,9 @@ http://ruby.taobao.org/
 <pre><code>$ sudo gem install cocoapods
 
 $ sudo gem install -n /usr/local/bin cocoapods
-</code></pre><p>3.cocoaPod镜像(一般不会用到)</p><br>    1)$ pod repo remove master<br>    2)$ pod repo add master <a href="https://gitcafe.com/akuandev/Specs.git" target="_blank" rel="external">https://gitcafe.com/akuandev/Specs.git</a><br>    3)$ pod repo update<br><br><p>4.假设我们要在工程中导入AFNetworking类库.</p><br><p>为了确定AFNetworking是否支持CocoaPods,可以用CocoaPods的搜索功能验证一下。在终端中输入:</p>
+</code></pre><p>3.cocoaPod镜像(一般不会用到)</p><br><p>1)$ pod repo remove master</p><br><p>2)$ pod repo add master <a href="https://gitcafe.com/akuandev/Specs.git" target="_blank" rel="external">https://gitcafe.com/akuandev/Specs.git</a></p><br><p>3)$ pod repo update</p>
+
+<p>4.假设我们要在工程中导入AFNetworking类库.</p><br><p>为了确定AFNetworking是否支持CocoaPods,可以用CocoaPods的搜索功能验证一下。在终端中输入:</p>
 
 <pre><code>$ pod search AFNetworking
 </code></pre><p>如果显示绿体字类库名,说明CocoaPods支持该类库</p>
@@ -387,7 +389,7 @@ $ pod update --verbose --no-repo-update]
 
 <p>CocoaPods会将所有的第三方库以target的方式组成一个名为Pods的工程，该工程就放在刚才新生成的Pods目录下。整个第三方库工程会生成一个名称为libPods.a的静态库提供给我们自己的CocoaPodsTest工程使用。</p><br><p>我们的工程和第三方库所在的工程会由一个新生成的workspace管理</p><br><p>为了方便我们直观的管理工程和第三方库，CocoaPodsTest工程和Pods工程会被以workspace的形式组织和管理，也就是我们刚才看到的CocoaPodsTest.xcworkspace文件。</p><br><p>原来的工程设置已经被更改了，这时候我们直接打开原来的工程文件去编译就会报错，只能使用新生成的workspace来进行项目管理。</p>
 
-<h3><center>孙悟空三大白骨精！ 感谢各位学习我的博客！声明此博客并不是我所写下的，是谁写的已经忘记了。我只是引用，如感谢原作者！！提供这么详细的使用步骤，谢谢大家</center></h3>
+<h3><center>孙悟空三大白骨精！ 感谢各位学习我的博客！在此声明此博客并不是我所写下的，是谁写的已经忘记了。我只是引用，感谢原作者！！提供这么详细的使用步骤，谢谢大家</center></h3>
           
         
       
