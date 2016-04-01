@@ -12,7 +12,7 @@ CocoaPods使用步骤(已有Ruby环境):其实如果你安装了Xcode 就已经�
 $ gem sources --remove https://rubygems.org/
 等有反应之后再敲入以下命令
 
-$ gem sources -a https://ruby.taobao"><meta property="og:updated_time" content="2016-04-01T05:54:08.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="CocoaPods使用步骤已安装Ruby环境"><meta name="twitter:description" content="CocoaPods使用步骤已安装Ruby环境
+$ gem sources -a https://ruby.taobao"><meta property="og:updated_time" content="2016-04-01T07:47:41.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="CocoaPods使用步骤已安装Ruby环境"><meta name="twitter:description" content="CocoaPods使用步骤已安装Ruby环境
 
 CocoaPods使用步骤(已有Ruby环境):其实如果你安装了Xcode 就已经有了 Ruby环境（注：$为提示作用，不要在终端中输入）1.打开终端,输入
 
@@ -31,7 +31,8 @@ http://ruby.taobao.org/
 $ sudo gem install -n /usr/local/bin cocoapods
 </code></pre><p>3.cocoaPod镜像(一般不会用到)</p><br><p>1)$ pod repo remove master</p><br><p>2)$ pod repo add master <a href="https://gitcafe.com/akuandev/Specs.git" target="_blank" rel="external">https://gitcafe.com/akuandev/Specs.git</a></p><br><p>3)$ pod repo update</p><p>4.假设我们要在工程中导入AFNetworking类库.</p><br><p>为了确定AFNetworking是否支持CocoaPods,可以用CocoaPods的搜索功能验证一下。在终端中输入:</p><pre><code>$ pod search AFNetworking
 </code></pre><p>如果显示绿体字类库名,说明CocoaPods支持该类库</p><p>5.现在建一个工程,叫CocoaPodsDemo</p><p>6.CocoaPods的工作原理是利用Podfile文件来下载我们指定的类库,每个工程只需要一个Podfile文件,但Podfile文件需要我们利用终端自行创建</p><p>7.在终端中使用cd命令进入工程所在目录,例如:</p><pre><code>$ cd /Users/lanouhn/Desktop/Shared/CocoaPods
-</code></pre><p>8.当前目录下,利用vim创建Podfile,在终端中输入:</p><br> $ vim Podfile<br><br><p>9.按【i】或【a】进入插入模式,输入以下内容:</p><pre><code>platform :ios, &apos;7.0&apos;
+</code></pre><p>8.当前目录下,利用vim创建Podfile,在终端中输入:</p><pre><code>$ vim Podfile
+</code></pre><p>9.按【i】或【a】进入插入模式,输入以下内容:</p><pre><code>platform :ios, &apos;7.0&apos;
 pod &quot;AFNetworking&quot;, &quot;~&gt; 2.0&quot;
 </code></pre><p>(这两行内容是在AFNetworking的github页面找到的。<br>这两句文字的意思是，当前AFNetworking支持的iOS最高版本是iOS 7.0, 要下载的AFNetworking版本是2.0)</p><p>输入完毕后,按【ESC】返回命令行模式</p><br><p>按【:】(冒号)进入末行模式,输入【wq】保存命令并退出vim</p><p>10.这时你会发现工程目录中，出现一个名为Podfile的文件，而且文件内容就是刚刚输入的内容。<br>(注意,Podfile文件应该和工程文件.xcodeproj在同一个目录下)</p><p>此时就可以利用CocoPods下载AFNetworking类库了,还是在终端中的当前工程目录下，运行以下命令:</p><pre><code>$ pod install
 </code></pre><p>(个人猜测,执行该命令后,CocoPods自动会找到该目录下的Podfile文件,下载文件内容对应的第三方类库)</p><br><p>[ps.最近使用CocoaPods来添加第三方类库，无论是执行pod install还是pod update都卡在了Analyzing dependencies不动</p><br><p>原因在于当执行以上两个命令的时候会升级CocoaPods的spec仓库，加一个参数可以省略这一步，然后速度就会提升不少。加参数的命令如下：</p><pre><code>$ pod install --verbose --no-repo-update

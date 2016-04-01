@@ -4,7 +4,7 @@
   <subtitle><![CDATA[tongxiaohao]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-01T05:54:08.000Z</updated>
+  <updated>2016-04-01T07:47:41.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://yoursite.com/2016/04/01/CocoaPods%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4%E5%B7%B2%E5%AE%89%E8%A3%85Ruby%E7%8E%AF%E5%A2%83/"/>
     <id>http://yoursite.com/2016/04/01/CocoaPods使用步骤已安装Ruby环境/</id>
     <published>2016-04-01T05:30:34.000Z</published>
-    <updated>2016-04-01T05:54:08.000Z</updated>
+    <updated>2016-04-01T07:47:41.000Z</updated>
     <content type="html"><![CDATA[<h1><center>CocoaPods使用步骤已安装Ruby环境</center></h1>
 
 <p>CocoaPods使用步骤(已有Ruby环境):</p><br><p>其实如果你安装了Xcode 就已经有了 Ruby环境</p><br><p>（注：$为提示作用，不要在终端中输入）</p><br><p>1.打开终端,输入</p>
@@ -58,7 +58,10 @@ $ sudo gem install -n /usr/local/bin cocoapods
 <p>7.在终端中使用cd命令进入工程所在目录,例如:</p>
 
 <pre><code>$ cd /Users/lanouhn/Desktop/Shared/CocoaPods
-</code></pre><p>8.当前目录下,利用vim创建Podfile,在终端中输入:</p><br>    $ vim Podfile<br><br><p>9.按【i】或【a】进入插入模式,输入以下内容:</p>
+</code></pre><p>8.当前目录下,利用vim创建Podfile,在终端中输入:</p>
+
+<pre><code>$ vim Podfile
+</code></pre><p>9.按【i】或【a】进入插入模式,输入以下内容:</p>
 
 <pre><code>platform :ios, &apos;7.0&apos;
 pod &quot;AFNetworking&quot;, &quot;~&gt; 2.0&quot;
