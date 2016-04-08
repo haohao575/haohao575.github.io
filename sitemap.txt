@@ -2,3 +2,7 @@ http://www.tongxiaohao.cn/
 http://www.tongxiaohao.cn/2016/04/01/CocoaPods%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4%E5%B7%B2%E5%AE%89%E8%A3%85Ruby%E7%8E%AF%E5%A2%83/
 http://www.tongxiaohao.cn/2016/03/29/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%AE%B2/
 http://www.tongxiaohao.cn/2016/03/25/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%80%E8%AE%B2/
+http://www.tongxiaohao.cn/archives/
+http://www.tongxiaohao.cn/tags/
+http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/
+http://www.tongxiaohao.cn/tags/CocoaPods/
