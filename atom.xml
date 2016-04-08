@@ -266,7 +266,7 @@ scanf(&quot;%d&quot;,&amp;a);
     <link href="http://yoursite.com/2016/01/30/hello/"/>
     <id>http://yoursite.com/2016/01/30/hello/</id>
     <published>2016-01-30T03:47:29.000Z</published>
-    <updated>2016-04-05T07:24:19.000Z</updated>
+    <updated>2016-04-08T03:43:36.000Z</updated>
     <content type="html"><![CDATA[<h1>Hello<br>#你们好：<br><br>这里是我自己查看的写文章对应语法的博客，没有什么实质上的东西测试使用的谢谢大家<br><br><h1><br>    这是标题<br></h1>
 
 <p><u><br>    下划线<br></u><br><i><br>    斜字体<br></i></p>
@@ -277,7 +277,43 @@ scanf(&quot;%d&quot;,&amp;a);
 
 <pre><code>读书这里面才是可以使用   空格的 
 天天快乐
-</code></pre></h1>]]></content>
+</code></pre><p><style type="text/css"></p>
+<p>#so360{white-space:nowrap}</p>
+<p>#so360 form{margin:0;padding:0}</p>
+<p>#so360_keyword{width:307px;height:24px;line-height:24px;font:14px arial;padding:2px 5px;margin-right:5px;<br>border:2px solid #666666;outline:0;vertical-align:middle}</p>
+<p>#so360_keyword{background:url(<a href="https://p.ssl.qhimg.com/t01ab1a3fb05f0ee893.png">https://p.ssl.qhimg.com/t01ab1a3fb05f0ee893.png</a>) no-repeat right center}</p>
+<p>#so360_submit{width:70px;height:32px;border:0;color:#fff;background:#666666;<br>font-weight:bold;font:bold 14px arial;padding:0;padding-top:3px\9;cursor:pointer;<br>vertical-align:middle}<br></style></p>
+<p><div id="so360"><br>    <form action="http://www.so.com/s" target="_blank" id="so360form"><br>   <input type="text" autocomplete="off" name="q" id="so360_keyword"><br>        <input type="submit" id="so360_submit" value="搜 索"><br>        <input type="hidden" name="ie" value="utf8"><br>        <input type="hidden" name="src" value="zz"><br>        <input type="hidden" name="site" value="haosou.com"><br>        <input type="hidden" name="rg" value="1"><br>    </form><br></div></p>
+<script type="text/javascript">
+(function() {
+   function $(id) {
+      return document.getElementById(id);
+   }
+   function addEvent(node , type , fn) {
+       if(node.addEventListener) {
+           node.addEventListener(type , fn , false);
+       } else if(node.attachEvent){
+           node.attachEvent("on" + type , fn);
+       } else {
+           node["on" + type] = fn;
+       }
+   };
+   var form = $("so360form");
+   if(!form) {
+       return;
+   }
+   addEvent(form , "submit" , function() {
+       form.src.value = "zz_" + window.location.host.replace(/\./g , "_");
+       return true;
+   });
+})();
+</script>
+
+
+
+
+
+</h1>]]></content>
     <summary type="html">
     <![CDATA[<h1>Hello<br>#你们好：<br><br>这里是我自己查看的写文章对应语法的博客，没有什么实质上的东西测试使用的谢谢大家<br><br><h1><br>    这是标题<br></h1>
 
