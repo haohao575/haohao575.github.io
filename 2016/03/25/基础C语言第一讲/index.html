@@ -1,31 +1,255 @@
-<!doctype html><html class="theme-next mist use-motion"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css"><link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css"><meta name="keywords" content="C语言,"><link rel="alternate" href="/atom.xml" title="童小浩" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0"><meta name="description" content="C语言第一讲《C语言基础》
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>基础C语言第一讲 | 童小浩</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="C语言第一讲《C语言基础》
 
 进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数
 
 进制
-1, 进制概念 进位机制 逢多少进1十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进12,计算机的进制计算机使用的是二进制 逢2进1 所以位数只有0，1"><meta property="og:type" content="article"><meta property="og:title" content="基础C语言第一讲"><meta property="og:url" content="http://yoursite.com/2016/03/25/基础C语言第一讲/index.html"><meta property="og:site_name" content="童小浩"><meta property="og:description" content="C语言第一讲《C语言基础》
+1, 进制概念 进位机制 逢多少进1十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进12,计算机的进制计算机使用的是二进制 逢2进1 所以位数只有0，1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基础C语言第一讲">
+<meta property="og:url" content="http://yoursite.com/2016/03/25/基础C语言第一讲/index.html">
+<meta property="og:site_name" content="童小浩">
+<meta property="og:description" content="C语言第一讲《C语言基础》
 
 进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数
 
 进制
-1, 进制概念 进位机制 逢多少进1十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进12,计算机的进制计算机使用的是二进制 逢2进1 所以位数只有0，1"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png"><meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png"><meta property="og:updated_time" content="2016-04-08T03:08:04.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="基础C语言第一讲"><meta name="twitter:description" content="C语言第一讲《C语言基础》
+1, 进制概念 进位机制 逢多少进1十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进12,计算机的进制计算机使用的是二进制 逢2进1 所以位数只有0，1">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png">
+<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png">
+<meta property="og:updated_time" content="2016-04-08T03:08:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基础C语言第一讲">
+<meta name="twitter:description" content="C语言第一讲《C语言基础》
 
 进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数
 
 进制
-1, 进制概念 进位机制 逢多少进1十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进12,计算机的进制计算机使用的是二进制 逢2进1 所以位数只有0，1"><script type="text/javascript" id="hexo.configuration">var NexT=window.NexT||{},CONFIG={scheme:"Mist",sidebar:{position:"left",display:"post"},fancybox:!0,motion:!0,duoshuo:{userId:0,author:"博主"}}</script><title> 基础C语言第一讲 | 童小浩</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="//hm.baidu.com/hm.js?49681fc991fc8aa4000e0c77d9f0e865";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="container one-collumn sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">童小浩</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">tongxiaohao</p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-home fa-fw"></i><br> 首页</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-archive fa-fw"></i><br> 归档</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-tags fa-fw"></i><br> 标签</a></li><li class="menu-item menu-item-about"><a href="/about" rel="section"><i class="menu-item-icon fa fa-user fa-fw"></i><br> 关于</a></li><li class="menu-item menu-item-commonweal"><a href="/404.html" rel="section"><i class="menu-item-icon fa fa-heartbeat fa-fw"></i><br> 公益404</a></li></ul></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"> 基础C语言第一讲</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-03-25T08:55:46+08:00" content="2016-03-25">2016-03-25</time></span> <span class="post-comments-count">&nbsp; | &nbsp;<a href="/2016/03/25/基础C语言第一讲/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/03/25/基础C语言第一讲/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><h1><center>C语言第一讲《C语言基础》</center></h1><h3><center>进制 程序的一般形式 常量\变量\运算符 表达式 语句 基本输入\输出函数</center></h3><p></p><h1>进制</h1><p></p><h2>1, 进制概念 进位机制 逢多少进1</h2><br>十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”<br><br>生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进1<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg" width="100" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="130" height="100" alt="图片"></center><br><br><h2>2,计算机的进制</h2><br>计算机使用的是二进制 逢2进1 所以位数只有0，1 例子 0，1，10，11，100<br><br>因为目前的计算机电脑内部 只识别 是对的 还是 错的 所以 它表示的 就是1和0<br><br><h2>3,进制规则</h2><br>N进制 在表示所有位中 显示的 只有 0～N-1 遇到N前一位加1<br><br>N进制 就是逢N进1<br><br><h2>4,进制转换</h2><br>基数 是几进制 基数就是几<br><br>位 从右到左 就是从低位到高位 位是按照0开始数 最右边就是0；<br><br>权 和基数一样 是几进制 权就是几<br><br>位权 就是每一个位置 对应的单位值 N^(I - 1)<br><br>（1）十进制转N进制<br> 连除倒取余<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="300" alt="图片"></center><br><center>例子1：转二进制 例子2：转十六进制</center><br>（2） N进制转十进制<br> 按位求和<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"></center><br><center>例子：二进制转十进制</center><br><br><h2>5,进制数表示</h2><br>十进制：不加以修饰 100<br><br>八进制：在数值前加0 表示 0573<br><br>二进制：在数值前加0b 表示 0b1101<br><br>十六进制：在数值前加0X 表示0X2A<br><br><h2>6,进制了解</h2><br>十进制：就是开发人员使用 （人）<br><br>二进制：计算机识别的语言 0，1编码<br><br>十六进制：因为一个十六进制数可以表示4位二进制 所以十六进制更多是为了方便表示二进制 十六进制的0～F 二进制的0000～1111<br><br> 以上图片资源均来自百度。<br><br><h1>程序的一般形式</h1><br><h2>1,创建程序</h2><br>1),选择OS X 下面的Application 选择Command Line Tool （控制台模式）点下面的Next<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br>2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png" width="682" height="392" alt="图片"><br><br><h2>2,程序基本介绍</h2><br><h3>1).注释</h3><br><br>单行注释，多行注视<br><br>作用：提供思路，提示代码作用，程序并不执行 不注释你会忘记的会发现以前写的代码不知道是干什么的了<br>单行注视不可以换行 只是注释 // 后边到这一行的末尾 敲到回车时候就不是注释了<br>多行注释：/ <em>可以在这个之间 可以换行</em>/<br><center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png" width="682" height="392" alt="图片"><br></center><br><br><h3>2).main 程序执行入口 又称主函数</h3><br> 如上图 这里我们介绍一个输出语句 printf(“你好！”); 这个就是在控制台输出<br><br><h3>3).#import 与#include</h3><br><br>//#import 与#include 引入文件与类库 如果要在本文件中使用其他文件 就必须引入其他文件 格式两种 &lt;&gt; , “” .&lt;&gt;使用系统类库文件 “” 使用创建文件<br><br><h2>3,数据类型</h2><br><h3>1).数据类型的分类</h3><br> 1).基本数据类型 ：字符类型char 1字节 整型 int 4字节 短整型 short 2字节 长整型 long 4 字节 或8字节 单精度浮点型 float 4字节 双精度浮点型 double 8字节<br> 2).构造类型 ：数组 枚举<br> 3). 指针类型；<br> 4).空类型 void<br><h3>2).数据类型的单位</h3><br> 数据类型的单位 字节byte比特 最常用的是位 bits 位是最小的存储单位 1字节 == 8位（二进制位）== 2位十六进制位<br><h3>数据类型的存储</h3><br> 不同的数据类型，存储的空间不同 空间决定了数据类型的存储数据的范围<br> 1).数据类型的存储空间与操作系统有关并不是统一的 但是有个原则: short&lt;=int&lt;=long&lt;=longlong<br> 2).sizeof()运算符，计算一个数据类型占用的空间 一定要记得是运算符而不是函数<br> 3).存储空间决定了存储数据的范围,不用背只需记得最长用到的 益处：超出了数据类型的取值范围<br> 常用的数据类型字节数请看分类里的介绍<br> 4).在整型中还有一个叫无符号标识符 unsigned 而整型区 分为来种有符合与无符号有符号的区分正负 整数对应的二进制数 最高位为1 为正整数 最高位为0 为负整数<br><h1>常量\变量\运算符</h1><br> 1，常量 程序运行期间不允许改变的量 如10 ，2.5，A，转义字符不可直接打印\n 字符串常量 “你好”<br> 2，知道常量了 那变量的定义就是…… 程序运行可以改变的量变量代表存储区域 用于储存内容 在存储区域的内容就是变量的值<br> 3，变量的定义 由三部分组成<br> 变量类型修饰符 变量名称 ＝ 初始值；<br> int studentAge = 22;<br> 4，变量命名要求<br> 只能用字母 数字 下划线 组成 并且数字不能开头<br> 不能使用系统保留字 如int float<br> 不能使用重复的变量名<br> 见面知意 这也是代码规范之一 使用驼峰命名发 单词的第一个字母大写 第一个单词 小写 如 studentName; teacherName;<br> 5，知道了变量 我们也会变量了 接下来就是运算符 第一个赋值运算符‘＝’<br> 赋值运算会把赋值运算符右边的值赋值给左边变量 age ＝ 10；<br> 赋值运算优先级低<br> //练习<br> // int a = 10,b = 20;<br> // a = b + a;<br> // b = a - b;<br> // a = a – b;<br> 6，算数运算符 +，-，<em>，/，%，++，–，<br> 这里一定要注意 ++，– 在前在后的区别 在前先执行 在后后执行<br> 意思：如<br> int a = 10;<br> printf(“%d\n”,a++); //输出 10；<br> int a = 10;<br> printf(“%d\n”,++a); //输出 11；<br> 7,复合运算符<br> += ,-=,</em>=,/=，%= 这些都是谁在前 计算的结果 赋值给谁<br> 如 int b = 0;<br> b += 2; 想等于 b = b + 2; 所以赋值给b b ＝ 2;<br><h1>表达式</h1><br> 就是常量变量 与运算符组合 表达式都会有返回值 3+5 a+=b<br><h1>语句</h1><br> 程序执行的最小单位 C与OC中 都是以;结尾 如果表达式加上分号就是 一条语句<br><h1>基本输入 输出函数</h1><br> int i = 0;<br> scanf(“%d”,&amp;i); //格式化输入函数 %d转换符<br> printf(“%d”,i); //格式化输出函数 %d转化符<br> 记得掩饰输入输出格式不同会产生什么问题<br> 语法scanf(格式串,变量1地址,变量2地址，……);<br> 如果输入数据类型与格式符匹配则继续读入<br> 否则不在读入立刻反回<br> scanf(“%d\n”,&amp;i); //切记不可加\n 会抵消人工回车而且不是一次是一直抵消 并且 输入只认大回车 小键盘的回车可能不会结束读入<br> 语法 printf(格式串,表达式1,表达式2，……);<br> 空白符 scanf(“%d “,a) 空白注意将不会输出<br> 输出转换 格式控制<br> printf(“%05.2f\n”,2.2222); //总共5位 小数点也是一位 不够补0位 不写0 表示不够补空行位<br> printf(“%-4d\n”,20); //左对其<br> printf(“%4d\n”,20); //右对其<br> 思考怎么输出% 解决%%<br><br><br><center><br><br><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言一讲已经结束。谢谢大家!</h2><p></p></center><p></p><script>!function(){var c=document.location.protocol+"//js.passport.qihucdn.com/11.0.1.js?8a21f7e7665c20472c1e055e0670ea85";document.write('<script src="'+c+'" id="sozz"><\/script>')}()</script></div><footer class="post-footer"><div class="post-tags"> <a href="/tags/C语言/" rel="tag">#C语言</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2016/01/30/hello/" rel="next" title="hello"><i class="fa fa-chevron-left"></i> hello</a></div><div class="post-nav-prev post-nav-item"> <a href="/2016/03/29/基础C语言第二讲/" rel="prev" title="基础C语言第二讲">基础C语言第二讲<i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="post-spread"><div class="jiathis_style"><a class="jiathis_button_tsina"></a><a class="jiathis_button_tqq"></a><a class="jiathis_button_weixin"></a><a class="jiathis_button_cqq"></a><a class="jiathis_button_douban"></a><a class="jiathis_button_renren"></a><a class="jiathis_button_qzone"></a><a class="jiathis_button_kaixin001"></a><a class="jiathis_button_copy"></a><a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a><a class="jiathis_counter_style"></a></div><script type="text/javascript">var jiathis_config={hideMore:!1}</script><script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script></div></div></div><div class="comments" id="comments"><div class="ds-thread" data-thread-key="2016/03/25/基础C语言第一讲/" data-title="基础C语言第一讲" data-url="http://yoursite.com/2016/03/25/基础C语言第一讲/"></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview"> 站点概览</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="http://ds.cdncache.org/avatar-50/938/215509.jpg" alt="童小浩"><p class="site-author-name" itemprop="name">童小浩</p><p class="site-description motion-element" itemprop="description">快乐是一天，不快乐也是一天，为什么不天天快乐呢？</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives"><span class="site-state-item-count">4</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags"><span class="site-state-item-count">3</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/haohao575" target="_blank"><i class="fa fa-globe"></i> github</a></span></div><div class="links-of-author motion-element"><p class="site-author-name">友情连接</p> <span class="links-of-author-item"><a href="http://www.lidaze.com/" target="_blank">李大泽</a></span> <span class="links-of-author-item"><a href="http://www.ochenkai.com/" target="_blank">陈凯的开发日志</a></span> <span class="links-of-author-item"><a href="http://www.jianshu.com/users/ac9b0df2a176/latest_articles" target="_blank">小全同学</a></span> <span class="links-of-author-item"><a href="http://www.jianshu.com/users/81c4380481c1/latest_articles" target="_blank">WildDylan</a></span> <span class="links-of-author-item"><a href="http://www.jwdev.cn" target="_blank">JWDEV</a></span> <span class="links-of-author-item"><a href="http://www.cocoayang.com" target="_blank">cocoaYang</a></span> <span class="links-of-author-item"><a href="http://www.jianshu.com/users/418f6e9e3ecc/latest_articles" target="_blank">陈向阳</a></span> <span class="links-of-author-item"><a href="http://www.iosli.com" target="_blank">男孩无衣</a></span></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc-indicator-top post-toc-indicator"><i class="fa fa-angle-double-up"></i></div><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">C语言第一讲《C语言基础》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">进制 程序的一般形式 常量\变量\运算符 表达式 语句 基本输入\输出函数</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">进制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">1, 进制概念 进位机制 逢多少进1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">2,计算机的进制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">3,进制规则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">4,进制转换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.5.</span> <span class="nav-text">5,进制数表示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.6.</span> <span class="nav-text">6,进制了解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">程序的一般形式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">1,创建程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">2,程序基本介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.1.</span> <span class="nav-text">1).注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.2.</span> <span class="nav-text">2).main 程序执行入口 又称主函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.3.</span> <span class="nav-text">3).#import 与#include</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.</span> <span class="nav-text">3,数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.1.</span> <span class="nav-text">1).数据类型的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.2.</span> <span class="nav-text">2).数据类型的单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.3.</span> <span class="nav-text">数据类型的存储</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">常量\变量\运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">表达式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">语句</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">基本输入 输出函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">7.1.</span> <span class="nav-text">孙悟空三大白骨精！ 感谢各位学习我的博客 C语言一讲已经结束。谢谢大家!</span></a></li></ol></li></div></div><div class="post-toc-indicator-bottom post-toc-indicator"><i class="fa fa-angle-double-down"></i></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright"> &copy; <span itemprop="copyrightYear">2016</span><span class="with-love"><i class="icon-next-heart fa fa-heart"></i></span> <span class="author" itemprop="copyrightHolder">童小浩</span></div><div class="powered-by"> 由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动</div><div class="theme-info"> 主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div></div></footer><div class="back-to-top"></div></div><script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script><script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script><script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script><script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script><script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script><script type="text/javascript" id="sidebar.toc.highlight">$(document).ready(function(){function o(){$(s+" "+r).removeClass(r.substring(1))}function t(){i(),n()}function i(){var o=$(".sidebar").height()-a.position().top-$(".post-toc-indicator-bottom").height();return a.css("height",o),o}function n(){c(".post-toc-indicator-top",a.scrollTop()>0?"show":"hide"),c(".post-toc-indicator-bottom",a.scrollTop()>=a.find("ol").height()-a.height()?"hide":"show")}function e(o){o.on("mousewheel DOMMouseScroll",function(o){var t=o.originalEvent,i=t.wheelDelta||-t.detail;this.scrollTop+=30*(0>i?1:-1),o.preventDefault(),n()})}function c(o,t){var i=$(o),n="show"===t?1:0;i.velocity?i.velocity("stop").velocity({opacity:n},{duration:100}):i.stop().animate({opacity:n},100)}var s=".post-toc",a=$(s),r=".active-current";a.on("activate.bs.scrollspy",function(){var t=$(s+" .active").last();o(),t.addClass("active-current"),a[0].scrollTop=t.position().top}).on("clear.bs.scrollspy",function(){o()}),$(document).on("sidebar.motion.complete",function(){t()}),$("body").scrollspy({target:s}),$(window).on("resize",function(){$(".sidebar").hasClass("sidebar-active")&&t()}),e(a)})</script><script type="text/javascript" id="sidebar.nav">$(document).ready(function(){var t=$("html"),i=200,e=$.isFunction(t.velocity);$(".sidebar-nav li").on("click",function(){var t=$(this),a="sidebar-nav-active",o="sidebar-panel-active";if(!t.hasClass(a)){var s=$("."+o),n=$("."+t.data("target"));e?s.velocity("transition.slideUpOut",i,function(){n.velocity("stop").velocity("transition.slideDownIn",i).addClass(o)}):s.animate({opacity:0},i,function(){s.hide(),n.stop().css({opacity:0,display:"block"}).animate({opacity:1},i,function(){s.removeClass(o),n.addClass(o)})}),t.siblings().removeClass(a),t.addClass(a)}}),$(".post-toc a").on("click",function(i){i.preventDefault();var a=NexT.utils.escapeSelector(this.getAttribute("href")),o=$(a).offset().top;e?t.velocity("stop").velocity("scroll",{offset:o+"px",mobileHA:!1}):$("html, body").stop().animate({scrollTop:o},500)}),NexT.motion.middleWares.sidebar=function(){var t=$(".post-toc-content");"post"===CONFIG.sidebar&&t.length>0&&t.html().trim().length>0&&NexT.utils.displaySidebar()}})</script><script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script><script type="text/javascript">var duoshuoQuery={short_name:"haohao575"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.id="duoshuo-script",t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}()</script><script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-  </script><script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-  </script><script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script><script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script></body></html>
+1, 进制概念 进位机制 逢多少进1十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进12,计算机的进制计算机使用的是二进制 逢2进1 所以位数只有0，1">
+  
+    <link rel="alternative" href="/atom.xml" title="童小浩" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">童小浩</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">tongxiaohao</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-基础C语言第一讲" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/25/基础C语言第一讲/" class="article-date">
+  <time datetime="2016-03-25T00:55:46.000Z" itemprop="datePublished">2016-03-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      基础C语言第一讲
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1><center>C语言第一讲《C语言基础》</center></h1>
+
+<h3><center>进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数</center></h3>
+
+<p></p><h1>进制</h1><p></p>
+<h2>1, 进制概念 进位机制 逢多少进1</h2><br>十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”<br><br>生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进1<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg" width="100" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="130" height="100" alt="图片"></center><br><br><h2>2,计算机的进制</h2><br>计算机使用的是二进制 逢2进1 所以位数只有0，1 例子 0，1，10，11，100<br><br>因为目前的计算机电脑内部 只识别 是对的 还是 错的 所以 它表示的 就是1和0<br><br><h2>3,进制规则</h2><br>N进制 在表示所有位中 显示的 只有 0～N-1 遇到N前一位加1<br><br>N进制 就是逢N进1<br><br><h2>4,进制转换</h2><br>基数 是几进制 基数就是几<br><br>位  从右到左 就是从低位到高位 位是按照0开始数 最右边就是0；<br><br>权  和基数一样 是几进制 权就是几<br><br>位权  就是每一个位置 对应的单位值 N^(I - 1)<br><br>（1）十进制转N进制<br>    连除倒取余<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="300" alt="图片"></center><br><center>例子1：转二进制   例子2：转十六进制</center><br>（2） N进制转十进制<br>    按位求和<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"></center><br><center>例子：二进制转十进制</center><br><br><h2>5,进制数表示</h2><br>十进制：不加以修饰 100<br><br>八进制：在数值前加0  表示 0573<br><br>二进制：在数值前加0b 表示 0b1101<br><br>十六进制：在数值前加0X 表示0X2A<br><br><h2>6,进制了解</h2><br>十进制：就是开发人员使用 （人）<br><br>二进制：计算机识别的语言 0，1编码<br><br>十六进制：因为一个十六进制数可以表示4位二进制 所以十六进制更多是为了方便表示二进制 十六进制的0～F 二进制的0000～1111<br><br>    以上图片资源均来自百度。<br><br><h1>程序的一般形式</h1><br><h2>1,创建程序</h2><br>1),选择OS X 下面的Application 选择Command Line Tool （控制台模式）点下面的Next<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br>2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png" width="682" height="392" alt="图片"><br><br><h2>2,程序基本介绍</h2><br><h3>1).注释</h3><br><br>单行注释，多行注视<br><br>作用：提供思路，提示代码作用，程序并不执行 不注释你会忘记的会发现以前写的代码不知道是干什么的了<br>单行注视不可以换行 只是注释 //  后边到这一行的末尾 敲到回车时候就不是注释了<br>多行注释：/<em> 可以在这个之间 可以换行</em>/<br><center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png" width="682" height="392" alt="图片"><br></center><br><br><h3>2).main 程序执行入口 又称主函数</h3><br>    如上图 这里我们介绍一个输出语句 printf(“你好！”); 这个就是在控制台输出<br><br><h3>3).#import 与#include</h3><br><br>//#import 与#include 引入文件与类库 如果要在本文件中使用其他文件 就必须引入其他文件 格式两种 &lt;&gt; , “” .&lt;&gt;使用系统类库文件 “” 使用创建文件<br><br><h2>3,数据类型</h2><br><h3>1).数据类型的分类</h3><br>    1).基本数据类型 ：字符类型char 1字节 整型 int 4字节 短整型 short 2字节 长整型 long 4    字节 或8字节 单精度浮点型 float 4字节 双精度浮点型 double 8字节<br>    2).构造类型 ：数组 枚举<br>    3).    指针类型；<br>    4).空类型 void<br><h3>2).数据类型的单位</h3><br>    数据类型的单位 字节byte比特 最常用的是位 bits 位是最小的存储单位 1字节 == 8位（二进制位）== 2位十六进制位<br><h3>数据类型的存储</h3><br>    不同的数据类型，存储的空间不同 空间决定了数据类型的存储数据的范围<br>    1).数据类型的存储空间与操作系统有关并不是统一的 但是有个原则: short&lt;=int&lt;=long&lt;=longlong<br>    2).sizeof()运算符，计算一个数据类型占用的空间 一定要记得是运算符而不是函数<br>    3).存储空间决定了存储数据的范围,不用背只需记得最长用到的 益处：超出了数据类型的取值范围<br>    常用的数据类型字节数请看分类里的介绍<br>    4).在整型中还有一个叫无符号标识符 unsigned 而整型区 分为来种有符合与无符号有符号的区分正负 整数对应的二进制数 最高位为1 为正整数 最高位为0 为负整数<br><h1>常量\变量\运算符</h1><br>    1，常量 程序运行期间不允许改变的量 如10 ，2.5，A，转义字符不可直接打印\n 字符串常量 “你好”<br>    2，知道常量了 那变量的定义就是…… 程序运行可以改变的量变量代表存储区域 用于储存内容 在存储区域的内容就是变量的值<br>    3，变量的定义 由三部分组成<br>    变量类型修饰符 变量名称 ＝ 初始值；<br>    int studentAge = 22;<br>    4，变量命名要求<br>    只能用字母 数字 下划线 组成 并且数字不能开头<br>    不能使用系统保留字 如int float<br>    不能使用重复的变量名<br>    见面知意 这也是代码规范之一 使用驼峰命名发 单词的第一个字母大写 第一个单词 小写 如 studentName; teacherName;<br>    5，知道了变量  我们也会变量了  接下来就是运算符 第一个赋值运算符‘＝’<br>    赋值运算会把赋值运算符右边的值赋值给左边变量 age ＝ 10；<br>    赋值运算优先级低<br>    //练习<br>    //    int a = 10,b = 20;<br>    //    a = b + a;<br>    //    b = a - b;<br>    //    a = a – b;<br>    6，算数运算符 +，-，<em>，/，%，++，–，<br>    这里一定要注意 ++，– 在前在后的区别 在前先执行 在后后执行<br>    意思：如<br>    int a = 10;<br>    printf(“%d\n”,a++); //输出 10；<br>    int a = 10;<br>    printf(“%d\n”,++a); //输出 11；<br>    7,复合运算符<br>    += ,-=,</em>=,/=，%= 这些都是谁在前 计算的结果 赋值给谁<br>    如 int b = 0;<br>    b += 2; 想等于 b = b + 2; 所以赋值给b b ＝ 2;<br><h1>表达式</h1><br>    就是常量变量 与运算符组合 表达式都会有返回值 3+5 a+=b<br><h1>语句</h1><br>    程序执行的最小单位 C与OC中 都是以;结尾 如果表达式加上分号就是 一条语句<br><h1>基本输入 输出函数</h1><br>    int i = 0;<br>    scanf(“%d”,&amp;i); //格式化输入函数 %d转换符<br>    printf(“%d”,i); //格式化输出函数 %d转化符<br>    记得掩饰输入输出格式不同会产生什么问题<br>    语法scanf(格式串,变量1地址,变量2地址，……);<br>    如果输入数据类型与格式符匹配则继续读入<br>    否则不在读入立刻反回<br>    scanf(“%d\n”,&amp;i); //切记不可加\n 会抵消人工回车而且不是一次是一直抵消 并且 输入只认大回车 小键盘的回车可能不会结束读入<br>    语法 printf(格式串,表达式1,表达式2，……);<br>    空白符 scanf(“%d “,a) 空白注意将不会输出<br>    输出转换 格式控制<br>    printf(“%05.2f\n”,2.2222); //总共5位 小数点也是一位 不够补0位 不写0 表示不够补空行位<br>    printf(“%-4d\n”,20); //左对其<br>    printf(“%4d\n”,20); //右对其<br>    思考怎么输出%  解决%%<br><br><br><center><br><br>    <h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言一讲已经结束。谢谢大家!</h2>
+
+<p></p></center><p></p>
+<script>
+(function(){
+   var src = document.location.protocol +'//js.passport.qihucdn.com/11.0.1.js?8a21f7e7665c20472c1e055e0670ea85';
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
+</script>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/25/基础C语言第一讲/" data-id="cimnligsa0007ht0au0v47eqi" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C语言/">C语言</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/03/29/基础C语言第二讲/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          基础C语言第二讲
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/01/30/hello/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hello</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CocoaPods/">CocoaPods</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/C语言/">C语言</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/测试/">测试</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CocoaPods/" style="font-size: 10px;">CocoaPods</a> <a href="/tags/C语言/" style="font-size: 20px;">C语言</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/04/01/CocoaPods使用步骤已安装Ruby环境/">CocoaPods使用步骤已安装Ruby环境</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/29/基础C语言第二讲/">基础C语言第二讲</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/25/基础C语言第一讲/">基础C语言第一讲</a>
+          </li>
+        
+          <li>
+            <a href="/2016/01/30/hello/">hello</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 童小浩<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
