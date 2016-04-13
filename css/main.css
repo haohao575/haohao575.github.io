@@ -11,12 +11,13 @@ body,sub,sup{position:relative}a,body{color:#555}.post-nav,.text-nowrap{white-sp
     table-layout: fixed;
     border:0;
 }
-table>tbody>.my_tr{
+table tbody .my_tr{
     background-color: #FFFFFF;
 }
 .my_td {
 	border-bottom: 3px solid #ffffff;
     border-right: 1px solid #ffffff;
+    background-color: #ffffff;
 }
 .my_tr{
 	background-color: #FFFFFF;
