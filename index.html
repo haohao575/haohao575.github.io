@@ -223,6 +223,79 @@
   
 </nav>
 
+<div id="myspan_th" style="float:right"></div>
+<script>
+  var myspan=document.getElementById('myspan_th');
+  function myfun(){
+    myimages="";
+    var time = new Date();
+    innter = time.getFullYear() + '/';
+    innter += setIt((time.getMonth()+1)) + '/';
+    innter += setIt(time.getDate()) + ' ';
+    innter += setIt(time.getHours()) + ':';
+    innter += setIt(time.getMinutes()) + ':';
+    innter += setIt(time.getSeconds());
+    myimage();
+    myspan.innerHTML=myimages;
+  }
+  function setIt (t){
+    return t<10 ? '0'+t : t;
+  }
+  setInterval(myfun,1000);
+  myfun();
+  function myimage(){
+    for (var i = innter.length - 1; i >= 0; i--) {
+    switch (innter[i]){
+      case '0':
+        myimages+='<img style="float:right" src="../image/timer/red_num_10.png" width=12px height=12px>';
+      break;  
+      
+      case '1':
+        myimages+='<img style="float:right" src="../image/timer/red_num_01.png" width=12px height=12px>';
+      break;  
+      
+      case '2':
+        myimages+='<img style="float:right" src="../image/timer/red_num_02.png" width=12px height=12px>';
+      break;  
+      
+      case '3':
+        myimages+='<img style="float:right" src="../image/timer/red_num_03.png" width=12px height=12px>';
+      break;  
+      
+      case '4':
+        myimages+='<img style="float:right" src="../image/timer/red_num_04.png" width=12px height=12px>';
+      break;  
+      
+      case '5':
+        myimages+='<img style="float:right" src="../image/timer/red_num_05.png" width=12px height=12px>';
+      break;  
+      
+      case '6':
+        myimages+='<img style="float:right" src="../image/timer/red_num_06.png" width=12px height=12px>';
+      break;  
+      
+      case '7':
+        myimages+='<img style="float:right" src="../image/timer/red_num_07.png" width=12px height=12px>';
+      break;  
+      
+      case '8':
+        myimages+='<img style="float:right" src="../image/timer/red_num_08.png" width=12px height=12px>';
+      break;  
+      
+      case '9':
+        myimages+='<img style="float:right" src="../image/timer/red_num_09.png" width=12px height=12px>';
+        break;
+      case ' ':
+        myimages+='<img style="float:right" src="../image/timer/aaa_meitu_4.png" width=12px height=12px>';          break;
+      case '/':
+        myimages+='<img style="float:right" src="../image/timer/aaa_meitu_2.png" width=15px height=15px>';          break;
+      case ':':
+        myimages+='<img style="float:right" src="../image/timer/aaa_meitu_1.png" width=15px height=15px>';        break;
+    }
+  };
+  }
+</script>
+
  </div>
     </header>
 
@@ -232,7 +305,32 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-    
+  <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+    <a href="https://www.baidu.com/" target="_blank">
+        <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="bottom" border="0">
+    </a>
+    <center>
+    <input type="text"  onfocus="checkHttps" name="word"  size="30">
+    <input type="submit"value="百度网页搜索">
+    </center>
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
       
 
   
