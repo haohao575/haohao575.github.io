@@ -305,34 +305,9 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
-  <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
-    <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-    <a href="https://www.baidu.com/" target="_blank">
-        <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="bottom" border="0">
-    </a>
-    <center>
-    <input type="text"  onfocus="checkHttps" name="word"  size="30">
-    <input type="submit"value="百度网页搜索">
-    </center>
-</form>
-<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
-<script>
-    function checkHttps () {
-        BaiduHttps.useHttps();    
-    };
-    function baiduWithHttps (formname) {
-        var data = BaiduHttps.useHttps();
-        if (data.s === 0) {
-            return true;
-        }
-        else {
-            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-            return true;
-        }
-    };
-</script>
-<center>
+
 <div onsubmit="return gowhere1(this)" target="_blank" name="search_form1" method="get" action="http://www.baidu.com/baidu">
+<center>
     <table class="myTabless" width="100%" height="80" cellspacing="0" cellpadding="0" border="0" style="font-family:宋体">
         <tbody>
             <tr class="my_tr">
@@ -380,7 +355,6 @@
                                                         <input id="word" type="text" name="word" onfocus="checkHttps" size="35" style="padding-top:5px; padding-left: 5px;padding-bottom:5px;">
                                                         <input  style="padding-top:5px;padding-bottom:5px;padding-left: 15px;padding-right: 15px;" type="submit" value="百度一下">
                                                     </font>
-                                              
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -399,8 +373,9 @@
             </tr>
         </tbody>
     </table>
+    </center>
 </div>
-</center>
+
 <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
 <script>
     function checkHttps () {
