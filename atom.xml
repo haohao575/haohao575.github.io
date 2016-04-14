@@ -4,7 +4,7 @@
   <subtitle><![CDATA[tongxiaohao]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tongxiaohao.cn/"/>
-  <updated>2016-04-14T07:18:05.000Z</updated>
+  <updated>2016-04-14T07:23:53.000Z</updated>
   <id>http://www.tongxiaohao.cn/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://www.tongxiaohao.cn/2016/04/14/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%89%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/04/14/基础C语言第三讲/</id>
     <published>2016-04-14T06:05:59.000Z</published>
-    <updated>2016-04-14T07:18:05.000Z</updated>
+    <updated>2016-04-14T07:23:53.000Z</updated>
     <content type="html"><![CDATA[<p><center><h1>C语言第三讲《C语言基础》</h1></center></p>
 <p><center><h3>循环  循环的 控制 语句 “while，do while，for” 随机数 循环嵌套<br></h3></center><br>回顾昨天所学 BOOL  关系运算符  逻辑运算符 逻辑与 &amp;&amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch</p>
 <h1>循环</h1>
@@ -52,7 +52,7 @@ do{
 
 //1        123        123       1        
 //12                  123       12
-//123                  123       123
+//123                 123       123
 
 
 for (int i = 1; i &lt; 4; i ++) {
