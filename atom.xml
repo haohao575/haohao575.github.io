@@ -4,7 +4,7 @@
   <subtitle><![CDATA[tongxiaohao]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tongxiaohao.cn/"/>
-  <updated>2016-04-14T08:16:01.000Z</updated>
+  <updated>2016-04-20T04:06:41.000Z</updated>
   <id>http://www.tongxiaohao.cn/</id>
   
   <author>
@@ -13,6 +13,177 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[基础C语言第四讲]]></title>
+    <link href="http://www.tongxiaohao.cn/2016/04/15/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%9B%9B%E8%AE%B2/"/>
+    <id>http://www.tongxiaohao.cn/2016/04/15/基础C语言第四讲/</id>
+    <published>2016-04-15T03:29:13.000Z</published>
+    <updated>2016-04-20T04:06:41.000Z</updated>
+    <content type="html"><![CDATA[<center><h1>C语言第四讲《C语言基础》</h1></center><br><center><h3><em>数组  数组排序 字符数组</em></h3></center><br>回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 循环嵌套 /break 结束循环 / continue 跳出本次循环/ 通常与if连用 /随机数/<br><br><h1>数组</h1><br>1,数组定义 把相同数据类型的成员组成 一组数据<br><br>2，数组是个构造类型 最简单的数组是一堆数组<br><br>3，数组定义 int a[4] = {0}；也可以这样 int a[] = {1,2,3} 数组有下标 从0开始 a[0] 就是1；<br>数组元素不带 类型标识<br><br>4，数组通常和for循环一起用<br><br>    int a[5] = {1,2,3,4,5};<br>    //输出每一个数组中元素的值<br>    for (int i = 0; i &lt; 5; i++){<br>        printf(“%d\n”,a[i]);<br>    }<br><br>注意事项<br><br>    1、定义数组 和 数组元素<br>    2、数组作为一个整体不能直接参与运算<br><br><br><h1>数组排序 就是数组内部按一定关系排序</h1><br>1、常见的排序方法：冒泡排序、选择排序、插入排序等等<br><br>2、排序的规律有两种：升序（小~大）、降序（大~小）<br><br>3、本节课：冒泡排序。<br><br>4、冒泡排序的基本思路：每次将相邻的两个数进行比较，按照升序或降序的顺序进行交换，直到所有数字的顺序全部正确。<br><br>冒泡排序（只适合小范围的数据排序）（20遍）<br><br><br>请仔细看下面图片理解冒泡排序：<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/25223707-da62d63797924c5aba0579f9b46bbbab.gif" width="200" height="120" alt="图片"><br></center><br><center><a target="_blank" href="http://www.cnblogs.com/kanlei/archive/2013/11/25/3442384.html"><u>上面图片由KANLEI博客提供感谢</u></a></center>
+
+<pre><code>int sort_arr[5] = {5,4,3,2,1}; // 外层循环，控制排序趟数,趟数为 ：数组元素个数-1
+//    for (int i = 0; i &lt; (5-1)/*5-1，表示数组有n个数比较，只比较n-1趟*/; i ++) {
+//        // 内层for循环，控制比较次数
+//        for (int j = 0; j &lt; 5 - (i+1)/*本来应该是5-i，但是i是从0 开始的，我们要得是从1开始，因此要5-（i+1）。此处的意思是每一趟，比较多少次。*/; j ++) {
+//            // 判断，并且交换。
+//            if (sort_arr[j] &gt; sort_arr[j+1]) {
+//                利用中间变量进行交换值
+//                int temp = sort_arr[j];
+//                sort_arr[j] = sort_arr[j+1];
+//                sort_arr[j+1] = temp;
+//                
+//            }
+//        }
+//    }
+//    //打印
+//    printf(&quot;冒泡排序后：&quot;);
+//    for (int i = 0; i &lt; 5; i ++) {
+//        printf(&quot;%d &quot;,sort_arr[i]);
+//    }
+</code></pre><p>练习 1 <br></p>
+<pre><code>//    int array[10] = {0};
+//    printf(&quot;排序前的10个数为：\n&quot;);
+//    //取随机数
+//    for (int i = 0; i &lt; 10 ; i ++) {
+//        unsigned num = arc4random() % 21+20;
+//        array[i] = num;
+//        printf(&quot;%d\t&quot;,array[i]);
+//    }
+//    // 排序开始
+//    // 外层for循环，控制比较多少趟。
+//    for (int i = 0; i &lt; 10-1; i ++) {
+//        // 内层for循环，控制比较多少次
+//        for (int j = 0; j &lt; 10 -(i+1); j ++) {
+//            // 冒泡排序
+//            if (array[j] &gt; array[j+1]) {
+//                
+//                int temp = array[j];
+//                array[j] = array[j+1];
+//                array[j+1] = temp;
+//            }
+//        }
+//    }
+//    printf(&quot;\n排序后的10 个数为：\n&quot;);
+//    for (int i = 0 ; i &lt; 10 ; i ++) {
+//        printf(&quot;%d  &quot;,array[i]);
+//    }
+</code></pre><h1>字符数组</h1>
+
+<p>1,char[] = {‘i’,’P’,’h’,’o’,’n’,’e’}<br><br>char[] = “iPhone”;<br><br> 字符串<br><br>(1)字符串常量  “hello world”<br><br>(2)使用字符数组存储字符串<br><br>(3)使用%s，输出字符串<br><br>/ 定义字符数组存储字符串<br></p>
+<pre><code>// char a[] = &quot;hello world&quot;;    
+// 系统如何识别字符串:&apos;\0&apos;。 数据存储在内存中，系统如何识别哪些字符属于一个完整的字符串。
+// &apos;\0&apos; 是字符串结束标志，在字符串的最后一位，由系统默认添加   空操作，不可以显示字符
+// &quot;hello&quot;存储时，实际上是：&apos;h&apos;, &apos;e&apos;, &apos;l&apos;, &apos;l&apos;, &apos;o&apos;, &apos;\0&apos;
+// 有效字符：在字符串中，&apos;\0&apos;之前的字符
+// 字符数组a中存储着字符串，数组中的元素为：&apos;h&apos;, &apos;e&apos;, &apos;l&apos;, &apos;l&apos;, &apos;o&apos;, &apos;\0&apos;
+// 存储字符串的字符数组元素个数 = 有效字符个数 + 1
+// 输出字符串
+// printf(&quot;%s&quot;, a);  
+</code></pre><p>2,字符串和字符数组的关系<br></p>
+<pre><code>sizeof( ) 是 计算字节的运算符
+// (1)字符串是一个字符数组
+//    char a[] = &quot;hello&quot;;
+//    char b[] = {&apos;h&apos;, &apos;e&apos;, &apos;l&apos;, &apos;l&apos;, &apos;o&apos;, &apos;\0&apos;};
+//    // a、b都是数组
+//    // 两个数组中存储的内容都是 字符串hello
+//    // 都可以访问、修改数据元素、遍历
+//    a[0] = &apos;a&apos;;
+//    for (int i = 0; i &lt; sizeof(a) / sizeof(char); i++) {
+//        printf(&quot;a[%d] = %c  b[%d] = %c\n&quot;, i, a[i], i, b[i]);
+//    }
+//(2)字符数组不一定是字符
+//    char a[] = {&apos;l&apos;, &apos;a&apos;, &apos;n&apos;, &apos;o&apos;, &apos;u&apos;};
+//    char b[] = &quot;lanou&quot;;
+// a和b都是字符数组
+// 数组a中存储了5个字符；数组b中存储了6个字符，存储的是一个字符串
+// 使用{}方式初始化字符数组时，如果数组元素包含’\0&apos;，存储的内容才能称为字符串
+</code></pre><p>字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较<br><br>自己把这个常用的4个函数练习一下<br></p>
+<pre><code>char hello[] = &quot;hello&quot;;
+char name[] = &quot;tongxiaohao&quot;;
+//计算字符串长度 strlen()
+unsigned long strlong = strlen(hello);
+//不算’\0’
+printf(&quot;%lu\n&quot;,strlong);
+printf(&quot;%lu\n&quot;,strlen(name));
+/*
+ 5
+ 11
+ */
+//拷贝strcpy()
+char strcpying[256];//开辟空间
+//将后边的字符串复制到前面的字符串中
+strcpy(strcpying, name);
+printf(&quot;%s\n&quot;,strcpying);
+/*
+tongxiaohao
+ */
+//strcat()拼接
+/*
+    注意点拼接返回到第一个字符串中
+    但是第一个字符串中要足够长的空间
+ */
+strcat(strcpying, hello);
+printf(&quot;%s\n&quot;,strcpying);
+/*
+tongxiaohaohello
+ */
+/*
+    strcmp()比较
+ 如果相同 为0; a
+ 如果前大于后 为负数 a1
+ 如果后大于前 为正数 a2
+ */
+char s1[] = &quot;aac&quot;;
+char s2[] = &quot;abc&quot;;
+char s3[] = &quot;aac&quot;;
+int a = strcmp(s1,s3);
+int a1 = strcmp(s2,s1);
+int a2 = strcmp(s1,s2);
+printf(&quot;a = %d,a1 = %d,a2 = %d\n&quot;,a,a1,a2);
+/*
+ a = 0,a1 = 1,a2 = -1
+ */
+</code></pre><p>练习 2 <br></p>
+<pre><code>//    char str[] = &quot;I love iOS, i want an iPhone6&quot;;
+//    
+//    int n = 0;
+//    int count = 0;
+//    
+//    while (str[n] != &apos;\0&apos;) {
+//        
+//        if (str[n] == &apos; &apos;) {
+//            
+//            count++;
+//        }
+//        
+//        n++;
+//    }
+//
+//    printf(&quot;空格数量：%d\n&quot;, count);
+</code></pre><p>练习<br></p>
+<pre><code>//只循环一半，不能交换&apos;\0&apos;
+//    char str[] = &quot;afjnpue&quot;;
+//    
+//    int length = (int)strlen(str);
+//    
+//    for (int i=0; i&lt;length/2; i++) {
+//        
+//        //交换
+//        char tmp = str[i];
+//        str[i] = str[length-1-i];
+//        str[length-1-i] = tmp;
+//    }
+//    
+//    printf(&quot;%s&quot;,str);
+</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言四讲已经结束。谢谢大家! 加油！！！</h2></center></p>]]></content>
+    <summary type="html">
+    <![CDATA[<center><h1>C语言第四讲《C语言基础》</h1></center><br><center><h3><em>数组  数组排序 字符数组</em></h3></center><br>回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 ]]>
+    </summary>
+    
+      <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[基础C语言第三讲]]></title>
