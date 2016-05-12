@@ -75,31 +75,37 @@
 
 
 
-<meta name="description" content="C语言第二讲《C语言基础》
-BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制
-BOOL
+<meta name="description" content="C语言第五讲《C语言基础》
+二维数组 字符串数组 多维数组回顾昨天所学 
+一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
+字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
+字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
+一 讲课之前 
 
-C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #define TRUE 1">
+大家想一想 我们数学中 有个叫点动成线 这个就">
 <meta property="og:type" content="article">
-<meta property="og:title" content="基础C语言第二讲">
-<meta property="og:url" content="http://www.tongxiaohao.cn/2016/03/29/基础C语言第二讲/index.html">
+<meta property="og:title" content="基础C语言第五讲">
+<meta property="og:url" content="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/index.html">
 <meta property="og:site_name" content="童小浩">
-<meta property="og:description" content="C语言第二讲《C语言基础》
-BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制
-BOOL
+<meta property="og:description" content="C语言第五讲《C语言基础》
+二维数组 字符串数组 多维数组回顾昨天所学 
+一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
+字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
+字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
+一 讲课之前 
 
-C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #define TRUE 1">
-<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%26%26%E7%9F%AD%E8%B7%AF%E7%8E%B0%E8%B1%A1.png">
-<meta property="og:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%8A%82%E5%9B%BE%E7%89%87.png">
-<meta property="og:updated_time" content="2016-04-13T02:01:33.000Z">
+大家想一想 我们数学中 有个叫点动成线 这个就">
+<meta property="og:updated_time" content="2016-05-12T07:12:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基础C语言第二讲">
-<meta name="twitter:description" content="C语言第二讲《C语言基础》
-BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制
-BOOL
+<meta name="twitter:title" content="基础C语言第五讲">
+<meta name="twitter:description" content="C语言第五讲《C语言基础》
+二维数组 字符串数组 多维数组回顾昨天所学 
+一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
+字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
+字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
+一 讲课之前 
 
-C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #define TRUE 1">
-<meta name="twitter:image" content="http://7xqlyv.com1.z0.glb.clouddn.com/%26%26%E7%9F%AD%E8%B7%AF%E7%8E%B0%E8%B1%A1.png">
+大家想一想 我们数学中 有个叫点动成线 这个就">
 
 
 
@@ -117,7 +123,7 @@ C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #d
   };
 </script>
 
-  <title> 基础C语言第二讲 | 童小浩 </title>
+  <title> 基础C语言第五讲 | 童小浩 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -267,7 +273,7 @@ C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #d
             
             
               
-                基础C语言第二讲
+                基础C语言第五讲
               
             
           </h1>
@@ -279,8 +285,8 @@ C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #d
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-29T23:54:37+08:00" content="2016-03-29">
-              2016-03-29
+            <time itemprop="dateCreated" datetime="2016-05-12T15:11:27+08:00" content="2016-05-12">
+              2016-05-12
             </time>
           </span>
 
@@ -290,8 +296,8 @@ C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #d
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/29/基础C语言第二讲/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/29/基础C语言第二讲/" itemprop="commentsCount"></span>
+                <a href="/2016/05/12/基础C语言第五讲/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/基础C语言第五讲/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -314,86 +320,163 @@ C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #d
       
 
       
-        <p><center><h1>C语言第二讲《C语言基础》</h1></center></p>
-<p><center><h3>BOOL  关系运算符  逻辑运算符 逻辑与 &amp;&amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch</h3></center><br>回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制</p>
-<h1>BOOL</h1>
+        <p><center><h1>C语言第五讲《C语言基础》</h1></center></p>
+<p><center><h3>二维数组 字符串数组 多维数组</h3></center><br>回顾昨天所学 </p>
+<pre><code>一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
+字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
+字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
+</code></pre><h1>一 讲课之前</h1> 
 
-<p>C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #define TRUE 1 #define FALSE 0 #define myBOOL int) 到了C99才有的 而OC是支持C99的</p><br><p>bool类型 只有两个值 真，假 在OC中BOOL就是YES ，NO C bool中非零为true真 零为false假OC中1位YES 0为NO 所以bool 值其实和int 一样都是用转义符%d进行输入输;</p>
+<pre><code>大家想一想 我们数学中 有个叫点动成线 这个就是 多个单一数据 就成了数组
+线动成面 就是今天的二维数组 表示数组里存数组 int a[m][n] = {0}; 这里就可以看成坐标系
+m代表每一行 n代表每一列 这里看起来就是 一个表格 先讲怎么输出
 
-<h1>关系运算符</h1>
+//    int a[4][3] = {1,2,3,4,5}; // 元素个数 m * n //不够 补0
+//    for (int i = 0; i &lt; 4; i ++) {
+//        for (int k = 0; k &lt; 3; k ++) {
+//            printf(&quot;%d&quot;,a[i][k]);
+//        }
+//        printf(&quot;\n&quot;);
+//    }
+//    char s[4][3] = {&apos;a&apos;,&apos;a&apos;,&apos;a&apos;,&apos;a&apos;};// char 不够补空格
+//    for (int i = 0; i &lt; 4; i ++) {
+//        for (int k = 0; k &lt; 3; k ++) {
+//            printf(&quot;%c &quot;,s[i][k]);
+//        }
+//        printf(&quot;\n&quot;);
+//    }
+//    char c[3] = {&apos;a&apos;,&apos;a&apos;,&apos;a&apos;};
+//    for (int i = 0; i &lt; 3; i ++) {
+//        printf(&quot;%c &quot;,c[i]);
+//    }
+//    printf(&quot;\n&quot;);
+</code></pre><h2>练习1.1</h2>
 
-<p>1，    关系运算 &lt;,&gt;,==,&lt;=,&gt;=,!= 其实在程序中==双等号表示值等 就是比较两边的值是否相等 ‘!=’ 是不相等</p><br><p>2，    关系运算的结果只有两个值 真 假 用bool来接收</p>
-
-<h1>逻辑运算符 逻辑与 &amp;&amp; 逻辑或 || 逻辑 ！非</h1>
-
-<p>1，逻辑与 逻辑运算符 &amp;&amp; </p><br><p>主要 关系运算表达式1 &amp;&amp; 关系运算表达式2 运算符两边 都为真的时候才位真 其他假 但是有个短路现象 <u>需要重点强调 当左边值为假的时候不会再去运算表示式2 直接会返回假 C语言中的代码优化</u>如下图</p><br><p><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%26%26%E7%9F%AD%E8%B7%AF%E7%8E%B0%E8%B1%A1.png" width="400" height="180" alt="图片"></p><br><p>2，逻辑或 ||</p><br><p>逻辑或 逻辑运算符 || 主要 关系运算表达式1 || 关系运算表达式2 运算符两边 都为假的时候才位假 其他真 但是有个短路现象 <u>需要重点强调 当左边值为真的时候不会再去运算表示式2 直接会返回真 C语言中的代码优化 例子请参照上图自己写一下</u></p><br><p>3，逻辑 ！非</p><br><p>就是取反运算 只对真假取反 ！YES ==NO</p><br><p>4，运算符的优先级</p><br><p>！&gt;算数运算符&gt;关系运算符&gt;逻辑运算符&gt;赋值运算符</p><p><br><br></p><h1>分支结构</h1><br><br><p>程序的主要三种结构 顺序结构 分支结构 循环结构</p><br><p>当你去跑步运动时候 一条马路跑下去就是 顺序 第一天学的就是 当遇到了一个十字路口 就是分支结构 今天要讲的就是分支结构 当你在学校跑道上跑圈的时候 就是循环结构 以后要讲</p><br><p>再次强调分支 什么是分支 比如你在巷子里吃饭 很多小餐馆 你选择一个 就是一个分支 那个巷子里就有很多的分支（餐馆）</p>
-
-<p></p><h1>if 如果</h1><p></p>
-
-<pre><code>1 ， //如果 表达式a &gt; b为真 才会执行 大括号里边的 代码否则不执行
-int a = 10, b = 20;
-if (a &gt; b) {
-        printf(&quot;a &gt; b&quot;);
-}
-2，//如果 表达式a &gt; b为真 才会执行 大括号里边的 代码否则执行 else 所对应的大括号里的代码
-if(a &gt; b){
-        printf(&quot;a &gt; b&quot;);
-}else{
-        printf(&quot;a &lt; b&quot;);
-}
-return 0;
-3，int a = 10, b = 20, c = 15;
-if (a &gt; b &amp;&amp; a &gt; c) { //if 判断不成立 判断 第一个 else if 不成立 就下一个 else if 直到一个成立的 都不成立 才运行 else
-           printf(&quot;a最大&quot;);
-}else if (b &gt; a &amp;&amp; b &gt; c){
-        printf(&quot;b最大&quot;);
-}else if (c &gt; a &amp;&amp; c &gt; b){
-        printf(&quot;c最大&quot;);
-}else{
-        printf(&quot;最少有两个相同的大小&quot;);
-}
-//如果 ?号前边 为真 就给前一个赋值 冒号前边的 为假就是冒号后边的
-int c = a &gt; b ? a : b;  介绍一个比较的简单写法 也是个条件运算符
-</code></pre><p></p><h1>enum 枚举 与 switch</h1><p></p>
-
-<pre><code>enum{
-        one = 1, //如果第一个不赋值 就默认为0
-        tow,     //2 以下依次加1
-        three,
-        four,
-        five
-};
-//目的：提高代码可读性 讲人能看懂的标识符与计算机能识别的数字建立关系
-//enum写在main函数上面 如下图
-</code></pre><p><img src="http://7xqlyv.com1.z0.glb.clouddn.com/C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%8A%82%E5%9B%BE%E7%89%87.png" width="240" height="120" alt="图片">    </p><br><p></p><h3>switch case</h3><p></p>
-
-<pre><code>int a = 0;
-scanf(&quot;%d&quot;,&amp;a);
-/*开关*/switch (a) { //只能放整形 只能整形 变量
-/*
-如果a 为2 则会运行 case tow 下面的{}里的程序
-如果a 为3 则会运行 case three 下面的{}里的程序
-如果a 不是1，2，3 则会运行 default 下面的{}里的程序
-*/
-/*情况*/ case one:{ 
-        printf(&quot;a = 1&quot;);
-/*情况结束标识*/break;
-    }
-    case tow:{
-        printf(&quot;a = 2&quot;);
-//break很重要不能忽视否则代码会一直向下运行 case three 直到有break
-        break;
-    }
-    case three:{
-        printf(&quot;a = 3&quot;);
-        break;
-    }
-    default: {//可以去掉
-        printf(&quot;a不是1，2，3&quot;);
-        break;
+<pre><code>int a[2][3] = {{1,2,3},{4,5,6}};
+int b[3][2] = {0};
+for (int i = 0; i &lt; 2; i ++) {
+    for (int k = 0; k &lt; 3; k ++) {
+        b[k][i] = a[i][k];
     }
 }
-</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言二讲已经结束。谢谢大家!</h2></center></p>
+for (int i = 0; i &lt; 3; i++) {
+    for (int k = 0; k &lt; 2; k ++) {
+        printf(&quot;%d&quot;,b[i][k]);
+    }
+    printf(&quot;\n&quot;);
+}
+</code></pre> <h2>练习1.2</h2>
+
+<pre><code> int a[3][4] = {{5,6,7,11}
+                  ,{9,0,1,12}
+                  ,{1,2,3,4}};
+int max = 0;
+int x = 0;
+int y = 0;
+for (int i = 0; i &lt; 3; i ++) {
+    for (int k = 0; k &lt; 4; k ++) {
+        if (a[i][k] &gt; max) {
+            max = a[i][k];
+            x = i;
+            y = k;
+        }
+    }
+}
+printf(&quot;max = %d&quot;,max);
+printf(&quot;在第%d行，第%d列&quot;,x,y);
+</code></pre><p></p><h1>二 字符串数组</h1><br>1、字符数组：数据元素是 字符 的数组，一维数组<br><br>2、字符串数组：数据元素是 字符串 的数组，二维数组。 字符串本身也是字符数组<p></p>
+<pre><code>//    char string[3][50] = {&quot;hello&quot;,&quot;童小浩&quot;,&quot;C语言&quot;};
+//    for(int i = 0;i &lt; 3; i ++){
+//        printf(&quot;%s&quot;,string[i]); //访问每一个字符串 string[2][2] 访问某一个字符
+//    }
+</code></pre><h2>练习2.1</h2>
+
+<pre><code>//    char names[3][30] = {&quot;yujiangchuan&quot;, &quot;xuedongxiao&quot;, &quot;fandeng&quot;};
+//
+//    int maxLength = 0;
+//
+//    for (int i = 0; i &lt; 3; i++) {
+//
+//        int length = (int)strlen(names[i]);
+//
+//        if (maxLength &lt; length) {
+//
+//            maxLength = length;
+//        }
+//
+//    }
+//
+//    printf(&quot;max length = %d&quot;, maxLength);
+</code></pre><h2>练习2.2</h2>
+
+<pre><code>// 使用冒泡排序
+//    char names[3][30] = {&quot;yujiangchuan&quot;, &quot;xuedongxiao&quot;, &quot;fandeng&quot;};
+//
+//    for (int i = 0; i &lt; 3-1; i++) {
+//
+//        for (int j = 0; j &lt; 3-1-i; j++) {
+//
+//            // 比较两个字符串的大小
+//            if (strcmp(names[j], names[j+1]) &gt; 0) {
+//
+//                // 交换字符串
+//                char name[30] = {0};
+//                strcpy(name, names[j]);
+//                strcpy(names[j], names[j+1]);
+//                strcpy(names[j+1], name);
+//
+//            }
+//        }
+//    }
+//    
+//    for (int i = 0; i &lt; 3; i++) {
+//        
+//        printf(&quot;%s\n&quot;, names[i]);
+//    }
+</code></pre><p>//从控制台输入字符串<br><br>//字符数组存储字符串<br></p>
+<pre><code>//    char a[100] = {0};
+// gets() 从标准输入设备读取字符串，以回车结束读取，使用&apos;\0&apos;结尾，回车符&apos;\n&apos;被舍弃没有遗留在缓冲区。
+// 可以用来输入带空格的字符串。
+// 可以无限读取，不会判断上限，因此使用gets不安全，可能会造成溢出
+
+//    printf(&quot;请输入字符串：&quot;);
+//    gets(a);
+//    printf(&quot;%s\n&quot;, a);
+// scanf(&quot;%s&quot;, a);  以 空格 或 回车符 结束读取，空格 或 回车符 会遗留在缓冲区.
+// 不能直接输入带空格的字符串。
+
+//    printf(&quot;请输入字符串：&quot;);
+//    scanf(&quot;%s&quot;, a);
+//    printf(&quot;%s\n&quot;, a);
+
+// scanf(&quot;%[^\n]&quot;, a);  %[]输入字符集
+// [^\n] 表示除了&apos;\n&apos;之外的字符都接收，即可以接收空格，这个可以用来输入带空格的字符串
+
+//    printf(&quot;请输入字符串：&quot;);
+//    scanf(&quot;%[^\n]&quot;, a);
+//    printf(&quot;%s\n&quot;, a);
+ 从控制台输入字符串
+ 字符数串组存储多个字符串
+ //    char names[6][20] = {}; // 定义一个字符串数组，里面有6个字符串，每个字符串的长度为20
+//    printf(&quot;请输入6个字符串:\n&quot;);
+//    for (int i = 0; i &lt; 6; i++) {
+//        scanf(&quot;%s&quot;, names[i]); // 循环输入字符串
+//        getchar(); // 取出键盘缓存区里的&apos;\n&apos;或&apos; &apos;字符
+//    }
+//
+//
+//    for (int i = 0; i &lt; 6; i++) {
+//        
+//        printf(&quot;%s &quot;, names[i]);
+//    }
+</code></pre><p></p><h1>三 多维数组 </h1><br>了解 a[i][j][k] <br>元素个数n = i <em> j </em> k 利用多层for循环 存取<br><br>多维数组占内存 元素个数 * 每个元素所占空间<br><p></p>
+<pre><code>总结 二维数组 有两个下标 通过双层循环 存取
+字符串数组 本质就是字符二维数组 字符串长度不能超过二维所规定长度-1
+多维数组
+</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</h2></center></p>
+
+
+
 
 
       
@@ -424,17 +507,13 @@ scanf(&quot;%d&quot;,&amp;a);
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/03/25/基础C语言第一讲/" rel="next" title="基础C语言第一讲">
-                <i class="fa fa-chevron-left"></i> 基础C语言第一讲
+              <a href="/2016/04/15/基础C语言第四讲/" rel="next" title="基础C语言第四讲">
+                <i class="fa fa-chevron-left"></i> 基础C语言第四讲
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/01/CocoaPods使用步骤已安装Ruby环境/" rel="prev" title="CocoaPods使用步骤已安装Ruby环境">
-                CocoaPods使用步骤已安装Ruby环境 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -449,10 +528,10 @@ scanf(&quot;%d&quot;,&amp;a);
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/03/29/基础C语言第二讲/"
-     data-title="基础C语言第二讲"
+        <div class="ds-share flat" data-thread-key="2016/05/12/基础C语言第五讲/"
+     data-title="基础C语言第五讲"
      data-content=""
-     data-url="http://www.tongxiaohao.cn/2016/03/29/基础C语言第二讲/">
+     data-url="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -479,8 +558,8 @@ scanf(&quot;%d&quot;,&amp;a);
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/29/基础C语言第二讲/"
-           data-title="基础C语言第二讲" data-url="http://www.tongxiaohao.cn/2016/03/29/基础C语言第二讲/">
+      <div class="ds-thread" data-thread-key="2016/05/12/基础C语言第五讲/"
+           data-title="基础C语言第五讲" data-url="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/">
       </div>
     
   </div>
@@ -582,7 +661,7 @@ scanf(&quot;%d&quot;,&amp;a);
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">C语言第二讲《C语言基础》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">BOOL  关系运算符  逻辑运算符 逻辑与 && 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">BOOL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">关系运算符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">逻辑运算符 逻辑与 && 逻辑或 || 逻辑 ！非</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">分支结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">if 如果</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">enum 枚举 与 switch</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">7.0.1.</span> <span class="nav-text">switch case</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">7.1.</span> <span class="nav-text">孙悟空三大白骨精！ 感谢各位学习我的博客 C语言二讲已经结束。谢谢大家!</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">C语言第五讲《C语言基础》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">二维数组 字符串数组 多维数组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">一 讲课之前</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">练习1.1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">练习1.2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">二 字符串数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">练习2.1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">练习2.2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">三 多维数组 </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
