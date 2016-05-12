@@ -1,337 +1,28 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="C语言," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="童小浩" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="C语言第五讲《C语言基础》
+<!doctype html><html class="theme-next mist use-motion"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css"><meta name="keywords" content="C语言,"><link rel="alternate" href="/atom.xml" title="童小浩" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1"><meta name="description" content="C语言第五讲《C语言基础》
 二维数组 字符串数组 多维数组回顾昨天所学 
 一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
 字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
 字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
 一 讲课之前 
 
-大家想一想 我们数学中 有个叫点动成线 这个就">
-<meta property="og:type" content="article">
-<meta property="og:title" content="基础C语言第五讲">
-<meta property="og:url" content="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/index.html">
-<meta property="og:site_name" content="童小浩">
-<meta property="og:description" content="C语言第五讲《C语言基础》
+大家想一想 我们数学中 有个叫点动成线 这个就"><meta property="og:type" content="article"><meta property="og:title" content="基础C语言第五讲"><meta property="og:url" content="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/index.html"><meta property="og:site_name" content="童小浩"><meta property="og:description" content="C语言第五讲《C语言基础》
 二维数组 字符串数组 多维数组回顾昨天所学 
 一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
 字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
 字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
 一 讲课之前 
 
-大家想一想 我们数学中 有个叫点动成线 这个就">
-<meta property="og:updated_time" content="2016-05-12T07:12:57.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="基础C语言第五讲">
-<meta name="twitter:description" content="C语言第五讲《C语言基础》
+大家想一想 我们数学中 有个叫点动成线 这个就"><meta property="og:updated_time" content="2016-05-12T07:12:57.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="基础C语言第五讲"><meta name="twitter:description" content="C语言第五讲《C语言基础》
 二维数组 字符串数组 多维数组回顾昨天所学 
 一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
 字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
 字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
 一 讲课之前 
 
-大家想一想 我们数学中 有个叫点动成线 这个就">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"hide"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: '博主'
-    }
-  };
-</script>
-
-  <title> 基础C语言第五讲 | 童小浩 </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?49681fc991fc8aa4000e0c77d9f0e865";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">童小浩</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle">tongxiaohao</p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                基础C语言第五讲
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-12T15:11:27+08:00" content="2016-05-12">
-              2016-05-12
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/12/基础C语言第五讲/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/基础C语言第五讲/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p><center><h1>C语言第五讲《C语言基础》</h1></center></p>
-<p><center><h3>二维数组 字符串数组 多维数组</h3></center><br>回顾昨天所学 </p>
-<pre><code>一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
+大家想一想 我们数学中 有个叫点动成线 这个就"><script type="text/javascript" id="hexo.configuration">var NexT=window.NexT||{},CONFIG={scheme:"Mist",sidebar:{position:"left",display:"hide"},fancybox:!0,motion:!0,duoshuo:{userId:0,author:"博主"}}</script><title> 基础C语言第五讲 | 童小浩</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="//hm.baidu.com/hm.js?49681fc991fc8aa4000e0c77d9f0e865";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="container one-collumn sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">童小浩</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">tongxiaohao</p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> 首页</a></li><li class="menu-item menu-item-about"><a href="/about" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br> 关于</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br> 归档</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> 标签</a></li><li class="menu-item menu-item-commonweal"><a href="/404.html" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i><br> 公益404</a></li></ul></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><header class="post-header"><h1 class="post-title" itemprop="name headline"> 基础C语言第五讲</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time itemprop="dateCreated" datetime="2016-05-12T15:11:27+08:00" content="2016-05-12">2016-05-12</time></span> <span class="post-comments-count">&nbsp; | &nbsp;<a href="/2016/05/12/基础C语言第五讲/#comments" itemprop="discussionUrl"><span class="post-comments-count ds-thread-count" data-thread-key="2016/05/12/基础C语言第五讲/" itemprop="commentsCount"></span></a></span></div></header><div class="post-body" itemprop="articleBody"><p><center><h1>C语言第五讲《C语言基础》</h1></center></p><p><center><h3>二维数组 字符串数组 多维数组</h3></center><br>回顾昨天所学</p><pre><code>一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
 字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
 字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
-</code></pre><h1>一 讲课之前</h1> 
-
-<pre><code>大家想一想 我们数学中 有个叫点动成线 这个就是 多个单一数据 就成了数组
+</code></pre><h1>一 讲课之前</h1><pre><code>大家想一想 我们数学中 有个叫点动成线 这个就是 多个单一数据 就成了数组
 线动成面 就是今天的二维数组 表示数组里存数组 int a[m][n] = {0}; 这里就可以看成坐标系
 m代表每一行 n代表每一列 这里看起来就是 一个表格 先讲怎么输出
 
@@ -354,9 +45,7 @@ m代表每一行 n代表每一列 这里看起来就是 一个表格 先讲怎�
 //        printf(&quot;%c &quot;,c[i]);
 //    }
 //    printf(&quot;\n&quot;);
-</code></pre><h2>练习1.1</h2>
-
-<pre><code>int a[2][3] = {{1,2,3},{4,5,6}};
+</code></pre><h2>练习1.1</h2><pre><code>int a[2][3] = {{1,2,3},{4,5,6}};
 int b[3][2] = {0};
 for (int i = 0; i &lt; 2; i ++) {
     for (int k = 0; k &lt; 3; k ++) {
@@ -369,9 +58,7 @@ for (int i = 0; i &lt; 3; i++) {
     }
     printf(&quot;\n&quot;);
 }
-</code></pre> <h2>练习1.2</h2>
-
-<pre><code> int a[3][4] = {{5,6,7,11}
+</code></pre><h2>练习1.2</h2><pre><code> int a[3][4] = {{5,6,7,11}
                   ,{9,0,1,12}
                   ,{1,2,3,4}};
 int max = 0;
@@ -388,14 +75,11 @@ for (int i = 0; i &lt; 3; i ++) {
 }
 printf(&quot;max = %d&quot;,max);
 printf(&quot;在第%d行，第%d列&quot;,x,y);
-</code></pre><p></p><h1>二 字符串数组</h1><br>1、字符数组：数据元素是 字符 的数组，一维数组<br><br>2、字符串数组：数据元素是 字符串 的数组，二维数组。 字符串本身也是字符数组<p></p>
-<pre><code>//    char string[3][50] = {&quot;hello&quot;,&quot;童小浩&quot;,&quot;C语言&quot;};
+</code></pre><p></p><h1>二 字符串数组</h1><br>1、字符数组：数据元素是 字符 的数组，一维数组<br><br>2、字符串数组：数据元素是 字符串 的数组，二维数组。 字符串本身也是字符数组<p></p><pre><code>//    char string[3][50] = {&quot;hello&quot;,&quot;童小浩&quot;,&quot;C语言&quot;};
 //    for(int i = 0;i &lt; 3; i ++){
 //        printf(&quot;%s&quot;,string[i]); //访问每一个字符串 string[2][2] 访问某一个字符
 //    }
-</code></pre><h2>练习2.1</h2>
-
-<pre><code>//    char names[3][30] = {&quot;yujiangchuan&quot;, &quot;xuedongxiao&quot;, &quot;fandeng&quot;};
+</code></pre><h2>练习2.1</h2><pre><code>//    char names[3][30] = {&quot;yujiangchuan&quot;, &quot;xuedongxiao&quot;, &quot;fandeng&quot;};
 //
 //    int maxLength = 0;
 //
@@ -411,9 +95,7 @@ printf(&quot;在第%d行，第%d列&quot;,x,y);
 //    }
 //
 //    printf(&quot;max length = %d&quot;, maxLength);
-</code></pre><h2>练习2.2</h2>
-
-<pre><code>// 使用冒泡排序
+</code></pre><h2>练习2.2</h2><pre><code>// 使用冒泡排序
 //    char names[3][30] = {&quot;yujiangchuan&quot;, &quot;xuedongxiao&quot;, &quot;fandeng&quot;};
 //
 //    for (int i = 0; i &lt; 3-1; i++) {
@@ -437,8 +119,7 @@ printf(&quot;在第%d行，第%d列&quot;,x,y);
 //        
 //        printf(&quot;%s\n&quot;, names[i]);
 //    }
-</code></pre><p>//从控制台输入字符串<br><br>//字符数组存储字符串<br></p>
-<pre><code>//    char a[100] = {0};
+</code></pre><p>//从控制台输入字符串<br><br>//字符数组存储字符串<br></p><pre><code>//    char a[100] = {0};
 // gets() 从标准输入设备读取字符串，以回车结束读取，使用&apos;\0&apos;结尾，回车符&apos;\n&apos;被舍弃没有遗留在缓冲区。
 // 可以用来输入带空格的字符串。
 // 可以无限读取，不会判断上限，因此使用gets不安全，可能会造成溢出
@@ -473,349 +154,7 @@ printf(&quot;在第%d行，第%d列&quot;,x,y);
 //        
 //        printf(&quot;%s &quot;, names[i]);
 //    }
-</code></pre><p></p><h1>三 多维数组 </h1><br>了解 a[i][j][k] <br>元素个数n = i <em> j </em> k 利用多层for循环 存取<br><br>多维数组占内存 元素个数 * 每个元素所占空间<br><p></p>
-<pre><code>总结 二维数组 有两个下标 通过双层循环 存取
+</code></pre><p></p><h1>三 多维数组</h1><br>了解 a[i][j][k]<br>元素个数n = i <em>j</em> k 利用多层for循环 存取<br><br>多维数组占内存 元素个数 * 每个元素所占空间<br><p></p><pre><code>总结 二维数组 有两个下标 通过双层循环 存取
 字符串数组 本质就是字符二维数组 字符串长度不能超过二维所规定长度-1
 多维数组
-</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</h2></center></p>
-
-
-
-
-
-      
-    </div>
-
-    <div>
-      
-        
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/C语言/" rel="tag">#C语言</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/04/15/基础C语言第四讲/" rel="next" title="基础C语言第四讲">
-                <i class="fa fa-chevron-left"></i> 基础C语言第四讲
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/12/基础C语言第六讲/" rel="prev" title="基础C语言第六讲">
-                基础C语言第六讲 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-        <div class="ds-share flat" data-thread-key="2016/05/12/基础C语言第五讲/"
-     data-title="基础C语言第五讲"
-     data-content=""
-     data-url="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/">
-  <div class="ds-share-inline">
-    <ul  class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-
-    </ul>
-    <div class="ds-share-icons-more">
-    </div>
-  </div>
-</div>
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2016/05/12/基础C语言第五讲/"
-           data-title="基础C语言第五讲" data-url="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/">
-      </div>
-    
-  </div>
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="http://ds.cdncache.org/avatar-50/938/215509.jpg"
-               alt="童小浩" />
-          <p class="site-author-name" itemprop="name">童小浩</p>
-          <p class="site-description motion-element" itemprop="description">快乐是一天，不快乐也是一天，为什么不天天快乐呢？————天天快乐</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">8</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/haohao575" target="_blank" title="github">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  github
-                </a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-
-        
-        
-
-      </section>
-
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">C语言第五讲《C语言基础》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">二维数组 字符串数组 多维数组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">一 讲课之前</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">练习1.1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">练习1.2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">二 字符串数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">练习2.1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">练习2.2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">三 多维数组 </span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</span></a></li></ol></li></ol></div>
-            
-          </div>
-        </section>
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">童小浩</span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"tongxiaohaocn"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-  
-
-
-
-
-
-  
-  
-  
-
-  
-
-  
-
-</body>
-</html>
+</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</h2></center></p></div><div></div><div></div><footer class="post-footer"><div class="post-tags"> <a href="/tags/C语言/" rel="tag">#C语言</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2016/04/15/基础C语言第四讲/" rel="next" title="基础C语言第四讲"><i class="fa fa-chevron-left"></i> 基础C语言第四讲</a></div><div class="post-nav-prev post-nav-item"> <a href="/2016/05/12/基础C语言第六讲/" rel="prev" title="基础C语言第六讲">基础C语言第六讲<i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="post-spread"><div class="ds-share flat" data-thread-key="2016/05/12/基础C语言第五讲/" data-title="基础C语言第五讲" data-content="" data-url="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li><li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li><li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li><li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li><li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div></div></div></div><div class="comments" id="comments"><div class="ds-thread" data-thread-key="2016/05/12/基础C语言第五讲/" data-title="基础C语言第五讲" data-url="http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/"></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview"> 站点概览</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="http://ds.cdncache.org/avatar-50/938/215509.jpg" alt="童小浩"><p class="site-author-name" itemprop="name">童小浩</p><p class="site-description motion-element" itemprop="description">快乐是一天，不快乐也是一天，为什么不天天快乐呢？————天天快乐</p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives"><span class="site-state-item-count">8</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-tags"> <a href="/tags"><span class="site-state-item-count">3</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/haohao575" target="_blank" title="github"><i class="fa fa-fw fa-globe"></i> github</a></span></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">C语言第五讲《C语言基础》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.1.</span> <span class="nav-text">二维数组 字符串数组 多维数组</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">一 讲课之前</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">练习1.1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">练习1.2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">二 字符串数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">练习2.1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">练习2.2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">三 多维数组</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</span></a></li></ol></li></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright"> &copy; <span itemprop="copyrightYear">2016</span><span class="with-love"><i class="fa fa-heart"></i></span> <span class="author" itemprop="copyrightHolder">童小浩</span></div><div class="powered-by"> 由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动</div><div class="theme-info"> 主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script><script type="text/javascript">var duoshuoQuery={short_name:"tongxiaohaocn"};!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.id="duoshuo-script",t.src=("https:"==document.location.protocol?"https:":"http:")+"//static.duoshuo.com/embed.js",t.charset="UTF-8",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(t)}()</script></body></html>
