@@ -89,7 +89,10 @@
 
 #define kAth (12) //命名规范要不就是大写要不开头以k开通第一个字母大写
 函数
-//练习1.1    void dayin1(i">
+
+//练习1.1
+
+void dayin1(in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基础C语言第六讲">
 <meta property="og:url" content="http://www.tongxiaohao.cn/2016/05/12/基础C语言第六讲/index.html">
@@ -108,8 +111,11 @@
 
 #define kAth (12) //命名规范要不就是大写要不开头以k开通第一个字母大写
 函数
-//练习1.1    void dayin1(i">
-<meta property="og:updated_time" content="2016-05-12T08:41:05.000Z">
+
+//练习1.1
+
+void dayin1(in">
+<meta property="og:updated_time" content="2016-05-12T08:48:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基础C语言第六讲">
 <meta name="twitter:description" content="C语言第六讲《C语言基础》
@@ -126,7 +132,10 @@
 
 #define kAth (12) //命名规范要不就是大写要不开头以k开通第一个字母大写
 函数
-//练习1.1    void dayin1(i">
+
+//练习1.1
+
+void dayin1(in">
 
 
 
@@ -354,9 +363,32 @@
 </code></pre><h1>宏定义</h1>
 
 <pre><code>#define kAth (12) //命名规范要不就是大写要不开头以k开通第一个字母大写
-</code></pre><p></p><h1>函数</h1><p></p>
-<p></p><h3>//练习1.1</h3><br>    void dayin1(int a);//函数声明<br>    void hello(void);//函数声明<br>    int bijiaodaxiao (int a, int b); //函数声明<br>    int wuCanYouFanHuiZhi(void);//函数声明<br>    int sumValue(int n);//函数声明<br>    int dayOfYear(int year,int mouth, int day);//函数声明<br>    int main(int argc, const char <em> argv[]) {<br>        int a = bijiaodaxiao(22, 21); //函数的调用<br>        printf(“%d”,a);<br>        dayin(“aaaa”);<br>        /</em><br>         一， 函数是什么东西 土豪例子<br>         我很有钱我叫我的管家去买饭 叫我的下人去干活 自己只看结果<br>         什么是函数  具有特定函数的代码短<br>         从函数定义上看函数分两种 系统写好的函数 为库函数 自己写的函数 为自定义函数<br>         1，函数的定义<br>         函数的返回值 为函数值 用return 返回 return 后边语句不在执行 没有返回值的函数也可以用<br>         参数有两种 形参 与 实参<br>         实参：出现在函数调用的表达式 比如 22 21<br>         形参：出现在函数定义中 用假名字代替调用时 所提供的值<p></p>
-<pre><code>     变量的作用域 就是变量的有效范围
+</code></pre><h1>函数</h1>
+
+<h3>//练习1.1</h3>
+
+<pre><code>void dayin1(int a);//函数声明
+void hello(void);//函数声明
+int bijiaodaxiao (int a, int b); //函数声明
+int wuCanYouFanHuiZhi(void);//函数声明
+int sumValue(int n);//函数声明
+int dayOfYear(int year,int mouth, int day);//函数声明
+int main(int argc, const char * argv[]) {
+    int a = bijiaodaxiao(22, 21); //函数的调用
+    printf(&quot;%d&quot;,a);
+    dayin(&quot;aaaa&quot;);
+    /*
+     一， 函数是什么东西 土豪例子
+     我很有钱我叫我的管家去买饭 叫我的下人去干活 自己只看结果
+     什么是函数  具有特定函数的代码短
+     从函数定义上看函数分两种 系统写好的函数 为库函数 自己写的函数 为自定义函数
+     1，函数的定义 
+     函数的返回值 为函数值 用return 返回 return 后边语句不在执行 没有返回值的函数也可以用
+     参数有两种 形参 与 实参
+     实参：出现在函数调用的表达式 比如 22 21
+     形参：出现在函数定义中 用假名字代替调用时 所提供的值
+
+     变量的作用域 就是变量的有效范围
      全局变量 与 局部变量 宏定义
 
      */
@@ -382,9 +414,23 @@ void dayin1(int a){ //有参 无返回值(函数实现)
 int wuCanYouFanHuiZhi(void){ //无参 有返回值(函数实现)
     return 20; //后面语句不在执行
 }
-</code></pre><p></p><h3>//练习1.2</h3><br>    int sumValue(int n){//(函数实现)<br>        int a = 0;<br>        for (int i = 1; i &lt;= n; i ++) {<br>                a = a + i;<br>        }<br>    return a;<br>    }<p></p>
-<p></p><h3>//练习1.3</h3><br>    int dayOfYear(int year,int mouth, int day){//(函数实现)<br>    // 31,28,31,30,31,30,31,31,30,31,30,31<br>        int a[12] = {31,28,31,30,31,30,31,31,30,31,30,31};<br>        int dayofyear = 0;<p></p>
-<pre><code>    if ((year % 400 == 0) || ((year % 4 == 0) &amp;&amp; (year % 100 == 0))) {
+</code></pre><h3>//练习1.2</h3>
+
+<pre><code>int sumValue(int n){//(函数实现)
+    int a = 0;
+    for (int i = 1; i &lt;= n; i ++) {
+            a = a + i;
+    }
+return a;
+}
+</code></pre><h3>//练习1.3</h3>
+
+<pre><code>int dayOfYear(int year,int mouth, int day){//(函数实现)
+// 31,28,31,30,31,30,31,31,30,31,30,31
+    int a[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    int dayofyear = 0;
+
+    if ((year % 400 == 0) || ((year % 4 == 0) &amp;&amp; (year % 100 == 0))) {
         if (mouth &gt; 2) {
             dayofyear = 1;
         }
@@ -395,8 +441,12 @@ int wuCanYouFanHuiZhi(void){ //无参 有返回值(函数实现)
     }
     return dayofyear + day;
 }
-</code></pre><p></p><h3>数组作为参数</h3><br>    void dayin(char *s){ //写在上方不用声明<br>        printf(“%s”,s);<br>    }<p></p>
-<p></p><h1>递归 练习1.4 打断点演示一下自己就好了</h1><br>// 5! = 5 <em> 4!<br><br>// 4! = 4 </em> 3! …<br><p></p>
+</code></pre><h3>数组作为参数</h3>
+
+<pre><code>void dayin(char *s){ //写在上方不用声明
+    printf(&quot;%s&quot;,s);
+}
+</code></pre><p></p><h1>递归 练习1.4 打断点演示一下自己就好了</h1><br>// 5! = 5 <em> 4!<br><br>// 4! = 4 </em> 3! …<br><p></p>
 <pre><code>int func(int n)
 {
     //    printf(&quot;正在计算%d的阶乘\n&quot;, n);
