@@ -7,7 +7,7 @@
       <title><![CDATA[基础C语言第六讲]]></title>
       <url>http://www.tongxiaohao.cn/2016/05/12/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%85%AD%E8%AE%B2/</url>
       <content type="html"><![CDATA[<p><center><h1>C语言第六讲《C语言基础》</h1></center></p>
-<p><center><h3>预编译 宏定义 函数 递归</h3></center><br>回顾昨天所学 </p>
+<p><center><h1>预编译 宏定义 函数 递归</h1></center><br>回顾昨天所学 </p>
 <pre><code>二维数组 字符串数组 多维数组
 </code></pre><h1>预编译</h1>
 
@@ -21,7 +21,7 @@
 <pre><code>#define kAth (12) //命名规范要不就是大写要不开头以k开通第一个字母大写
 </code></pre><h1>函数</h1>
 
-<h3>//练习1.1</h3>
+<h1>//练习1.1</h1>
 
 <pre><code>void dayin1(int a);//函数声明
 void hello(void);//函数声明
@@ -70,7 +70,7 @@ void dayin1(int a){ //有参 无返回值(函数实现)
 int wuCanYouFanHuiZhi(void){ //无参 有返回值(函数实现)
     return 20; //后面语句不在执行
 }
-</code></pre><h3>//练习1.2</h3>
+</code></pre><h1>//练习1.2</h1>
 
 <pre><code>int sumValue(int n){//(函数实现)
     int a = 0;
@@ -79,7 +79,7 @@ int wuCanYouFanHuiZhi(void){ //无参 有返回值(函数实现)
     }
 return a;
 }
-</code></pre><h3>//练习1.3</h3>
+</code></pre><h1>//练习1.3</h1>
 
 <pre><code>int dayOfYear(int year,int mouth, int day){//(函数实现)
 // 31,28,31,30,31,30,31,31,30,31,30,31
@@ -97,7 +97,7 @@ return a;
     }
     return dayofyear + day;
 }
-</code></pre><h3>数组作为参数</h3>
+</code></pre><h1>数组作为参数</h1>
 
 <pre><code>void dayin(char *s){ //写在上方不用声明
     printf(&quot;%s&quot;,s);
@@ -125,7 +125,7 @@ return a;
       <title><![CDATA[基础C语言第五讲]]></title>
       <url>http://www.tongxiaohao.cn/2016/05/12/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%94%E8%AE%B2/</url>
       <content type="html"><![CDATA[<p><center><h1>C语言第五讲《C语言基础》</h1></center></p>
-<p><center><h3>二维数组 字符串数组 多维数组</h3></center><br>回顾昨天所学 </p>
+<p><center><h1>二维数组 字符串数组 多维数组</h1></center><br>回顾昨天所学 </p>
 <pre><code>一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
 字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
 字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
@@ -154,7 +154,7 @@ m代表每一行 n代表每一列 这里看起来就是 一个表格 先讲怎�
 //        printf(&quot;%c &quot;,c[i]);
 //    }
 //    printf(&quot;\n&quot;);
-</code></pre><h2>练习1.1</h2>
+</code></pre><h1>练习1.1</h1>
 
 <pre><code>int a[2][3] = {{1,2,3},{4,5,6}};
 int b[3][2] = {0};
@@ -169,7 +169,7 @@ for (int i = 0; i &lt; 3; i++) {
     }
     printf(&quot;\n&quot;);
 }
-</code></pre> <h2>练习1.2</h2>
+</code></pre> <h1>练习1.2</h1>
 
 <pre><code> int a[3][4] = {{5,6,7,11}
                   ,{9,0,1,12}
@@ -188,12 +188,7 @@ for (int i = 0; i &lt; 3; i ++) {
 }
 printf(&quot;max = %d&quot;,max);
 printf(&quot;在第%d行，第%d列&quot;,x,y);
-</code></pre><p></p><h1>二 字符串数组</h1><br>1、字符数组：数据元素是 字符 的数组，一维数组<br><br>2、字符串数组：数据元素是 字符串 的数组，二维数组。 字符串本身也是字符数组<p></p>
-<pre><code>//    char string[3][50] = {&quot;hello&quot;,&quot;童小浩&quot;,&quot;C语言&quot;};
-//    for(int i = 0;i &lt; 3; i ++){
-//        printf(&quot;%s&quot;,string[i]); //访问每一个字符串 string[2][2] 访问某一个字符
-//    }
-</code></pre><h2>练习2.1</h2>
+</code></pre><h1>二 字符串数组</h1><br>1、字符数组：数据元素是 字符 的数组，一维数组<br><br>2、字符串数组：数据元素是 字符串 的数组，二维数组。 字符串本身也是字符数组<br><br>    //    char string[3][50] = {“hello”,”童小浩”,”C语言”};<br>    //    for(int i = 0;i &lt; 3; i ++){<br>    //        printf(“%s”,string[i]); //访问每一个字符串 string[2][2] 访问某一个字符<br>    //    }<br><br><h1>练习2.1</h1>
 
 <pre><code>//    char names[3][30] = {&quot;yujiangchuan&quot;, &quot;xuedongxiao&quot;, &quot;fandeng&quot;};
 //
@@ -211,7 +206,7 @@ printf(&quot;在第%d行，第%d列&quot;,x,y);
 //    }
 //
 //    printf(&quot;max length = %d&quot;, maxLength);
-</code></pre><h2>练习2.2</h2>
+</code></pre><h1>练习2.2</h1>
 
 <pre><code>// 使用冒泡排序
 //    char names[3][30] = {&quot;yujiangchuan&quot;, &quot;xuedongxiao&quot;, &quot;fandeng&quot;};
@@ -277,7 +272,7 @@ printf(&quot;在第%d行，第%d列&quot;,x,y);
 <pre><code>总结 二维数组 有两个下标 通过双层循环 存取
 字符串数组 本质就是字符二维数组 字符串长度不能超过二维所规定长度-1
 多维数组
-</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</h2></center></p>
+</code></pre><p><center><h1>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</h1></center></p>
 
 
 
@@ -288,7 +283,7 @@ printf(&quot;在第%d行，第%d列&quot;,x,y);
     <entry>
       <title><![CDATA[基础C语言第四讲]]></title>
       <url>http://www.tongxiaohao.cn/2016/04/15/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%9B%9B%E8%AE%B2/</url>
-      <content type="html"><![CDATA[<center><h1>C语言第四讲《C语言基础》</h1></center><br><center><h3><em>数组  数组排序 字符数组</em></h3></center><br>回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 循环嵌套 /break 结束循环 / continue 跳出本次循环/ 通常与if连用 /随机数/<br><br><h1>数组</h1><br>1,数组定义 把相同数据类型的成员组成 一组数据<br><br>2，数组是个构造类型 最简单的数组是一堆数组<br><br>3，数组定义 int a[4] = {0}；也可以这样 int a[] = {1,2,3} 数组有下标 从0开始 a[0] 就是1；<br>数组元素不带 类型标识<br><br>4，数组通常和for循环一起用<br><br>    int a[5] = {1,2,3,4,5};<br>    //输出每一个数组中元素的值<br>    for (int i = 0; i &lt; 5; i++){<br>        printf(“%d\n”,a[i]);<br>    }<br><br>注意事项<br><br>    1、定义数组 和 数组元素<br>    2、数组作为一个整体不能直接参与运算<br><br><br><h1>数组排序 就是数组内部按一定关系排序</h1><br>1、常见的排序方法：冒泡排序、选择排序、插入排序等等<br><br>2、排序的规律有两种：升序（小~大）、降序（大~小）<br><br>3、本节课：冒泡排序。<br><br>4、冒泡排序的基本思路：每次将相邻的两个数进行比较，按照升序或降序的顺序进行交换，直到所有数字的顺序全部正确。<br><br>冒泡排序（只适合小范围的数据排序）（20遍）<br><br><br>请仔细看下面图片理解冒泡排序：<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/25223707-da62d63797924c5aba0579f9b46bbbab.gif" width="200" height="120" alt="图片"><br></center><br><center><a target="_blank" href="http://www.cnblogs.com/kanlei/archive/2013/11/25/3442384.html">上面图片由KANLEI博客提供感谢</a></center>
+      <content type="html"><![CDATA[<center><h1>C语言第四讲《C语言基础》</h1></center><br><center><h1><em>数组  数组排序 字符数组</em></h1></center><br>回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 循环嵌套 /break 结束循环 / continue 跳出本次循环/ 通常与if连用 /随机数/<br><br><h1>数组</h1><br>1,数组定义 把相同数据类型的成员组成 一组数据<br><br>2，数组是个构造类型 最简单的数组是一堆数组<br><br>3，数组定义 int a[4] = {0}；也可以这样 int a[] = {1,2,3} 数组有下标 从0开始 a[0] 就是1；<br>数组元素不带 类型标识<br><br>4，数组通常和for循环一起用<br><br>    int a[5] = {1,2,3,4,5};<br>    //输出每一个数组中元素的值<br>    for (int i = 0; i &lt; 5; i++){<br>        printf(“%d\n”,a[i]);<br>    }<br><br>注意事项<br><br>    1、定义数组 和 数组元素<br>    2、数组作为一个整体不能直接参与运算<br><br><br><h1>数组排序 就是数组内部按一定关系排序</h1><br>1、常见的排序方法：冒泡排序、选择排序、插入排序等等<br><br>2、排序的规律有两种：升序（小~大）、降序（大~小）<br><br>3、本节课：冒泡排序。<br><br>4、冒泡排序的基本思路：每次将相邻的两个数进行比较，按照升序或降序的顺序进行交换，直到所有数字的顺序全部正确。<br><br>冒泡排序（只适合小范围的数据排序）（20遍）<br><br><br>请仔细看下面图片理解冒泡排序：<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/25223707-da62d63797924c5aba0579f9b46bbbab.gif" width="200" height="120" alt="图片"><br></center><br><center><a target="_blank" href="http://www.cnblogs.com/kanlei/archive/2013/11/25/3442384.html">上面图片由KANLEI博客提供感谢</a></center>
 
 <pre><code>int sort_arr[5] = {5,4,3,2,1}; // 外层循环，控制排序趟数,趟数为 ：数组元素个数-1
 //    for (int i = 0; i &lt; (5-1)/*5-1，表示数组有n个数比较，只比较n-1趟*/; i ++) {
@@ -444,14 +439,14 @@ printf(&quot;a = %d,a1 = %d,a2 = %d\n&quot;,a,a1,a2);
 //    }
 //    
 //    printf(&quot;%s&quot;,str);
-</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言四讲已经结束。谢谢大家! 加油！！！</h2></center></p>]]></content>
+</code></pre><p><center><h1>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言四讲已经结束。谢谢大家! 加油！！！</h1></center></p>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[基础C语言第三讲]]></title>
       <url>http://www.tongxiaohao.cn/2016/04/14/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%89%E8%AE%B2/</url>
       <content type="html"><![CDATA[<p><center><h1>C语言第三讲《C语言基础》</h1></center></p>
-<p><center><h3>循环  循环的 控制 语句 “while，do while，for” 随机数 循环嵌套<br></h3></center><br>回顾昨天所学 BOOL  关系运算符  逻辑运算符 逻辑与 &amp;&amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch</p>
+<p><center><h1>循环  循环的 控制 语句 “while，do while，for” 随机数 循环嵌套<br></h1></center><br>回顾昨天所学 BOOL  关系运算符  逻辑运算符 逻辑与 &amp;&amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch</p>
 <h1>循环</h1>
 
 <p>为什么要用循环 ?<br><br>先做一个程序 输出 10 个 hello word<br><br>再输出 100 个呢？<br><br>/打印 hello world 100遍，如果打印1000、10000遍呢<br><br> 可以复制粘贴，但是会造成两个问题。<br></p>
@@ -459,7 +454,7 @@ printf(&quot;a = %d,a1 = %d,a2 = %d\n&quot;,a,a1,a2);
 </code></pre><p>使用循环就是为了解决这个问题<br><br>这就是要用到循环结构： 进行循环<br><br>当符合条件时候， 重复某一代码<br><br>循环的作用：减少重复冗余代码，增加代码可读性，易于维护</p>
 <h1>循环的 控制 语句 while do while for</h1>
 
-<h2>1 while：</h2><br>    while(条件表达式){   <br><br>    要先判断条件表达式 <br>在执行 代码 如果条件为假 <br>将终止循环 包括第一次 如果条件为假 将不会执行以下代码<br>        需要重复运行的代码<br><br>     }<br><br><br>     int i = 0;<br>     while (i &lt; 5) { // 0，1，2，3，4;<br>     printf(“%d\n”,i);<br>          }<br><br>练习题 #输出1～100个位数是7的数<br><br><br>    int i = 1;<br>    while (i &lt;= 100) {<br>        if (i  % 10 == 7) {<br>            printf(“%d\n”,i);<br>        }<br>        i ++;<br>    }<br><br>练习题 #输出1～100包含7的数<br><br><br>    int i = 1;<br>    while (i &lt;= 100) {<br>        if (!(i  % 10 == 7 )&amp;&amp; !(i / 10 % 10 == 7) &amp;&amp; !(i % 7 == 0)) {<br>            printf(“%d\n”,i);<br>        }<br>        i ++;<br>    }<br><br><br><h2>随机整数 break continue</h2><br>随机整数<br><br><br>     int a = 0;<br>    a = arc4random() % 10; // 0,1,2,3,4,5,6,7,8,9 个数字 对N取余 取值范围 0 ～ N - 1；<br><br>如果是 2 ～ 10 之间的呢<br><br>    int a = 0;<br>        a = arc4random() % 9+ 2;<br><br>所以有个公式 [m,n]之间的 随机数<br><br><br>    a = arc4random() % (n - m + 1)+ m;<br><br>break ：<br><br><br>    int i = 1;<br>    while (i) { // 0，1，2，3，4，5，6;<br>        if (i &gt; 6) {<br>            break; //用于结束循环<br>        }<br>        printf(“%d\n”,i);<br>        i ++;<br>    }<br><br>continue:<br><br><br>    int i = 1;<br>    while (i &lt; 5) {<br>        if (i == 2) {<br>            i ++;//注意一定要加 否则每次 都==2 程序循环到这里了<br>            continue; //跳出本次循环 下面的代码不在执行<br>        }<br>        printf(“%d\n”,i);<br>        i ++;<br>    }<br><br><h2>for</h2>
+<h1>1 while：</h1><br>    while(条件表达式){   <br><br>    要先判断条件表达式 <br>在执行 代码 如果条件为假 <br>将终止循环 包括第一次 如果条件为假 将不会执行以下代码<br>        需要重复运行的代码<br><br>     }<br><br><br>     int i = 0;<br>     while (i &lt; 5) { // 0，1，2，3，4;<br>     printf(“%d\n”,i);<br>          }<br><br>练习题 #输出1～100个位数是7的数<br><br><br>    int i = 1;<br>    while (i &lt;= 100) {<br>        if (i  % 10 == 7) {<br>            printf(“%d\n”,i);<br>        }<br>        i ++;<br>    }<br><br>练习题 #输出1～100包含7的数<br><br><br>    int i = 1;<br>    while (i &lt;= 100) {<br>        if (!(i  % 10 == 7 )&amp;&amp; !(i / 10 % 10 == 7) &amp;&amp; !(i % 7 == 0)) {<br>            printf(“%d\n”,i);<br>        }<br>        i ++;<br>    }<br><br><br><h1>随机整数 break continue</h1><br>随机整数<br><br><br>     int a = 0;<br>    a = arc4random() % 10; // 0,1,2,3,4,5,6,7,8,9 个数字 对N取余 取值范围 0 ～ N - 1；<br><br>如果是 2 ～ 10 之间的呢<br><br>    int a = 0;<br>        a = arc4random() % 9+ 2;<br><br>所以有个公式 [m,n]之间的 随机数<br><br><br>    a = arc4random() % (n - m + 1)+ m;<br><br>break ：<br><br><br>    int i = 1;<br>    while (i) { // 0，1，2，3，4，5，6;<br>        if (i &gt; 6) {<br>            break; //用于结束循环<br>        }<br>        printf(“%d\n”,i);<br>        i ++;<br>    }<br><br>continue:<br><br><br>    int i = 1;<br>    while (i &lt; 5) {<br>        if (i == 2) {<br>            i ++;//注意一定要加 否则每次 都==2 程序循环到这里了<br>            continue; //跳出本次循环 下面的代码不在执行<br>        }<br>        printf(“%d\n”,i);<br>        i ++;<br>    }<br><br><h1>for</h1>
 
 <pre><code>int i = 10;
 while (i--) { //注意- -i
@@ -470,7 +465,7 @@ while (i--) { //注意- -i
     printf(&quot;%d\n&quot;,i);
 }
 </code></pre><p>其实 循环初始值 就是 while 变量的定义 int i ＝ 0；<br><br>循环条件呢 就是 while后边括号里的内容<br><br>增值就是 while 循环里面 i ++；大括号里依然就是需要循环的代码<br><br>利用for循做上面的两道练习题<br></p>
-<p></p><h2>do….while</h2><br>while：先判断，再执行//do…while：先执行一次，在判断<p></p>
+<p></p><h1>do….while</h1><br>while：先判断，再执行//do…while：先执行一次，在判断<p></p>
 <pre><code>int i = 0;
 do{
     printf(&quot;%d\n&quot;,i);
@@ -499,7 +494,7 @@ for (int i = 1; i &lt; 4; i ++) {
     printf(&quot;\n&quot;);
 }
 </code></pre><p></p><h1>总结</h1><br>for 通常用于知道循环次数<br><br>while 通常用于不知道循环次数 用break结束循环 <br><br>do while 用处很少 <br><br>break 结束循环 continue 跳出本次循环 通常与if连用<br><p></p>
-<p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言三讲已经结束。谢谢大家! 加油！！！</h2></center></p>
+<p><center><h1>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言三讲已经结束。谢谢大家! 加油！！！</h1></center></p>
 
 
 
@@ -593,7 +588,7 @@ $ pod update --verbose --no-repo-update]
 <p></p><p>我们的工程和第三方库所在的工程会由一个新生成的workspace管理</p><p></p>
 <p></p><p>为了方便我们直观的管理工程和第三方库，CocoaPodsTest工程和Pods工程会被以workspace的形式组织和管理，也就是我们刚才看到的CocoaPodsTest.xcworkspace文件。</p><p></p>
 <p></p><p>原来的工程设置已经被更改了，这时候我们直接打开原来的工程文件去编译就会报错，只能使用新生成的workspace来进行项目管理。</p><p></p>
-<h3><center>孙悟空三大白骨精！ 感谢各位学习我的博客！在此声明此博客并不是我所写下的，是谁写的已经忘记了。我只是引用，感谢原作者！！提供这么详细的使用步骤，谢谢大家</center></h3>
+<h1><center>孙悟空三大白骨精！ 感谢各位学习我的博客！在此声明此博客并不是我所写下的，是谁写的已经忘记了。我只是引用，感谢原作者！！提供这么详细的使用步骤，谢谢大家</center></h1>
 ]]></content>
     </entry>
     
@@ -601,7 +596,7 @@ $ pod update --verbose --no-repo-update]
       <title><![CDATA[基础C语言第二讲]]></title>
       <url>http://www.tongxiaohao.cn/2016/03/29/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%AE%B2/</url>
       <content type="html"><![CDATA[<p><center><h1>C语言第二讲《C语言基础》</h1></center></p>
-<p><center><h3>BOOL  关系运算符  逻辑运算符 逻辑与 &amp;&amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch</h3></center><br>回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制</p>
+<p><center><h1>BOOL  关系运算符  逻辑运算符 逻辑与 &amp;&amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch</h1></center><br>回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制</p>
 <h1>BOOL</h1>
 
 <p>C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #define TRUE 1 #define FALSE 0 #define myBOOL int) 到了C99才有的 而OC是支持C99的</p><br><p>bool类型 只有两个值 真，假 在OC中BOOL就是YES ，NO C bool中非零为true真 零为false假OC中1位YES 0为NO 所以bool 值其实和int 一样都是用转义符%d进行输入输;</p>
@@ -651,7 +646,7 @@ int c = a &gt; b ? a : b;  介绍一个比较的简单写法 也是个条件运�
 };
 //目的：提高代码可读性 讲人能看懂的标识符与计算机能识别的数字建立关系
 //enum写在main函数上面 如下图
-</code></pre><p><img src="http://7xqlyv.com1.z0.glb.clouddn.com/C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%8A%82%E5%9B%BE%E7%89%87.png" width="240" height="120" alt="图片">    </p><br><p></p><h3>switch case</h3><p></p>
+</code></pre><p><img src="http://7xqlyv.com1.z0.glb.clouddn.com/C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%8A%82%E5%9B%BE%E7%89%87.png" width="240" height="120" alt="图片">    </p><br><p></p><h1>switch case</h1><p></p>
 
 <pre><code>int a = 0;
 scanf(&quot;%d&quot;,&amp;a);
@@ -679,7 +674,7 @@ scanf(&quot;%d&quot;,&amp;a);
         break;
     }
 }
-</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言二讲已经结束。谢谢大家!</h2></center></p>
+</code></pre><p><center><h1>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言二讲已经结束。谢谢大家!</h1></center></p>
 
 ]]></content>
     </entry>
@@ -689,10 +684,18 @@ scanf(&quot;%d&quot;,&amp;a);
       <url>http://www.tongxiaohao.cn/2016/03/25/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%80%E8%AE%B2/</url>
       <content type="html"><![CDATA[<h1><center>C语言第一讲《C语言基础》</center></h1>
 
-<h3><center>进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数</center></h3>
+<h1><center>进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数</center></h1>
 
-<p></p><h1>进制</h1><p></p>
-<h2>1, 进制概念 进位机制 逢多少进1</h2><br>十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”<br><br>生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进1<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg" width="100" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="130" height="100" alt="图片"></center><br><br><h2>2,计算机的进制</h2><br>计算机使用的是二进制 逢2进1 所以位数只有0，1 例子 0，1，10，11，100<br><br>因为目前的计算机电脑内部 只识别 是对的 还是 错的 所以 它表示的 就是1和0<br><br><h2>3,进制规则</h2><br>N进制 在表示所有位中 显示的 只有 0～N-1 遇到N前一位加1<br><br>N进制 就是逢N进1<br><br><h2>4,进制转换</h2><br>基数 是几进制 基数就是几<br><br>位  从右到左 就是从低位到高位 位是按照0开始数 最右边就是0；<br><br>权  和基数一样 是几进制 权就是几<br><br>位权  就是每一个位置 对应的单位值 N^(I - 1)<br><br>（1）十进制转N进制<br>    连除倒取余<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="300" alt="图片"></center><br><center>例子1：转二进制   例子2：转十六进制</center><br>（2） N进制转十进制<br>    按位求和<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"></center><br><center>例子：二进制转十进制</center><br><br><h2>5,进制数表示</h2><br>十进制：不加以修饰 100<br><br>八进制：在数值前加0  表示 0573<br><br>二进制：在数值前加0b 表示 0b1101<br><br>十六进制：在数值前加0X 表示0X2A<br><br><h2>6,进制了解</h2><br>十进制：就是开发人员使用 （人）<br><br>二进制：计算机识别的语言 0，1编码<br><br>十六进制：因为一个十六进制数可以表示4位二进制 所以十六进制更多是为了方便表示二进制 十六进制的0～F 二进制的0000～1111<br><br>    以上图片资源均来自百度。<br><br><h1>程序的一般形式</h1><br><h2>1,创建程序</h2><br>1),选择OS X 下面的Application 选择Command Line Tool （控制台模式）点下面的Next<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br>2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png" width="682" height="392" alt="图片"><br><br><h2>2,程序基本介绍</h2><br><h3>1).注释</h3><br><br>单行注释，多行注视<br><br>作用：提供思路，提示代码作用，程序并不执行 不注释你会忘记的会发现以前写的代码不知道是干什么的了<br>单行注视不可以换行 只是注释 //  后边到这一行的末尾 敲到回车时候就不是注释了<br>多行注释：/<em> 可以在这个之间 可以换行</em>/<br><center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png" width="682" height="392" alt="图片"><br></center><br><br><h3>2).main 程序执行入口 又称主函数</h3><br>    如上图 这里我们介绍一个输出语句 printf(“你好！”); 这个就是在控制台输出<br><br><h3>3).#import 与#include</h3><br><br>//#import 与#include 引入文件与类库 如果要在本文件中使用其他文件 就必须引入其他文件 格式两种 &lt;&gt; , “” .&lt;&gt;使用系统类库文件 “” 使用创建文件<br><br><h2>3,数据类型</h2><br><h3>1).数据类型的分类</h3><br>    1).基本数据类型 ：字符类型char 1字节 整型 int 4字节 短整型 short 2字节 长整型 long 4    字节 或8字节 单精度浮点型 float 4字节 双精度浮点型 double 8字节<br>    2).构造类型 ：数组 枚举<br>    3).    指针类型；<br>    4).空类型 void<br><h3>2).数据类型的单位</h3><br>    数据类型的单位 字节byte比特 最常用的是位 bits 位是最小的存储单位 1字节 == 8位（二进制位）== 2位十六进制位<br><h3>数据类型的存储</h3><br>    不同的数据类型，存储的空间不同 空间决定了数据类型的存储数据的范围<br>    1).数据类型的存储空间与操作系统有关并不是统一的 但是有个原则: short&lt;=int&lt;=long&lt;=longlong<br>    2).sizeof()运算符，计算一个数据类型占用的空间 一定要记得是运算符而不是函数<br>    3).存储空间决定了存储数据的范围,不用背只需记得最长用到的 益处：超出了数据类型的取值范围<br>    常用的数据类型字节数请看分类里的介绍<br>    4).在整型中还有一个叫无符号标识符 unsigned 而整型区 分为来种有符合与无符号有符号的区分正负 整数对应的二进制数 最高位为1 为正整数 最高位为0 为负整数<br><h1>常量\变量\运算符</h1><br>    1，常量 程序运行期间不允许改变的量 如10 ，2.5，A，转义字符不可直接打印\n 字符串常量 “你好”<br>    2，知道常量了 那变量的定义就是…… 程序运行可以改变的量变量代表存储区域 用于储存内容 在存储区域的内容就是变量的值<br>    3，变量的定义 由三部分组成<br>    变量类型修饰符 变量名称 ＝ 初始值；<br>    int studentAge = 22;<br>    4，变量命名要求<br>    只能用字母 数字 下划线 组成 并且数字不能开头<br>    不能使用系统保留字 如int float<br>    不能使用重复的变量名<br>    见面知意 这也是代码规范之一 使用驼峰命名发 单词的第一个字母大写 第一个单词 小写 如 studentName; teacherName;<br>    5，知道了变量  我们也会变量了  接下来就是运算符 第一个赋值运算符‘＝’<br>    赋值运算会把赋值运算符右边的值赋值给左边变量 age ＝ 10；<br>    赋值运算优先级低<br>    //练习<br>    //    int a = 10,b = 20;<br>    //    a = b + a;<br>    //    b = a - b;<br>    //    a = a – b;<br>    6，算数运算符 +，-，<em>，/，%，++，–，<br>    这里一定要注意 ++，– 在前在后的区别 在前先执行 在后后执行<br>    意思：如<br>    int a = 10;<br>    printf(“%d\n”,a++); //输出 10；<br>    int a = 10;<br>    printf(“%d\n”,++a); //输出 11；<br>    7,复合运算符<br>    += ,-=,</em>=,/=，%= 这些都是谁在前 计算的结果 赋值给谁<br>    如 int b = 0;<br>    b += 2; 想等于 b = b + 2; 所以赋值给b b ＝ 2;<br><h1>表达式</h1><br>    就是常量变量 与运算符组合 表达式都会有返回值 3+5 a+=b<br><h1>语句</h1><br>    程序执行的最小单位 C与OC中 都是以;结尾 如果表达式加上分号就是 一条语句<br><h1>基本输入 输出函数</h1><br>    int i = 0;<br>    scanf(“%d”,&amp;i); //格式化输入函数 %d转换符<br>    printf(“%d”,i); //格式化输出函数 %d转化符<br>    记得掩饰输入输出格式不同会产生什么问题<br>    语法scanf(格式串,变量1地址,变量2地址，……);<br>    如果输入数据类型与格式符匹配则继续读入<br>    否则不在读入立刻反回<br>    scanf(“%d\n”,&amp;i); //切记不可加\n 会抵消人工回车而且不是一次是一直抵消 并且 输入只认大回车 小键盘的回车可能不会结束读入<br>    语法 printf(格式串,表达式1,表达式2，……);<br>    空白符 scanf(“%d “,a) 空白注意将不会输出<br>    输出转换 格式控制<br>    printf(“%05.2f\n”,2.2222); //总共5位 小数点也是一位 不够补0位 不写0 表示不够补空行位<br>    printf(“%-4d\n”,20); //左对其<br>    printf(“%4d\n”,20); //右对其<br>    思考怎么输出%  解决%%<br><br><br><center><br><br>    <h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言一讲已经结束。谢谢大家!</h2>
+<h1>进制</h1><br><h1>1, 进制概念 进位机制 逢多少进1</h1><br>十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”<br><br>生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进1<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg" width="100" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="130" height="100" alt="图片"></center><br><br><h1>2,计算机的进制</h1><br>计算机使用的是二进制 逢2进1 所以位数只有0，1 例子 0，1，10，11，100<br><br>因为目前的计算机电脑内部 只识别 是对的 还是 错的 所以 它表示的 就是1和0<br><br><h1>3,进制规则</h1><br>N进制 在表示所有位中 显示的 只有 0～N-1 遇到N前一位加1<br><br>N进制 就是逢N进1<br><br><h1>4,进制转换</h1><br>基数 是几进制 基数就是几<br><br>位  从右到左 就是从低位到高位 位是按照0开始数 最右边就是0；<br><br>权  和基数一样 是几进制 权就是几<br><br>位权  就是每一个位置 对应的单位值 N^(I - 1)<br><br>（1）十进制转N进制<br>    连除倒取余<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="300" alt="图片"></center><br><center>例子1：转二进制   例子2：转十六进制</center><br>（2） N进制转十进制<br>    按位求和<br><center><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg" width="250" height="100" alt="图片"></center><br><center>例子：二进制转十进制</center><br><br><h1>5,进制数表示</h1><br>十进制：不加以修饰 100<br><br>八进制：在数值前加0  表示 0573<br><br>二进制：在数值前加0b 表示 0b1101<br><br>十六进制：在数值前加0X 表示0X2A<br><br><h1>6,进制了解</h1><br>十进制：就是开发人员使用 （人）<br><br>二进制：计算机识别的语言 0，1编码<br><br>十六进制：因为一个十六进制数可以表示4位二进制 所以十六进制更多是为了方便表示二进制 十六进制的0～F 二进制的0000～1111<br><br>    以上图片资源均来自百度。<br><br><h1>程序的一般形式</h1><br><h1>1,创建程序</h1><br>1),选择OS X 下面的Application 选择Command Line Tool （控制台模式）点下面的Next<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br>2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建<br><center>如下图</center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png" width="682" height="392" alt="图片"><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png" width="682" height="392" alt="图片"><br><br><h1>2,程序基本介绍</h1><br><h1>1).注释</h1>
+
+<p>单行注释，多行注视</p>
+<p>作用：提供思路，提示代码作用，程序并不执行 不注释你会忘记的会发现以前写的代码不知道是干什么的了<br>单行注视不可以换行 只是注释 //  后边到这一行的末尾 敲到回车时候就不是注释了<br>多行注释：/<em> 可以在这个之间 可以换行</em>/</p>
+<center><br><img src="http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png" width="682" height="392" alt="图片"><br></center>
+
+<h1>2).main 程序执行入口 又称主函数</h1><br>    如上图 这里我们介绍一个输出语句 printf(“你好！”); 这个就是在控制台输出<br><br><h1>3).#import 与#include</h1>
+
+<p>//#import 与#include 引入文件与类库 如果要在本文件中使用其他文件 就必须引入其他文件 格式两种 &lt;&gt; , “” .&lt;&gt;使用系统类库文件 “” 使用创建文件</p>
+<h1>3,数据类型</h1><br><h1>1).数据类型的分类</h1><br>    1).基本数据类型 ：字符类型char 1字节 整型 int 4字节 短整型 short 2字节 长整型 long 4    字节 或8字节 单精度浮点型 float 4字节 双精度浮点型 double 8字节<br>    2).构造类型 ：数组 枚举<br>    3).    指针类型；<br>    4).空类型 void<br><h1>2).数据类型的单位</h1><br>    数据类型的单位 字节byte比特 最常用的是位 bits 位是最小的存储单位 1字节 == 8位（二进制位）== 2位十六进制位<br><h1>数据类型的存储</h1><br>    不同的数据类型，存储的空间不同 空间决定了数据类型的存储数据的范围<br>    1).数据类型的存储空间与操作系统有关并不是统一的 但是有个原则: short&lt;=int&lt;=long&lt;=longlong<br>    2).sizeof()运算符，计算一个数据类型占用的空间 一定要记得是运算符而不是函数<br>    3).存储空间决定了存储数据的范围,不用背只需记得最长用到的 益处：超出了数据类型的取值范围<br>    常用的数据类型字节数请看分类里的介绍<br>    4).在整型中还有一个叫无符号标识符 unsigned 而整型区 分为来种有符合与无符号有符号的区分正负 整数对应的二进制数 最高位为1 为正整数 最高位为0 为负整数<br><h1>常量\变量\运算符</h1><br>    1，常量 程序运行期间不允许改变的量 如10 ，2.5，A，转义字符不可直接打印\n 字符串常量 “你好”<br>    2，知道常量了 那变量的定义就是…… 程序运行可以改变的量变量代表存储区域 用于储存内容 在存储区域的内容就是变量的值<br>    3，变量的定义 由三部分组成<br>    变量类型修饰符 变量名称 ＝ 初始值；<br>    int studentAge = 22;<br>    4，变量命名要求<br>    只能用字母 数字 下划线 组成 并且数字不能开头<br>    不能使用系统保留字 如int float<br>    不能使用重复的变量名<br>    见面知意 这也是代码规范之一 使用驼峰命名发 单词的第一个字母大写 第一个单词 小写 如 studentName; teacherName;<br>    5，知道了变量  我们也会变量了  接下来就是运算符 第一个赋值运算符‘＝’<br>    赋值运算会把赋值运算符右边的值赋值给左边变量 age ＝ 10；<br>    赋值运算优先级低<br>    //练习<br>    //    int a = 10,b = 20;<br>    //    a = b + a;<br>    //    b = a - b;<br>    //    a = a – b;<br>    6，算数运算符 +，-，<em>，/，%，++，–，<br>    这里一定要注意 ++，– 在前在后的区别 在前先执行 在后后执行<br>    意思：如<br>    int a = 10;<br>    printf(“%d\n”,a++); //输出 10；<br>    int a = 10;<br>    printf(“%d\n”,++a); //输出 11；<br>    7,复合运算符<br>    += ,-=,</em>=,/=，%= 这些都是谁在前 计算的结果 赋值给谁<br>    如 int b = 0;<br>    b += 2; 想等于 b = b + 2; 所以赋值给b b ＝ 2;<br><h1>表达式</h1><br>    就是常量变量 与运算符组合 表达式都会有返回值 3+5 a+=b<br><h1>语句</h1><br>    程序执行的最小单位 C与OC中 都是以;结尾 如果表达式加上分号就是 一条语句<br><h1>基本输入 输出函数</h1><br>    int i = 0;<br>    scanf(“%d”,&amp;i); //格式化输入函数 %d转换符<br>    printf(“%d”,i); //格式化输出函数 %d转化符<br>    记得掩饰输入输出格式不同会产生什么问题<br>    语法scanf(格式串,变量1地址,变量2地址，……);<br>    如果输入数据类型与格式符匹配则继续读入<br>    否则不在读入立刻反回<br>    scanf(“%d\n”,&amp;i); //切记不可加\n 会抵消人工回车而且不是一次是一直抵消 并且 输入只认大回车 小键盘的回车可能不会结束读入<br>    语法 printf(格式串,表达式1,表达式2，……);<br>    空白符 scanf(“%d “,a) 空白注意将不会输出<br>    输出转换 格式控制<br>    printf(“%05.2f\n”,2.2222); //总共5位 小数点也是一位 不够补0位 不写0 表示不够补空行位<br>    printf(“%-4d\n”,20); //左对其<br>    printf(“%4d\n”,20); //右对其<br>    思考怎么输出%  解决%%<br><br><br><center><br><br>    <h1>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言一讲已经结束。谢谢大家!</h1>
 
 <p></p></center><p></p>
 ]]></content>

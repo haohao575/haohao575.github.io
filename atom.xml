@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tongxiaohao.cn" rel="hub"/>
   <link href="http://www.tongxiaohao.cn/"/>
-  <updated>2016-05-12T08:48:32.000Z</updated>
+  <updated>2016-09-08T09:41:53.000Z</updated>
   <id>http://www.tongxiaohao.cn/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://www.tongxiaohao.cn/2016/05/12/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%85%AD%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/05/12/基础C语言第六讲/</id>
     <published>2016-05-12T08:22:34.000Z</published>
-    <updated>2016-05-12T08:48:32.000Z</updated>
+    <updated>2016-09-08T09:41:53.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第六讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;预编译 宏定义 函数 递归&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;预编译 宏定义 函数 递归&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;二维数组 字符串数组 多维数组
 &lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;预编译&lt;/h1&gt;
 
@@ -37,7 +37,7 @@
 &lt;pre&gt;&lt;code&gt;#define kAth (12) //命名规范要不就是大写要不开头以k开通第一个字母大写
 &lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;函数&lt;/h1&gt;
 
-&lt;h3&gt;//练习1.1&lt;/h3&gt;
+&lt;h1&gt;//练习1.1&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;void dayin1(int a);//函数声明
 void hello(void);//函数声明
@@ -86,7 +86,7 @@ void dayin1(int a){ //有参 无返回值(函数实现)
 int wuCanYouFanHuiZhi(void){ //无参 有返回值(函数实现)
     return 20; //后面语句不在执行
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;//练习1.2&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;//练习1.2&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;int sumValue(int n){//(函数实现)
     int a = 0;
@@ -95,7 +95,7 @@ int wuCanYouFanHuiZhi(void){ //无参 有返回值(函数实现)
     }
 return a;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;//练习1.3&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;//练习1.3&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;int dayOfYear(int year,int mouth, int day){//(函数实现)
 // 31,28,31,30,31,30,31,31,30,31,30,31
@@ -113,7 +113,7 @@ return a;
     }
     return dayofyear + day;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;数组作为参数&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;数组作为参数&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;void dayin(char *s){ //写在上方不用声明
     printf(&amp;quot;%s&amp;quot;,s);
@@ -139,11 +139,15 @@ return a;
     <summary type="html">
     
       &lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第六讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;预编译 宏定义 函数 递归&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;预编译 宏定义 函数 递归&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;二维数组 字符串数组 多维数组
 &lt;/code&gt;&lt;
     
     </summary>
+    
+      <category term="讲义" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/"/>
+    
+      <category term="C语音" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E9%9F%B3/"/>
     
     
       <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
@@ -155,10 +159,10 @@ return a;
     <link href="http://www.tongxiaohao.cn/2016/05/12/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%94%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/05/12/基础C语言第五讲/</id>
     <published>2016-05-12T07:11:27.000Z</published>
-    <updated>2016-05-12T07:12:57.000Z</updated>
+    <updated>2016-09-08T09:41:32.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第五讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;二维数组 字符串数组 多维数组&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;二维数组 字符串数组 多维数组&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;一维数组 数组定义 相同数据类型的成员组成 一组数据 数组排序 （冒泡排序）
 字符数组 与 字符串 结束多个\0 %s 打印是以\0为标志
 字符串常用4个函数 strlen() 长度 不算’\0’strcpy()拷贝 strcat()拼接 strcmp()比较
@@ -187,7 +191,7 @@ m代表每一行 n代表每一列 这里看起来就是 一个表格 先讲怎�
 //        printf(&amp;quot;%c &amp;quot;,c[i]);
 //    }
 //    printf(&amp;quot;\n&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;练习1.1&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;练习1.1&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;int a[2][3] = {{1,2,3},{4,5,6}};
 int b[3][2] = {0};
@@ -202,7 +206,7 @@ for (int i = 0; i &amp;lt; 3; i++) {
     }
     printf(&amp;quot;\n&amp;quot;);
 }
-&lt;/code&gt;&lt;/pre&gt; &lt;h2&gt;练习1.2&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt; &lt;h1&gt;练习1.2&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt; int a[3][4] = {{5,6,7,11}
                   ,{9,0,1,12}
@@ -221,12 +225,7 @@ for (int i = 0; i &amp;lt; 3; i ++) {
 }
 printf(&amp;quot;max = %d&amp;quot;,max);
 printf(&amp;quot;在第%d行，第%d列&amp;quot;,x,y);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;二 字符串数组&lt;/h1&gt;&lt;br&gt;1、字符数组：数据元素是 字符 的数组，一维数组&lt;br&gt;&lt;br&gt;2、字符串数组：数据元素是 字符串 的数组，二维数组。 字符串本身也是字符数组&lt;p&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;//    char string[3][50] = {&amp;quot;hello&amp;quot;,&amp;quot;童小浩&amp;quot;,&amp;quot;C语言&amp;quot;};
-//    for(int i = 0;i &amp;lt; 3; i ++){
-//        printf(&amp;quot;%s&amp;quot;,string[i]); //访问每一个字符串 string[2][2] 访问某一个字符
-//    }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;练习2.1&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;二 字符串数组&lt;/h1&gt;&lt;br&gt;1、字符数组：数据元素是 字符 的数组，一维数组&lt;br&gt;&lt;br&gt;2、字符串数组：数据元素是 字符串 的数组，二维数组。 字符串本身也是字符数组&lt;br&gt;&lt;br&gt;    //    char string[3][50] = {“hello”,”童小浩”,”C语言”};&lt;br&gt;    //    for(int i = 0;i &amp;lt; 3; i ++){&lt;br&gt;    //        printf(“%s”,string[i]); //访问每一个字符串 string[2][2] 访问某一个字符&lt;br&gt;    //    }&lt;br&gt;&lt;br&gt;&lt;h1&gt;练习2.1&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;//    char names[3][30] = {&amp;quot;yujiangchuan&amp;quot;, &amp;quot;xuedongxiao&amp;quot;, &amp;quot;fandeng&amp;quot;};
 //
@@ -244,7 +243,7 @@ printf(&amp;quot;在第%d行，第%d列&amp;quot;,x,y);
 //    }
 //
 //    printf(&amp;quot;max length = %d&amp;quot;, maxLength);
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;练习2.2&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;练习2.2&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;// 使用冒泡排序
 //    char names[3][30] = {&amp;quot;yujiangchuan&amp;quot;, &amp;quot;xuedongxiao&amp;quot;, &amp;quot;fandeng&amp;quot;};
@@ -310,7 +309,7 @@ printf(&amp;quot;在第%d行，第%d列&amp;quot;,x,y);
 &lt;pre&gt;&lt;code&gt;总结 二维数组 有两个下标 通过双层循环 存取
 字符串数组 本质就是字符二维数组 字符串长度不能超过二维所规定长度-1
 多维数组
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！&lt;/h2&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h1&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
 
 
 
@@ -320,10 +319,14 @@ printf(&amp;quot;在第%d行，第%d列&amp;quot;,x,y);
     <summary type="html">
     
       &lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第五讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;二维数组 字符串数组 多维数组&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;二维数组 字符串数组 多维数组&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;一维数组 数组定义 相同数据类型的成员组成 
     
     </summary>
+    
+      <category term="讲义" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/"/>
+    
+      <category term="C语音" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E9%9F%B3/"/>
     
     
       <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
@@ -335,9 +338,9 @@ printf(&amp;quot;在第%d行，第%d列&amp;quot;,x,y);
     <link href="http://www.tongxiaohao.cn/2016/04/15/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%9B%9B%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/04/15/基础C语言第四讲/</id>
     <published>2016-04-15T03:29:13.000Z</published>
-    <updated>2016-04-20T05:00:41.000Z</updated>
+    <updated>2016-09-08T09:40:40.000Z</updated>
     
-    <content type="html">&lt;center&gt;&lt;h1&gt;C语言第四讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;&lt;h3&gt;&lt;em&gt;数组  数组排序 字符数组&lt;/em&gt;&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 循环嵌套 /break 结束循环 / continue 跳出本次循环/ 通常与if连用 /随机数/&lt;br&gt;&lt;br&gt;&lt;h1&gt;数组&lt;/h1&gt;&lt;br&gt;1,数组定义 把相同数据类型的成员组成 一组数据&lt;br&gt;&lt;br&gt;2，数组是个构造类型 最简单的数组是一堆数组&lt;br&gt;&lt;br&gt;3，数组定义 int a[4] = {0}；也可以这样 int a[] = {1,2,3} 数组有下标 从0开始 a[0] 就是1；&lt;br&gt;数组元素不带 类型标识&lt;br&gt;&lt;br&gt;4，数组通常和for循环一起用&lt;br&gt;&lt;br&gt;    int a[5] = {1,2,3,4,5};&lt;br&gt;    //输出每一个数组中元素的值&lt;br&gt;    for (int i = 0; i &amp;lt; 5; i++){&lt;br&gt;        printf(“%d\n”,a[i]);&lt;br&gt;    }&lt;br&gt;&lt;br&gt;注意事项&lt;br&gt;&lt;br&gt;    1、定义数组 和 数组元素&lt;br&gt;    2、数组作为一个整体不能直接参与运算&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h1&gt;数组排序 就是数组内部按一定关系排序&lt;/h1&gt;&lt;br&gt;1、常见的排序方法：冒泡排序、选择排序、插入排序等等&lt;br&gt;&lt;br&gt;2、排序的规律有两种：升序（小~大）、降序（大~小）&lt;br&gt;&lt;br&gt;3、本节课：冒泡排序。&lt;br&gt;&lt;br&gt;4、冒泡排序的基本思路：每次将相邻的两个数进行比较，按照升序或降序的顺序进行交换，直到所有数字的顺序全部正确。&lt;br&gt;&lt;br&gt;冒泡排序（只适合小范围的数据排序）（20遍）&lt;br&gt;&lt;br&gt;&lt;br&gt;请仔细看下面图片理解冒泡排序：&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/25223707-da62d63797924c5aba0579f9b46bbbab.gif&quot; width=&quot;200&quot; height=&quot;120&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/kanlei/archive/2013/11/25/3442384.html&quot;&gt;上面图片由KANLEI博客提供感谢&lt;/a&gt;&lt;/center&gt;
+    <content type="html">&lt;center&gt;&lt;h1&gt;C语言第四讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;&lt;h1&gt;&lt;em&gt;数组  数组排序 字符数组&lt;/em&gt;&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 循环嵌套 /break 结束循环 / continue 跳出本次循环/ 通常与if连用 /随机数/&lt;br&gt;&lt;br&gt;&lt;h1&gt;数组&lt;/h1&gt;&lt;br&gt;1,数组定义 把相同数据类型的成员组成 一组数据&lt;br&gt;&lt;br&gt;2，数组是个构造类型 最简单的数组是一堆数组&lt;br&gt;&lt;br&gt;3，数组定义 int a[4] = {0}；也可以这样 int a[] = {1,2,3} 数组有下标 从0开始 a[0] 就是1；&lt;br&gt;数组元素不带 类型标识&lt;br&gt;&lt;br&gt;4，数组通常和for循环一起用&lt;br&gt;&lt;br&gt;    int a[5] = {1,2,3,4,5};&lt;br&gt;    //输出每一个数组中元素的值&lt;br&gt;    for (int i = 0; i &amp;lt; 5; i++){&lt;br&gt;        printf(“%d\n”,a[i]);&lt;br&gt;    }&lt;br&gt;&lt;br&gt;注意事项&lt;br&gt;&lt;br&gt;    1、定义数组 和 数组元素&lt;br&gt;    2、数组作为一个整体不能直接参与运算&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h1&gt;数组排序 就是数组内部按一定关系排序&lt;/h1&gt;&lt;br&gt;1、常见的排序方法：冒泡排序、选择排序、插入排序等等&lt;br&gt;&lt;br&gt;2、排序的规律有两种：升序（小~大）、降序（大~小）&lt;br&gt;&lt;br&gt;3、本节课：冒泡排序。&lt;br&gt;&lt;br&gt;4、冒泡排序的基本思路：每次将相邻的两个数进行比较，按照升序或降序的顺序进行交换，直到所有数字的顺序全部正确。&lt;br&gt;&lt;br&gt;冒泡排序（只适合小范围的数据排序）（20遍）&lt;br&gt;&lt;br&gt;&lt;br&gt;请仔细看下面图片理解冒泡排序：&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/25223707-da62d63797924c5aba0579f9b46bbbab.gif&quot; width=&quot;200&quot; height=&quot;120&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://www.cnblogs.com/kanlei/archive/2013/11/25/3442384.html&quot;&gt;上面图片由KANLEI博客提供感谢&lt;/a&gt;&lt;/center&gt;
 
 &lt;pre&gt;&lt;code&gt;int sort_arr[5] = {5,4,3,2,1}; // 外层循环，控制排序趟数,趟数为 ：数组元素个数-1
 //    for (int i = 0; i &amp;lt; (5-1)/*5-1，表示数组有n个数比较，只比较n-1趟*/; i ++) {
@@ -493,13 +496,17 @@ printf(&amp;quot;a = %d,a1 = %d,a2 = %d\n&amp;quot;,a,a1,a2);
 //    }
 //    
 //    printf(&amp;quot;%s&amp;quot;,str);
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言四讲已经结束。谢谢大家! 加油！！！&lt;/h2&gt;&lt;/center&gt;&lt;/p&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h1&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言四讲已经结束。谢谢大家! 加油！！！&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;</content>
     
     <summary type="html">
     
-      &lt;center&gt;&lt;h1&gt;C语言第四讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;&lt;h3&gt;&lt;em&gt;数组  数组排序 字符数组&lt;/em&gt;&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 
+      &lt;center&gt;&lt;h1&gt;C语言第四讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;&lt;h1&gt;&lt;em&gt;数组  数组排序 字符数组&lt;/em&gt;&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 循环/ 循环控制语句while ，do while， for /  随机数 
     
     </summary>
+    
+      <category term="讲义" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/"/>
+    
+      <category term="C语音" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E9%9F%B3/"/>
     
     
       <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
@@ -511,10 +518,10 @@ printf(&amp;quot;a = %d,a1 = %d,a2 = %d\n&amp;quot;,a,a1,a2);
     <link href="http://www.tongxiaohao.cn/2016/04/14/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%89%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/04/14/基础C语言第三讲/</id>
     <published>2016-04-14T06:05:59.000Z</published>
-    <updated>2016-04-14T08:16:01.000Z</updated>
+    <updated>2016-09-08T09:39:38.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第三讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;循环  循环的 控制 语句 “while，do while，for” 随机数 循环嵌套&lt;br&gt;&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;循环  循环的 控制 语句 “while，do while，for” 随机数 循环嵌套&lt;br&gt;&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch&lt;/p&gt;
 &lt;h1&gt;循环&lt;/h1&gt;
 
 &lt;p&gt;为什么要用循环 ?&lt;br&gt;&lt;br&gt;先做一个程序 输出 10 个 hello word&lt;br&gt;&lt;br&gt;再输出 100 个呢？&lt;br&gt;&lt;br&gt;/打印 hello world 100遍，如果打印1000、10000遍呢&lt;br&gt;&lt;br&gt; 可以复制粘贴，但是会造成两个问题。&lt;br&gt;&lt;/p&gt;
@@ -522,7 +529,7 @@ printf(&amp;quot;a = %d,a1 = %d,a2 = %d\n&amp;quot;,a,a1,a2);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;使用循环就是为了解决这个问题&lt;br&gt;&lt;br&gt;这就是要用到循环结构： 进行循环&lt;br&gt;&lt;br&gt;当符合条件时候， 重复某一代码&lt;br&gt;&lt;br&gt;循环的作用：减少重复冗余代码，增加代码可读性，易于维护&lt;/p&gt;
 &lt;h1&gt;循环的 控制 语句 while do while for&lt;/h1&gt;
 
-&lt;h2&gt;1 while：&lt;/h2&gt;&lt;br&gt;    while(条件表达式){   &lt;br&gt;&lt;br&gt;    要先判断条件表达式 &lt;br&gt;在执行 代码 如果条件为假 &lt;br&gt;将终止循环 包括第一次 如果条件为假 将不会执行以下代码&lt;br&gt;        需要重复运行的代码&lt;br&gt;&lt;br&gt;     }&lt;br&gt;&lt;br&gt;&lt;br&gt;     int i = 0;&lt;br&gt;     while (i &amp;lt; 5) { // 0，1，2，3，4;&lt;br&gt;     printf(“%d\n”,i);&lt;br&gt;          }&lt;br&gt;&lt;br&gt;练习题 #输出1～100个位数是7的数&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i &amp;lt;= 100) {&lt;br&gt;        if (i  % 10 == 7) {&lt;br&gt;            printf(“%d\n”,i);&lt;br&gt;        }&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;练习题 #输出1～100包含7的数&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i &amp;lt;= 100) {&lt;br&gt;        if (!(i  % 10 == 7 )&amp;amp;&amp;amp; !(i / 10 % 10 == 7) &amp;amp;&amp;amp; !(i % 7 == 0)) {&lt;br&gt;            printf(“%d\n”,i);&lt;br&gt;        }&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h2&gt;随机整数 break continue&lt;/h2&gt;&lt;br&gt;随机整数&lt;br&gt;&lt;br&gt;&lt;br&gt;     int a = 0;&lt;br&gt;    a = arc4random() % 10; // 0,1,2,3,4,5,6,7,8,9 个数字 对N取余 取值范围 0 ～ N - 1；&lt;br&gt;&lt;br&gt;如果是 2 ～ 10 之间的呢&lt;br&gt;&lt;br&gt;    int a = 0;&lt;br&gt;        a = arc4random() % 9+ 2;&lt;br&gt;&lt;br&gt;所以有个公式 [m,n]之间的 随机数&lt;br&gt;&lt;br&gt;&lt;br&gt;    a = arc4random() % (n - m + 1)+ m;&lt;br&gt;&lt;br&gt;break ：&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i) { // 0，1，2，3，4，5，6;&lt;br&gt;        if (i &amp;gt; 6) {&lt;br&gt;            break; //用于结束循环&lt;br&gt;        }&lt;br&gt;        printf(“%d\n”,i);&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;continue:&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i &amp;lt; 5) {&lt;br&gt;        if (i == 2) {&lt;br&gt;            i ++;//注意一定要加 否则每次 都==2 程序循环到这里了&lt;br&gt;            continue; //跳出本次循环 下面的代码不在执行&lt;br&gt;        }&lt;br&gt;        printf(“%d\n”,i);&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;&lt;h2&gt;for&lt;/h2&gt;
+&lt;h1&gt;1 while：&lt;/h1&gt;&lt;br&gt;    while(条件表达式){   &lt;br&gt;&lt;br&gt;    要先判断条件表达式 &lt;br&gt;在执行 代码 如果条件为假 &lt;br&gt;将终止循环 包括第一次 如果条件为假 将不会执行以下代码&lt;br&gt;        需要重复运行的代码&lt;br&gt;&lt;br&gt;     }&lt;br&gt;&lt;br&gt;&lt;br&gt;     int i = 0;&lt;br&gt;     while (i &amp;lt; 5) { // 0，1，2，3，4;&lt;br&gt;     printf(“%d\n”,i);&lt;br&gt;          }&lt;br&gt;&lt;br&gt;练习题 #输出1～100个位数是7的数&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i &amp;lt;= 100) {&lt;br&gt;        if (i  % 10 == 7) {&lt;br&gt;            printf(“%d\n”,i);&lt;br&gt;        }&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;练习题 #输出1～100包含7的数&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i &amp;lt;= 100) {&lt;br&gt;        if (!(i  % 10 == 7 )&amp;amp;&amp;amp; !(i / 10 % 10 == 7) &amp;amp;&amp;amp; !(i % 7 == 0)) {&lt;br&gt;            printf(“%d\n”,i);&lt;br&gt;        }&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;h1&gt;随机整数 break continue&lt;/h1&gt;&lt;br&gt;随机整数&lt;br&gt;&lt;br&gt;&lt;br&gt;     int a = 0;&lt;br&gt;    a = arc4random() % 10; // 0,1,2,3,4,5,6,7,8,9 个数字 对N取余 取值范围 0 ～ N - 1；&lt;br&gt;&lt;br&gt;如果是 2 ～ 10 之间的呢&lt;br&gt;&lt;br&gt;    int a = 0;&lt;br&gt;        a = arc4random() % 9+ 2;&lt;br&gt;&lt;br&gt;所以有个公式 [m,n]之间的 随机数&lt;br&gt;&lt;br&gt;&lt;br&gt;    a = arc4random() % (n - m + 1)+ m;&lt;br&gt;&lt;br&gt;break ：&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i) { // 0，1，2，3，4，5，6;&lt;br&gt;        if (i &amp;gt; 6) {&lt;br&gt;            break; //用于结束循环&lt;br&gt;        }&lt;br&gt;        printf(“%d\n”,i);&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;continue:&lt;br&gt;&lt;br&gt;&lt;br&gt;    int i = 1;&lt;br&gt;    while (i &amp;lt; 5) {&lt;br&gt;        if (i == 2) {&lt;br&gt;            i ++;//注意一定要加 否则每次 都==2 程序循环到这里了&lt;br&gt;            continue; //跳出本次循环 下面的代码不在执行&lt;br&gt;        }&lt;br&gt;        printf(“%d\n”,i);&lt;br&gt;        i ++;&lt;br&gt;    }&lt;br&gt;&lt;br&gt;&lt;h1&gt;for&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;int i = 10;
 while (i--) { //注意- -i
@@ -533,7 +540,7 @@ while (i--) { //注意- -i
     printf(&amp;quot;%d\n&amp;quot;,i);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其实 循环初始值 就是 while 变量的定义 int i ＝ 0；&lt;br&gt;&lt;br&gt;循环条件呢 就是 while后边括号里的内容&lt;br&gt;&lt;br&gt;增值就是 while 循环里面 i ++；大括号里依然就是需要循环的代码&lt;br&gt;&lt;br&gt;利用for循做上面的两道练习题&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;h2&gt;do….while&lt;/h2&gt;&lt;br&gt;while：先判断，再执行//do…while：先执行一次，在判断&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h1&gt;do….while&lt;/h1&gt;&lt;br&gt;while：先判断，再执行//do…while：先执行一次，在判断&lt;p&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;int i = 0;
 do{
     printf(&amp;quot;%d\n&amp;quot;,i);
@@ -562,7 +569,7 @@ for (int i = 1; i &amp;lt; 4; i ++) {
     printf(&amp;quot;\n&amp;quot;);
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;总结&lt;/h1&gt;&lt;br&gt;for 通常用于知道循环次数&lt;br&gt;&lt;br&gt;while 通常用于不知道循环次数 用break结束循环 &lt;br&gt;&lt;br&gt;do while 用处很少 &lt;br&gt;&lt;br&gt;break 结束循环 continue 跳出本次循环 通常与if连用&lt;br&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言三讲已经结束。谢谢大家! 加油！！！&lt;/h2&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言三讲已经结束。谢谢大家! 加油！！！&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
 
 
 
@@ -571,9 +578,13 @@ for (int i = 1; i &amp;lt; 4; i ++) {
     <summary type="html">
     
       &lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第三讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;循环  循环的 控制 语句 “while，do while，for” 随机数 循环嵌套&lt;br&gt;&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 BOOL  
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;循环  循环的 控制 语句 “while，do while，for” 随机数 循环嵌套&lt;br&gt;&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 BOOL  
     
     </summary>
+    
+      <category term="讲义" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/"/>
+    
+      <category term="C语音" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E9%9F%B3/"/>
     
     
       <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
@@ -585,7 +596,7 @@ for (int i = 1; i &amp;lt; 4; i ++) {
     <link href="http://www.tongxiaohao.cn/2016/04/01/CocoaPods%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4%E5%B7%B2%E5%AE%89%E8%A3%85Ruby%E7%8E%AF%E5%A2%83/"/>
     <id>http://www.tongxiaohao.cn/2016/04/01/CocoaPods使用步骤已安装Ruby环境/</id>
     <published>2016-04-01T05:30:34.000Z</published>
-    <updated>2016-04-13T02:09:44.000Z</updated>
+    <updated>2016-09-08T09:35:31.000Z</updated>
     
     <content type="html">&lt;h1&gt;&lt;center&gt;CocoaPods使用步骤已安装Ruby环境&lt;/center&gt;&lt;/h1&gt;
 
@@ -671,7 +682,7 @@ $ pod update --verbose --no-repo-update]
 &lt;p&gt;&lt;/p&gt;&lt;p&gt;我们的工程和第三方库所在的工程会由一个新生成的workspace管理&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;p&gt;为了方便我们直观的管理工程和第三方库，CocoaPodsTest工程和Pods工程会被以workspace的形式组织和管理，也就是我们刚才看到的CocoaPodsTest.xcworkspace文件。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;&lt;p&gt;原来的工程设置已经被更改了，这时候我们直接打开原来的工程文件去编译就会报错，只能使用新生成的workspace来进行项目管理。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-&lt;h3&gt;&lt;center&gt;孙悟空三大白骨精！ 感谢各位学习我的博客！在此声明此博客并不是我所写下的，是谁写的已经忘记了。我只是引用，感谢原作者！！提供这么详细的使用步骤，谢谢大家&lt;/center&gt;&lt;/h3&gt;
+&lt;h1&gt;&lt;center&gt;孙悟空三大白骨精！ 感谢各位学习我的博客！在此声明此博客并不是我所写下的，是谁写的已经忘记了。我只是引用，感谢原作者！！提供这么详细的使用步骤，谢谢大家&lt;/center&gt;&lt;/h1&gt;
 </content>
     
     <summary type="html">
@@ -681,6 +692,10 @@ $ pod update --verbose --no-repo-update]
 &lt;p&gt;CocoaPods使用步骤(已有Ruby环境):&lt;/p&gt;&lt;br&gt;&lt;p&gt;其实如果你安装了Xcode 就已经有了 Ruby环境&lt;/p&gt;&lt;br&gt;&lt;p&gt;（注：$为提示作用，不要在终端
     
     </summary>
+    
+      <category term="开发辅助" scheme="http://www.tongxiaohao.cn/categories/%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9/"/>
+    
+      <category term="命令行" scheme="http://www.tongxiaohao.cn/categories/%E5%BC%80%E5%8F%91%E8%BE%85%E5%8A%A9/%E5%91%BD%E4%BB%A4%E8%A1%8C/"/>
     
     
       <category term="CocoaPods" scheme="http://www.tongxiaohao.cn/tags/CocoaPods/"/>
@@ -692,10 +707,10 @@ $ pod update --verbose --no-repo-update]
     <link href="http://www.tongxiaohao.cn/2016/03/29/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/03/29/基础C语言第二讲/</id>
     <published>2016-03-29T15:54:37.000Z</published>
-    <updated>2016-04-13T02:01:33.000Z</updated>
+    <updated>2016-09-08T09:37:56.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第二讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch&lt;/h3&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 N进制转换十进制 十进制转换N进制 变量的定义 运算符 赋值运算 格式化输入输出函数 输出转换格式的控制&lt;/p&gt;
 &lt;h1&gt;BOOL&lt;/h1&gt;
 
 &lt;p&gt;C语言中C89 是没有bool类型的(程序员自己用3个宏定义来表示 #define TRUE 1 #define FALSE 0 #define myBOOL int) 到了C99才有的 而OC是支持C99的&lt;/p&gt;&lt;br&gt;&lt;p&gt;bool类型 只有两个值 真，假 在OC中BOOL就是YES ，NO C bool中非零为true真 零为false假OC中1位YES 0为NO 所以bool 值其实和int 一样都是用转义符%d进行输入输;&lt;/p&gt;
@@ -745,7 +760,7 @@ int c = a &amp;gt; b ? a : b;  介绍一个比较的简单写法 也是个条件
 };
 //目的：提高代码可读性 讲人能看懂的标识符与计算机能识别的数字建立关系
 //enum写在main函数上面 如下图
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%8A%82%E5%9B%BE%E7%89%87.png&quot; width=&quot;240&quot; height=&quot;120&quot; alt=&quot;图片&quot;&gt;    &lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;h3&gt;switch case&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%BA%8C%E8%8A%82%E5%9B%BE%E7%89%87.png&quot; width=&quot;240&quot; height=&quot;120&quot; alt=&quot;图片&quot;&gt;    &lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;switch case&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;int a = 0;
 scanf(&amp;quot;%d&amp;quot;,&amp;amp;a);
@@ -773,16 +788,20 @@ scanf(&amp;quot;%d&amp;quot;,&amp;amp;a);
         break;
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言二讲已经结束。谢谢大家!&lt;/h2&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h1&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言二讲已经结束。谢谢大家!&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
 
 </content>
     
     <summary type="html">
     
       &lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第二讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
-&lt;p&gt;&lt;center&gt;&lt;h3&gt;BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch&lt;/h3&gt;&lt;/
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;BOOL  关系运算符  逻辑运算符 逻辑与 &amp;amp;&amp;amp; 逻辑或 || 逻辑 ！非  分支结构\if  enum\枚举\switch&lt;/h1&gt;&lt;/
     
     </summary>
+    
+      <category term="讲义" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/"/>
+    
+      <category term="C语音" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E9%9F%B3/"/>
     
     
       <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
@@ -794,14 +813,22 @@ scanf(&amp;quot;%d&amp;quot;,&amp;amp;a);
     <link href="http://www.tongxiaohao.cn/2016/03/25/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%80%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/03/25/基础C语言第一讲/</id>
     <published>2016-03-25T00:55:46.000Z</published>
-    <updated>2016-04-13T02:01:20.000Z</updated>
+    <updated>2016-09-08T09:37:15.000Z</updated>
     
     <content type="html">&lt;h1&gt;&lt;center&gt;C语言第一讲《C语言基础》&lt;/center&gt;&lt;/h1&gt;
 
-&lt;h3&gt;&lt;center&gt;进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数&lt;/center&gt;&lt;/h3&gt;
+&lt;h1&gt;&lt;center&gt;进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数&lt;/center&gt;&lt;/h1&gt;
 
-&lt;p&gt;&lt;/p&gt;&lt;h1&gt;进制&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;
-&lt;h2&gt;1, 进制概念 进位机制 逢多少进1&lt;/h2&gt;&lt;br&gt;十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”&lt;br&gt;&lt;br&gt;生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进1&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg&quot; width=&quot;100&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;130&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;h2&gt;2,计算机的进制&lt;/h2&gt;&lt;br&gt;计算机使用的是二进制 逢2进1 所以位数只有0，1 例子 0，1，10，11，100&lt;br&gt;&lt;br&gt;因为目前的计算机电脑内部 只识别 是对的 还是 错的 所以 它表示的 就是1和0&lt;br&gt;&lt;br&gt;&lt;h2&gt;3,进制规则&lt;/h2&gt;&lt;br&gt;N进制 在表示所有位中 显示的 只有 0～N-1 遇到N前一位加1&lt;br&gt;&lt;br&gt;N进制 就是逢N进1&lt;br&gt;&lt;br&gt;&lt;h2&gt;4,进制转换&lt;/h2&gt;&lt;br&gt;基数 是几进制 基数就是几&lt;br&gt;&lt;br&gt;位  从右到左 就是从低位到高位 位是按照0开始数 最右边就是0；&lt;br&gt;&lt;br&gt;权  和基数一样 是几进制 权就是几&lt;br&gt;&lt;br&gt;位权  就是每一个位置 对应的单位值 N^(I - 1)&lt;br&gt;&lt;br&gt;（1）十进制转N进制&lt;br&gt;    连除倒取余&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;250&quot; height=&quot;300&quot; alt=&quot;图片&quot;&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;例子1：转二进制   例子2：转十六进制&lt;/center&gt;&lt;br&gt;（2） N进制转十进制&lt;br&gt;    按位求和&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;250&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;250&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;例子：二进制转十进制&lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;h2&gt;5,进制数表示&lt;/h2&gt;&lt;br&gt;十进制：不加以修饰 100&lt;br&gt;&lt;br&gt;八进制：在数值前加0  表示 0573&lt;br&gt;&lt;br&gt;二进制：在数值前加0b 表示 0b1101&lt;br&gt;&lt;br&gt;十六进制：在数值前加0X 表示0X2A&lt;br&gt;&lt;br&gt;&lt;h2&gt;6,进制了解&lt;/h2&gt;&lt;br&gt;十进制：就是开发人员使用 （人）&lt;br&gt;&lt;br&gt;二进制：计算机识别的语言 0，1编码&lt;br&gt;&lt;br&gt;十六进制：因为一个十六进制数可以表示4位二进制 所以十六进制更多是为了方便表示二进制 十六进制的0～F 二进制的0000～1111&lt;br&gt;&lt;br&gt;    以上图片资源均来自百度。&lt;br&gt;&lt;br&gt;&lt;h1&gt;程序的一般形式&lt;/h1&gt;&lt;br&gt;&lt;h2&gt;1,创建程序&lt;/h2&gt;&lt;br&gt;1),选择OS X 下面的Application 选择Command Line Tool （控制台模式）点下面的Next&lt;br&gt;&lt;center&gt;如下图&lt;/center&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建&lt;br&gt;&lt;center&gt;如下图&lt;/center&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;h2&gt;2,程序基本介绍&lt;/h2&gt;&lt;br&gt;&lt;h3&gt;1).注释&lt;/h3&gt;&lt;br&gt;&lt;br&gt;单行注释，多行注视&lt;br&gt;&lt;br&gt;作用：提供思路，提示代码作用，程序并不执行 不注释你会忘记的会发现以前写的代码不知道是干什么的了&lt;br&gt;单行注视不可以换行 只是注释 //  后边到这一行的末尾 敲到回车时候就不是注释了&lt;br&gt;多行注释：/&lt;em&gt; 可以在这个之间 可以换行&lt;/em&gt;/&lt;br&gt;&lt;center&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;h3&gt;2).main 程序执行入口 又称主函数&lt;/h3&gt;&lt;br&gt;    如上图 这里我们介绍一个输出语句 printf(“你好！”); 这个就是在控制台输出&lt;br&gt;&lt;br&gt;&lt;h3&gt;3).#import 与#include&lt;/h3&gt;&lt;br&gt;&lt;br&gt;//#import 与#include 引入文件与类库 如果要在本文件中使用其他文件 就必须引入其他文件 格式两种 &amp;lt;&amp;gt; , “” .&amp;lt;&amp;gt;使用系统类库文件 “” 使用创建文件&lt;br&gt;&lt;br&gt;&lt;h2&gt;3,数据类型&lt;/h2&gt;&lt;br&gt;&lt;h3&gt;1).数据类型的分类&lt;/h3&gt;&lt;br&gt;    1).基本数据类型 ：字符类型char 1字节 整型 int 4字节 短整型 short 2字节 长整型 long 4    字节 或8字节 单精度浮点型 float 4字节 双精度浮点型 double 8字节&lt;br&gt;    2).构造类型 ：数组 枚举&lt;br&gt;    3).    指针类型；&lt;br&gt;    4).空类型 void&lt;br&gt;&lt;h3&gt;2).数据类型的单位&lt;/h3&gt;&lt;br&gt;    数据类型的单位 字节byte比特 最常用的是位 bits 位是最小的存储单位 1字节 == 8位（二进制位）== 2位十六进制位&lt;br&gt;&lt;h3&gt;数据类型的存储&lt;/h3&gt;&lt;br&gt;    不同的数据类型，存储的空间不同 空间决定了数据类型的存储数据的范围&lt;br&gt;    1).数据类型的存储空间与操作系统有关并不是统一的 但是有个原则: short&amp;lt;=int&amp;lt;=long&amp;lt;=longlong&lt;br&gt;    2).sizeof()运算符，计算一个数据类型占用的空间 一定要记得是运算符而不是函数&lt;br&gt;    3).存储空间决定了存储数据的范围,不用背只需记得最长用到的 益处：超出了数据类型的取值范围&lt;br&gt;    常用的数据类型字节数请看分类里的介绍&lt;br&gt;    4).在整型中还有一个叫无符号标识符 unsigned 而整型区 分为来种有符合与无符号有符号的区分正负 整数对应的二进制数 最高位为1 为正整数 最高位为0 为负整数&lt;br&gt;&lt;h1&gt;常量\变量\运算符&lt;/h1&gt;&lt;br&gt;    1，常量 程序运行期间不允许改变的量 如10 ，2.5，A，转义字符不可直接打印\n 字符串常量 “你好”&lt;br&gt;    2，知道常量了 那变量的定义就是…… 程序运行可以改变的量变量代表存储区域 用于储存内容 在存储区域的内容就是变量的值&lt;br&gt;    3，变量的定义 由三部分组成&lt;br&gt;    变量类型修饰符 变量名称 ＝ 初始值；&lt;br&gt;    int studentAge = 22;&lt;br&gt;    4，变量命名要求&lt;br&gt;    只能用字母 数字 下划线 组成 并且数字不能开头&lt;br&gt;    不能使用系统保留字 如int float&lt;br&gt;    不能使用重复的变量名&lt;br&gt;    见面知意 这也是代码规范之一 使用驼峰命名发 单词的第一个字母大写 第一个单词 小写 如 studentName; teacherName;&lt;br&gt;    5，知道了变量  我们也会变量了  接下来就是运算符 第一个赋值运算符‘＝’&lt;br&gt;    赋值运算会把赋值运算符右边的值赋值给左边变量 age ＝ 10；&lt;br&gt;    赋值运算优先级低&lt;br&gt;    //练习&lt;br&gt;    //    int a = 10,b = 20;&lt;br&gt;    //    a = b + a;&lt;br&gt;    //    b = a - b;&lt;br&gt;    //    a = a – b;&lt;br&gt;    6，算数运算符 +，-，&lt;em&gt;，/，%，++，–，&lt;br&gt;    这里一定要注意 ++，– 在前在后的区别 在前先执行 在后后执行&lt;br&gt;    意思：如&lt;br&gt;    int a = 10;&lt;br&gt;    printf(“%d\n”,a++); //输出 10；&lt;br&gt;    int a = 10;&lt;br&gt;    printf(“%d\n”,++a); //输出 11；&lt;br&gt;    7,复合运算符&lt;br&gt;    += ,-=,&lt;/em&gt;=,/=，%= 这些都是谁在前 计算的结果 赋值给谁&lt;br&gt;    如 int b = 0;&lt;br&gt;    b += 2; 想等于 b = b + 2; 所以赋值给b b ＝ 2;&lt;br&gt;&lt;h1&gt;表达式&lt;/h1&gt;&lt;br&gt;    就是常量变量 与运算符组合 表达式都会有返回值 3+5 a+=b&lt;br&gt;&lt;h1&gt;语句&lt;/h1&gt;&lt;br&gt;    程序执行的最小单位 C与OC中 都是以;结尾 如果表达式加上分号就是 一条语句&lt;br&gt;&lt;h1&gt;基本输入 输出函数&lt;/h1&gt;&lt;br&gt;    int i = 0;&lt;br&gt;    scanf(“%d”,&amp;amp;i); //格式化输入函数 %d转换符&lt;br&gt;    printf(“%d”,i); //格式化输出函数 %d转化符&lt;br&gt;    记得掩饰输入输出格式不同会产生什么问题&lt;br&gt;    语法scanf(格式串,变量1地址,变量2地址，……);&lt;br&gt;    如果输入数据类型与格式符匹配则继续读入&lt;br&gt;    否则不在读入立刻反回&lt;br&gt;    scanf(“%d\n”,&amp;amp;i); //切记不可加\n 会抵消人工回车而且不是一次是一直抵消 并且 输入只认大回车 小键盘的回车可能不会结束读入&lt;br&gt;    语法 printf(格式串,表达式1,表达式2，……);&lt;br&gt;    空白符 scanf(“%d “,a) 空白注意将不会输出&lt;br&gt;    输出转换 格式控制&lt;br&gt;    printf(“%05.2f\n”,2.2222); //总共5位 小数点也是一位 不够补0位 不写0 表示不够补空行位&lt;br&gt;    printf(“%-4d\n”,20); //左对其&lt;br&gt;    printf(“%4d\n”,20); //右对其&lt;br&gt;    思考怎么输出%  解决%%&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;br&gt;&lt;br&gt;    &lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言一讲已经结束。谢谢大家!&lt;/h2&gt;
+&lt;h1&gt;进制&lt;/h1&gt;&lt;br&gt;&lt;h1&gt;1, 进制概念 进位机制 逢多少进1&lt;/h1&gt;&lt;br&gt;十进制 用0～9表示 就是逢10进1 进1就是表示多了一位 “10”&lt;br&gt;&lt;br&gt;生活中的例子 六十进制 钟表 逢60进1 12进制 年 逢12进1 24进制 天 每一天24小时逢24进1&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/bbb%20%E4%B8%8B%E5%8D%882.33.40.jpeg&quot; width=&quot;100&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;130&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;h1&gt;2,计算机的进制&lt;/h1&gt;&lt;br&gt;计算机使用的是二进制 逢2进1 所以位数只有0，1 例子 0，1，10，11，100&lt;br&gt;&lt;br&gt;因为目前的计算机电脑内部 只识别 是对的 还是 错的 所以 它表示的 就是1和0&lt;br&gt;&lt;br&gt;&lt;h1&gt;3,进制规则&lt;/h1&gt;&lt;br&gt;N进制 在表示所有位中 显示的 只有 0～N-1 遇到N前一位加1&lt;br&gt;&lt;br&gt;N进制 就是逢N进1&lt;br&gt;&lt;br&gt;&lt;h1&gt;4,进制转换&lt;/h1&gt;&lt;br&gt;基数 是几进制 基数就是几&lt;br&gt;&lt;br&gt;位  从右到左 就是从低位到高位 位是按照0开始数 最右边就是0；&lt;br&gt;&lt;br&gt;权  和基数一样 是几进制 权就是几&lt;br&gt;&lt;br&gt;位权  就是每一个位置 对应的单位值 N^(I - 1)&lt;br&gt;&lt;br&gt;（1）十进制转N进制&lt;br&gt;    连除倒取余&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E5%8D%81%E8%BF%9B%E5%88%B6%E8%BD%AC%E4%BA%8C%E8%BF%9B%E5%88%B6%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;250&quot; height=&quot;300&quot; alt=&quot;图片&quot;&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;例子1：转二进制   例子2：转十六进制&lt;/center&gt;&lt;br&gt;（2） N进制转十进制&lt;br&gt;    按位求和&lt;br&gt;&lt;center&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B61%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;250&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%BD%AC%E5%8D%81%E8%BF%9B%E5%88%B62%20%E4%B8%8B%E5%8D%882.33.40.jpg&quot; width=&quot;250&quot; height=&quot;100&quot; alt=&quot;图片&quot;&gt;&lt;/center&gt;&lt;br&gt;&lt;center&gt;例子：二进制转十进制&lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;h1&gt;5,进制数表示&lt;/h1&gt;&lt;br&gt;十进制：不加以修饰 100&lt;br&gt;&lt;br&gt;八进制：在数值前加0  表示 0573&lt;br&gt;&lt;br&gt;二进制：在数值前加0b 表示 0b1101&lt;br&gt;&lt;br&gt;十六进制：在数值前加0X 表示0X2A&lt;br&gt;&lt;br&gt;&lt;h1&gt;6,进制了解&lt;/h1&gt;&lt;br&gt;十进制：就是开发人员使用 （人）&lt;br&gt;&lt;br&gt;二进制：计算机识别的语言 0，1编码&lt;br&gt;&lt;br&gt;十六进制：因为一个十六进制数可以表示4位二进制 所以十六进制更多是为了方便表示二进制 十六进制的0～F 二进制的0000～1111&lt;br&gt;&lt;br&gt;    以上图片资源均来自百度。&lt;br&gt;&lt;br&gt;&lt;h1&gt;程序的一般形式&lt;/h1&gt;&lt;br&gt;&lt;h1&gt;1,创建程序&lt;/h1&gt;&lt;br&gt;1),选择OS X 下面的Application 选择Command Line Tool （控制台模式）点下面的Next&lt;br&gt;&lt;center&gt;如下图&lt;/center&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/chuangjianchengxu1%20%E4%B8%8B%E5%8D%882.33.40.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;2),填写项目名称 和 开发组织机构名称 组织机构ID 选择语言 Objective -C (OC)点击Next 选择在桌面创建&lt;br&gt;&lt;center&gt;如下图&lt;/center&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E5%88%9B%E5%BB%BA%E7%A8%8B%E5%BA%8F2%20%E4%B8%8B%E5%8D%882.33.40.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E9%80%89%E6%8B%A9%E6%A1%8C%E9%9D%A2.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;h1&gt;2,程序基本介绍&lt;/h1&gt;&lt;br&gt;&lt;h1&gt;1).注释&lt;/h1&gt;
+
+&lt;p&gt;单行注释，多行注视&lt;/p&gt;
+&lt;p&gt;作用：提供思路，提示代码作用，程序并不执行 不注释你会忘记的会发现以前写的代码不知道是干什么的了&lt;br&gt;单行注视不可以换行 只是注释 //  后边到这一行的末尾 敲到回车时候就不是注释了&lt;br&gt;多行注释：/&lt;em&gt; 可以在这个之间 可以换行&lt;/em&gt;/&lt;/p&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;http://7xqlyv.com1.z0.glb.clouddn.com/%E4%BB%A3%E7%A0%81%E6%B3%A8%E9%87%8A.png&quot; width=&quot;682&quot; height=&quot;392&quot; alt=&quot;图片&quot;&gt;&lt;br&gt;&lt;/center&gt;
+
+&lt;h1&gt;2).main 程序执行入口 又称主函数&lt;/h1&gt;&lt;br&gt;    如上图 这里我们介绍一个输出语句 printf(“你好！”); 这个就是在控制台输出&lt;br&gt;&lt;br&gt;&lt;h1&gt;3).#import 与#include&lt;/h1&gt;
+
+&lt;p&gt;//#import 与#include 引入文件与类库 如果要在本文件中使用其他文件 就必须引入其他文件 格式两种 &amp;lt;&amp;gt; , “” .&amp;lt;&amp;gt;使用系统类库文件 “” 使用创建文件&lt;/p&gt;
+&lt;h1&gt;3,数据类型&lt;/h1&gt;&lt;br&gt;&lt;h1&gt;1).数据类型的分类&lt;/h1&gt;&lt;br&gt;    1).基本数据类型 ：字符类型char 1字节 整型 int 4字节 短整型 short 2字节 长整型 long 4    字节 或8字节 单精度浮点型 float 4字节 双精度浮点型 double 8字节&lt;br&gt;    2).构造类型 ：数组 枚举&lt;br&gt;    3).    指针类型；&lt;br&gt;    4).空类型 void&lt;br&gt;&lt;h1&gt;2).数据类型的单位&lt;/h1&gt;&lt;br&gt;    数据类型的单位 字节byte比特 最常用的是位 bits 位是最小的存储单位 1字节 == 8位（二进制位）== 2位十六进制位&lt;br&gt;&lt;h1&gt;数据类型的存储&lt;/h1&gt;&lt;br&gt;    不同的数据类型，存储的空间不同 空间决定了数据类型的存储数据的范围&lt;br&gt;    1).数据类型的存储空间与操作系统有关并不是统一的 但是有个原则: short&amp;lt;=int&amp;lt;=long&amp;lt;=longlong&lt;br&gt;    2).sizeof()运算符，计算一个数据类型占用的空间 一定要记得是运算符而不是函数&lt;br&gt;    3).存储空间决定了存储数据的范围,不用背只需记得最长用到的 益处：超出了数据类型的取值范围&lt;br&gt;    常用的数据类型字节数请看分类里的介绍&lt;br&gt;    4).在整型中还有一个叫无符号标识符 unsigned 而整型区 分为来种有符合与无符号有符号的区分正负 整数对应的二进制数 最高位为1 为正整数 最高位为0 为负整数&lt;br&gt;&lt;h1&gt;常量\变量\运算符&lt;/h1&gt;&lt;br&gt;    1，常量 程序运行期间不允许改变的量 如10 ，2.5，A，转义字符不可直接打印\n 字符串常量 “你好”&lt;br&gt;    2，知道常量了 那变量的定义就是…… 程序运行可以改变的量变量代表存储区域 用于储存内容 在存储区域的内容就是变量的值&lt;br&gt;    3，变量的定义 由三部分组成&lt;br&gt;    变量类型修饰符 变量名称 ＝ 初始值；&lt;br&gt;    int studentAge = 22;&lt;br&gt;    4，变量命名要求&lt;br&gt;    只能用字母 数字 下划线 组成 并且数字不能开头&lt;br&gt;    不能使用系统保留字 如int float&lt;br&gt;    不能使用重复的变量名&lt;br&gt;    见面知意 这也是代码规范之一 使用驼峰命名发 单词的第一个字母大写 第一个单词 小写 如 studentName; teacherName;&lt;br&gt;    5，知道了变量  我们也会变量了  接下来就是运算符 第一个赋值运算符‘＝’&lt;br&gt;    赋值运算会把赋值运算符右边的值赋值给左边变量 age ＝ 10；&lt;br&gt;    赋值运算优先级低&lt;br&gt;    //练习&lt;br&gt;    //    int a = 10,b = 20;&lt;br&gt;    //    a = b + a;&lt;br&gt;    //    b = a - b;&lt;br&gt;    //    a = a – b;&lt;br&gt;    6，算数运算符 +，-，&lt;em&gt;，/，%，++，–，&lt;br&gt;    这里一定要注意 ++，– 在前在后的区别 在前先执行 在后后执行&lt;br&gt;    意思：如&lt;br&gt;    int a = 10;&lt;br&gt;    printf(“%d\n”,a++); //输出 10；&lt;br&gt;    int a = 10;&lt;br&gt;    printf(“%d\n”,++a); //输出 11；&lt;br&gt;    7,复合运算符&lt;br&gt;    += ,-=,&lt;/em&gt;=,/=，%= 这些都是谁在前 计算的结果 赋值给谁&lt;br&gt;    如 int b = 0;&lt;br&gt;    b += 2; 想等于 b = b + 2; 所以赋值给b b ＝ 2;&lt;br&gt;&lt;h1&gt;表达式&lt;/h1&gt;&lt;br&gt;    就是常量变量 与运算符组合 表达式都会有返回值 3+5 a+=b&lt;br&gt;&lt;h1&gt;语句&lt;/h1&gt;&lt;br&gt;    程序执行的最小单位 C与OC中 都是以;结尾 如果表达式加上分号就是 一条语句&lt;br&gt;&lt;h1&gt;基本输入 输出函数&lt;/h1&gt;&lt;br&gt;    int i = 0;&lt;br&gt;    scanf(“%d”,&amp;amp;i); //格式化输入函数 %d转换符&lt;br&gt;    printf(“%d”,i); //格式化输出函数 %d转化符&lt;br&gt;    记得掩饰输入输出格式不同会产生什么问题&lt;br&gt;    语法scanf(格式串,变量1地址,变量2地址，……);&lt;br&gt;    如果输入数据类型与格式符匹配则继续读入&lt;br&gt;    否则不在读入立刻反回&lt;br&gt;    scanf(“%d\n”,&amp;amp;i); //切记不可加\n 会抵消人工回车而且不是一次是一直抵消 并且 输入只认大回车 小键盘的回车可能不会结束读入&lt;br&gt;    语法 printf(格式串,表达式1,表达式2，……);&lt;br&gt;    空白符 scanf(“%d “,a) 空白注意将不会输出&lt;br&gt;    输出转换 格式控制&lt;br&gt;    printf(“%05.2f\n”,2.2222); //总共5位 小数点也是一位 不够补0位 不写0 表示不够补空行位&lt;br&gt;    printf(“%-4d\n”,20); //左对其&lt;br&gt;    printf(“%4d\n”,20); //右对其&lt;br&gt;    思考怎么输出%  解决%%&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;br&gt;&lt;br&gt;    &lt;h1&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言一讲已经结束。谢谢大家!&lt;/h1&gt;
 
 &lt;p&gt;&lt;/p&gt;&lt;/center&gt;&lt;p&gt;&lt;/p&gt;
 </content>
@@ -810,12 +837,15 @@ scanf(&amp;quot;%d&amp;quot;,&amp;amp;a);
     
       &lt;h1&gt;&lt;center&gt;C语言第一讲《C语言基础》&lt;/center&gt;&lt;/h1&gt;
 
-&lt;h3&gt;&lt;center&gt;进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数&lt;/center&gt;&lt;/h3&gt;
+&lt;h1&gt;&lt;center&gt;进制  程序的一般形式  常量\变量\运算符  表达式  语句  基本输入\输出函数&lt;/center&gt;&lt;/h1&gt;
 
-&lt;p&gt;&lt;/p&gt;&lt;h1&gt;进制&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;
-&lt;h2
+&lt;h1&gt;进制&lt;/h1&gt;&lt;br&gt;&lt;h1&gt;1, 进制概念 进位
     
     </summary>
+    
+      <category term="讲义" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/"/>
+    
+      <category term="C语音" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E9%9F%B3/"/>
     
     
       <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
@@ -827,7 +857,7 @@ scanf(&amp;quot;%d&amp;quot;,&amp;amp;a);
     <link href="http://www.tongxiaohao.cn/2016/01/30/hello/"/>
     <id>http://www.tongxiaohao.cn/2016/01/30/hello/</id>
     <published>2016-01-30T03:47:29.000Z</published>
-    <updated>2016-04-13T10:16:15.000Z</updated>
+    <updated>2016-09-08T09:34:30.000Z</updated>
     
     <content type="html">&lt;h1&gt;Hello&lt;br&gt;#你们好：&lt;br&gt;&lt;br&gt;这里是我自己查看的写文章对应语法的博客，没有什么实质上的东西测试使用的谢谢大家&lt;br&gt;&lt;br&gt;&lt;h1&gt;&lt;br&gt;    这是标题&lt;br&gt;&lt;/h1&gt;
 
@@ -849,8 +879,6 @@ scanf(&amp;quot;%d&amp;quot;,&amp;amp;a);
     
     </summary>
     
-    
-      <category term="测试" scheme="http://www.tongxiaohao.cn/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
