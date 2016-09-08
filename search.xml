@@ -745,6 +745,12 @@ scanf(&quot;%d&quot;,&amp;a);
     </entry>
     
     <entry>
+      <title><![CDATA[读书]]></title>
+      <url>http://www.tongxiaohao.cn/reading/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[分类]]></title>
       <url>http://www.tongxiaohao.cn/categories/index.html</url>
       <content type="html"></content>
@@ -753,12 +759,6 @@ scanf(&quot;%d&quot;,&amp;a);
     <entry>
       <title><![CDATA[tags]]></title>
       <url>http://www.tongxiaohao.cn/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[读书]]></title>
-      <url>http://www.tongxiaohao.cn/reading/index.html</url>
       <content type="html"></content>
     </entry>
     
