@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title><![CDATA[基础C语言第八讲]]></title>
+      <url>http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%85%AB%E8%AE%B2/</url>
+      <content type="html"><![CDATA[<p><center><h1>C语言第八讲《C语言基础》</h1></center></p>
+<p><center><h1>数据的存储 内存的访问方式 指针变量 取址运算符&amp; 取值运算符* 指针的运算符</h1></center></p>
+<p><center><h1>本讲第二模块<br><br>        指针与数组 指针与字符串 指针与函数<br><br></h1></center><br>回顾昨天所学 </p>
+<pre><code>结构体 结构体声明 定义 使用
+//typedef 起别名 结构体嵌套 结构体数组 结构体内存大小
+typedef struct students students;
+</code></pre><h1>一·数据的存储</h1>
+
+<pre><code>字节 是最小的存储单位 一个字节 未一个存储单位（内存单元） 不同数据类型 存储的单位不同
+内存是由多个连续的内存单元组成.
+内存单元用于存储数据，每个内存单元占1个字节，1个字节 = 8个二进制位
+内存单元地址：内存单元的编号，连续的。便于访问内存单元，就像门牌号一样。
+</code></pre><h1>二·内存的访问方式</h1>
+
+<pre><code>直接访问 与 间接访问
+直接访问 是访问内存空间的内容 如 a = 20,b = 2 * a
+间接访问 是通过内存单元编号 以及 数据所占 字节数 访问数据的数据
+指针就是间接方式访问的一种
+</code></pre><h1>三·指针变量</h1>
+
+<pre><code>int * p = NULL; //初始值NULL恒等于 0
+//int * 为整数指针 注意指针变量所占字节数 只与操作系统有关
+//打印指针变量的值
+printf(&quot;p = %p \n&quot;,p);
+</code></pre><h1>四·取址运算符 &amp;</h1><br>    int a = 10;<br>    int b = 20;<br>    int <em>pa = &a;//取出整形数a的地址<br>    int </em>pb = &b;//取出整形数b的地址<br>    printf(“pa = %p,a = %d &amp;a = %p\n”,pa,a,&amp;a);<br>    printf(“pb = %p,b = %d &amp;b = %p\n”,pb,b,&amp;b);<br><br><h1>五·取值运算符 <em></em></h1><br>    printf(“pa = %d\n”,<em>pa);//打印出地址pa内的值<br>    /</em><br>        注意 指针变量定义 <em> 只起到修饰作用告诉 p是什么<br>            指针变量取值时 访问内存地址为P的存储区域内容
+     </em>/<br><br><h1>六·指针的运算符</h1><br>    //指针的运算只有加减<br>    //指针的赋值 意味着 指针的重只向<br>    pa = &b;//pa指针重指向b的地址<br>    printf(“Pa = %p\n”,pa);//此时输出为b的地址<br><br><center><h1>本讲第二模块<br><br>        指针与数组 指针与字符串 指针与函数<br><br></h1></center><br><h1>指针与数组</h1><br>    //数组:连续内存空间存储数据的构造类型<br>    //数组名：即为数组首地址<br>    /<em><br>    解释 </em>p <em>(p + 1) </em>p + 1<br>    <em>(p + 2) = 6 元素值是否会发生改变<br>     指针可以当数组使用<br>     指针与数组的区别<br>     1， 所占空间不同<br>     指针只与系统操作位数有关<br>     数组与元素个数 和类型有关<br>     2，数组名是常量地址 不能重只向 指针可以
+     </em>/<br><br><h1>指针与字符串</h1><br>    // 定义字符数组存储字符串  str在栈区存放，常量字符串拷贝的副本存储在字符数组中，数组中的元素是可以改的。<br>    char str[] = “hello”;<br>    char <em>p = str;<br>    // 使用指针修改数组元素
+    </em>p = ‘a’;<br>    // 使用指针访问数组元素<br>    for (int i = 0; i &lt; 6; i++) {<br>        printf(“%c “, <em>(p + i));<br>    }<br>    printf(“\n”);<br>    // 使用指针操作字符串<br>    printf(“%s\n”, p);<br>    // 定义字符指针指向字符串<br>    // “”常量字符串，存储在常量区，只能访问不能修改<br>    // 定义指针指向常量区的字符串常量的首地址，指针p中只是存储的地址<br>    char </em> p = “hello”;<br>      <em>p = ‘a’;<br>    // 可以访问字符和字符串<br>    printf(“%s\n”, p);<br>    printf(“%c\n”, </em>p);<br>    // 总结：指向数组的指针可以访问和修改数组元素；指向常量字符串的指针只能访问数组元素<br>      char a[] = “hello”;<br>      char b[20] = {0};<br>      char <em> c = NULL;<br>      c = “lanou”; // 指向新的字符串<br>      strcpy(b, a);<br>      strcpy(c, a);    // 不能修改指针c指向的内容<br>      //练习：<br>      //通过指针计算字符串的长度<br>      char str[] = “iPhone”;<br>      char </em>ps = str;<br>      int n = 0;<br>      //    while (ps[n] != ‘\0’) {<br>        //或者<br>      //while (<em>(ps + n) != ‘\0’) {<br>          n ++;<br>      }<br>      printf(“%d\n”,n);//6<br>      char strs[3][5] = {“iOS”, “iPad”, “iMac”};<br>      // strs本质是二维数组<br>      // strs存储的数组元素是字符数组(字符数组中存储的是字符串，常量字符串的副本)<br>      // strs[0]  第一个字符数组的首元素地址，可以访问字符数组<br>      // strs[1]  第二个字符数组的首元素地址<br>      // strs[2]  第三个字符数组的首元素地址<br>      printf(“%s\n”, strs[0]);<br>      printf(“%s\n”, strs[1]);<br>      printf(“%s\n”, </em>strs);<br>      printf(“%s\n”, <em>(strs + 1));<br>      strs[0] = “mac”;  // strs[0]访问的是字符数组，必能直接赋值<br><br><h1>指针与字符串数组</h1><br>     //指针数组  数组中的元素都是指针<br>        char </em> strs[3] = {“iOS”, “iPad”, “iMac”};<br>      //    strs本质是一维数组<br>      //    strs存储的数组元素是字符指针(字符指针指向常量字符串)<br>      //    strs[0]  第一个字符指针，指向常量区的”iOS”<br>      //    strs[1]  第二个字符指针，指向常量区的”iPad”<br>      //    strs[2]  第三个字符指针，指向常量区的”iMac”<br>        // 访问<br>        printf(“%s\n”, strs[0]);<br>        printf(“%s\n”, strs[1]);<br>        printf(“%s\n”, <em>strs);<br>        printf(“%s\n”, </em>(strs + 1));<br>        // 修改<br>        strs[0] = “Symbian”;  // strs[0]访问的是字符指针，指针的重新指向另一个常量字符串<br>        printf(“%s\n”, strs[0]);<br>         // 为什么地址的差值为8?  因为指针占用八个字节，反过来印证了数组里面的元素是指针。<br>        printf(“%p\n”, strs);<br>        printf(“%p\n”, strs + 1);<br>        printf(“%p\n”, strs + 2);<br><br><h1>指针与函数</h1>
+
+<pre><code>/*
+ 思考 如何用指针 实习两个数交换函数
+ */
+void changeValue2(int *p1, int *p2);//声明函数
+int main(int argc, const char * argv[]) {
+    int a1 = 10, b1 = 20;
+    changeValue2(&amp;a1, &amp;b1);
+    printf(&quot;%d, %d&quot;,a1,b1); //验证值是否替换
+    return 0;
+}
+void changeValue2(int *p1, int *p2)
+{
+    int temp = *p1; // 取出p1所指向的地址里面的数据
+    *p1 = *p2;
+    *p2 = temp;
+    printf(&quot;%d   %d\n&quot;, *p1, *p2); //验证是否地址的值被替换
+}
+//利用函数传入地址交换数值
+</code></pre><p></p><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言八讲已经结束。谢谢大家! 加油！！！</h2></center></p><br><p></p>
+<p><center><h1>童小浩还有些话要说</h1></center><br></p>
+<p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;到此，C语言基础的全部八讲也结束，相信大家都应该了解和入门计算机的语言。接下来就可以，以这个基础去学习新的真正在开发中用到的高级语言比如<java,js,oc,swift ...="">这些语言。C语言几乎是所有语言的底层我们现在只是学习了个基础，C语言很庞大希望大家去努力学习！！</java,js,oc,swift></p><br><p></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[基础C语言第七讲]]></title>
       <url>http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%83%E8%AE%B2/</url>
       <content type="html"><![CDATA[<p><center><h1>C语言第七讲《C语言基础》</h1></center></p>
