@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tongxiaohao.cn" rel="hub"/>
   <link href="http://www.tongxiaohao.cn/"/>
-  <updated>2016-09-23T07:40:45.000Z</updated>
+  <updated>2016-09-23T07:45:28.000Z</updated>
   <id>http://www.tongxiaohao.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%85%AB%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/09/23/基础C语言第八讲/</id>
     <published>2016-09-23T07:00:05.000Z</published>
-    <updated>2016-09-23T07:40:45.000Z</updated>
+    <updated>2016-09-23T07:45:28.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第八讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;h1&gt;数据的存储 内存的访问方式 指针变量 取址运算符&amp;amp; 取值运算符* 指针的运算符&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
@@ -46,10 +46,115 @@ typedef struct students students;
 //int * 为整数指针 注意指针变量所占字节数 只与操作系统有关
 //打印指针变量的值
 printf(&amp;quot;p = %p \n&amp;quot;,p);
-&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;四·取址运算符 &amp;amp;&lt;/h1&gt;&lt;br&gt;    int a = 10;&lt;br&gt;    int b = 20;&lt;br&gt;    int &lt;em&gt;pa = &amp;a;//取出整形数a的地址&lt;br&gt;    int &lt;/em&gt;pb = &amp;b;//取出整形数b的地址&lt;br&gt;    printf(“pa = %p,a = %d &amp;amp;a = %p\n”,pa,a,&amp;amp;a);&lt;br&gt;    printf(“pb = %p,b = %d &amp;amp;b = %p\n”,pb,b,&amp;amp;b);&lt;br&gt;&lt;br&gt;&lt;h1&gt;五·取值运算符 &lt;em&gt;&lt;/em&gt;&lt;/h1&gt;&lt;br&gt;    printf(“pa = %d\n”,&lt;em&gt;pa);//打印出地址pa内的值&lt;br&gt;    /&lt;/em&gt;&lt;br&gt;        注意 指针变量定义 &lt;em&gt; 只起到修饰作用告诉 p是什么&lt;br&gt;            指针变量取值时 访问内存地址为P的存储区域内容
-     &lt;/em&gt;/&lt;br&gt;&lt;br&gt;&lt;h1&gt;六·指针的运算符&lt;/h1&gt;&lt;br&gt;    //指针的运算只有加减&lt;br&gt;    //指针的赋值 意味着 指针的重只向&lt;br&gt;    pa = &amp;b;//pa指针重指向b的地址&lt;br&gt;    printf(“Pa = %p\n”,pa);//此时输出为b的地址&lt;br&gt;&lt;br&gt;&lt;center&gt;&lt;h1&gt;本讲第二模块&lt;br&gt;&lt;br&gt;        指针与数组 指针与字符串 指针与函数&lt;br&gt;&lt;br&gt;&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;&lt;h1&gt;指针与数组&lt;/h1&gt;&lt;br&gt;    //数组:连续内存空间存储数据的构造类型&lt;br&gt;    //数组名：即为数组首地址&lt;br&gt;    /&lt;em&gt;&lt;br&gt;    解释 &lt;/em&gt;p &lt;em&gt;(p + 1) &lt;/em&gt;p + 1&lt;br&gt;    &lt;em&gt;(p + 2) = 6 元素值是否会发生改变&lt;br&gt;     指针可以当数组使用&lt;br&gt;     指针与数组的区别&lt;br&gt;     1， 所占空间不同&lt;br&gt;     指针只与系统操作位数有关&lt;br&gt;     数组与元素个数 和类型有关&lt;br&gt;     2，数组名是常量地址 不能重只向 指针可以
-     &lt;/em&gt;/&lt;br&gt;&lt;br&gt;&lt;h1&gt;指针与字符串&lt;/h1&gt;&lt;br&gt;    // 定义字符数组存储字符串  str在栈区存放，常量字符串拷贝的副本存储在字符数组中，数组中的元素是可以改的。&lt;br&gt;    char str[] = “hello”;&lt;br&gt;    char &lt;em&gt;p = str;&lt;br&gt;    // 使用指针修改数组元素
-    &lt;/em&gt;p = ‘a’;&lt;br&gt;    // 使用指针访问数组元素&lt;br&gt;    for (int i = 0; i &amp;lt; 6; i++) {&lt;br&gt;        printf(“%c “, &lt;em&gt;(p + i));&lt;br&gt;    }&lt;br&gt;    printf(“\n”);&lt;br&gt;    // 使用指针操作字符串&lt;br&gt;    printf(“%s\n”, p);&lt;br&gt;    // 定义字符指针指向字符串&lt;br&gt;    // “”常量字符串，存储在常量区，只能访问不能修改&lt;br&gt;    // 定义指针指向常量区的字符串常量的首地址，指针p中只是存储的地址&lt;br&gt;    char &lt;/em&gt; p = “hello”;&lt;br&gt;      &lt;em&gt;p = ‘a’;&lt;br&gt;    // 可以访问字符和字符串&lt;br&gt;    printf(“%s\n”, p);&lt;br&gt;    printf(“%c\n”, &lt;/em&gt;p);&lt;br&gt;    // 总结：指向数组的指针可以访问和修改数组元素；指向常量字符串的指针只能访问数组元素&lt;br&gt;      char a[] = “hello”;&lt;br&gt;      char b[20] = {0};&lt;br&gt;      char &lt;em&gt; c = NULL;&lt;br&gt;      c = “lanou”; // 指向新的字符串&lt;br&gt;      strcpy(b, a);&lt;br&gt;      strcpy(c, a);    // 不能修改指针c指向的内容&lt;br&gt;      //练习：&lt;br&gt;      //通过指针计算字符串的长度&lt;br&gt;      char str[] = “iPhone”;&lt;br&gt;      char &lt;/em&gt;ps = str;&lt;br&gt;      int n = 0;&lt;br&gt;      //    while (ps[n] != ‘\0’) {&lt;br&gt;        //或者&lt;br&gt;      //while (&lt;em&gt;(ps + n) != ‘\0’) {&lt;br&gt;          n ++;&lt;br&gt;      }&lt;br&gt;      printf(“%d\n”,n);//6&lt;br&gt;      char strs[3][5] = {“iOS”, “iPad”, “iMac”};&lt;br&gt;      // strs本质是二维数组&lt;br&gt;      // strs存储的数组元素是字符数组(字符数组中存储的是字符串，常量字符串的副本)&lt;br&gt;      // strs[0]  第一个字符数组的首元素地址，可以访问字符数组&lt;br&gt;      // strs[1]  第二个字符数组的首元素地址&lt;br&gt;      // strs[2]  第三个字符数组的首元素地址&lt;br&gt;      printf(“%s\n”, strs[0]);&lt;br&gt;      printf(“%s\n”, strs[1]);&lt;br&gt;      printf(“%s\n”, &lt;/em&gt;strs);&lt;br&gt;      printf(“%s\n”, &lt;em&gt;(strs + 1));&lt;br&gt;      strs[0] = “mac”;  // strs[0]访问的是字符数组，必能直接赋值&lt;br&gt;&lt;br&gt;&lt;h1&gt;指针与字符串数组&lt;/h1&gt;&lt;br&gt;     //指针数组  数组中的元素都是指针&lt;br&gt;        char &lt;/em&gt; strs[3] = {“iOS”, “iPad”, “iMac”};&lt;br&gt;      //    strs本质是一维数组&lt;br&gt;      //    strs存储的数组元素是字符指针(字符指针指向常量字符串)&lt;br&gt;      //    strs[0]  第一个字符指针，指向常量区的”iOS”&lt;br&gt;      //    strs[1]  第二个字符指针，指向常量区的”iPad”&lt;br&gt;      //    strs[2]  第三个字符指针，指向常量区的”iMac”&lt;br&gt;        // 访问&lt;br&gt;        printf(“%s\n”, strs[0]);&lt;br&gt;        printf(“%s\n”, strs[1]);&lt;br&gt;        printf(“%s\n”, &lt;em&gt;strs);&lt;br&gt;        printf(“%s\n”, &lt;/em&gt;(strs + 1));&lt;br&gt;        // 修改&lt;br&gt;        strs[0] = “Symbian”;  // strs[0]访问的是字符指针，指针的重新指向另一个常量字符串&lt;br&gt;        printf(“%s\n”, strs[0]);&lt;br&gt;         // 为什么地址的差值为8?  因为指针占用八个字节，反过来印证了数组里面的元素是指针。&lt;br&gt;        printf(“%p\n”, strs);&lt;br&gt;        printf(“%p\n”, strs + 1);&lt;br&gt;        printf(“%p\n”, strs + 2);&lt;br&gt;&lt;br&gt;&lt;h1&gt;指针与函数&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;四·取址运算符 &amp;amp;&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;int a = 10;
+int b = 20;
+int *pa = &amp;amp;a;//取出整形数a的地址
+int *pb = &amp;amp;b;//取出整形数b的地址
+printf(&amp;quot;pa = %p,a = %d &amp;amp;a = %p\n&amp;quot;,pa,a,&amp;amp;a);
+printf(&amp;quot;pb = %p,b = %d &amp;amp;b = %p\n&amp;quot;,pb,b,&amp;amp;b);
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;五·取值运算符 *&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;printf(&amp;quot;*pa = %d\n&amp;quot;,*pa);//打印出地址pa内的值
+/*
+    注意 指针变量定义 * 只起到修饰作用告诉 p是什么
+        指针变量取值时 访问内存地址为P的存储区域内容
+ */
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;六·指针的运算符&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;//指针的运算只有加减
+//指针的赋值 意味着 指针的重只向
+pa = &amp;amp;b;//pa指针重指向b的地址
+printf(&amp;quot;Pa = %p\n&amp;quot;,pa);//此时输出为b的地址
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h1&gt;本讲第二模块&lt;br&gt;&lt;br&gt;        指针与数组 指针与字符串 指针与函数&lt;br&gt;&lt;br&gt;&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;h1&gt;指针与数组&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;//数组:连续内存空间存储数据的构造类型
+//数组名：即为数组首地址
+/*
+解释 *p *(p + 1) *p + 1
+*(p + 2) = 6 元素值是否会发生改变
+ 指针可以当数组使用
+ 指针与数组的区别
+ 1， 所占空间不同
+ 指针只与系统操作位数有关
+ 数组与元素个数 和类型有关
+ 2，数组名是常量地址 不能重只向 指针可以
+ */
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;指针与字符串&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;// 定义字符数组存储字符串  str在栈区存放，常量字符串拷贝的副本存储在字符数组中，数组中的元素是可以改的。
+char str[] = &amp;quot;hello&amp;quot;;
+char *p = str;
+// 使用指针修改数组元素
+*p = &amp;apos;a&amp;apos;;
+// 使用指针访问数组元素
+for (int i = 0; i &amp;lt; 6; i++) {
+    printf(&amp;quot;%c &amp;quot;, *(p + i));
+}
+printf(&amp;quot;\n&amp;quot;);
+// 使用指针操作字符串
+printf(&amp;quot;%s\n&amp;quot;, p);
+// 定义字符指针指向字符串
+// &amp;quot;&amp;quot;常量字符串，存储在常量区，只能访问不能修改
+// 定义指针指向常量区的字符串常量的首地址，指针p中只是存储的地址
+char * p = &amp;quot;hello&amp;quot;;
+  *p = &amp;apos;a&amp;apos;;
+// 可以访问字符和字符串
+printf(&amp;quot;%s\n&amp;quot;, p);
+printf(&amp;quot;%c\n&amp;quot;, *p);
+// 总结：指向数组的指针可以访问和修改数组元素；指向常量字符串的指针只能访问数组元素
+  char a[] = &amp;quot;hello&amp;quot;;
+  char b[20] = {0};
+  char * c = NULL;
+  c = &amp;quot;lanou&amp;quot;; // 指向新的字符串
+  strcpy(b, a);
+  strcpy(c, a);    // 不能修改指针c指向的内容
+  //练习：
+  //通过指针计算字符串的长度
+  char str[] = &amp;quot;iPhone&amp;quot;;
+  char *ps = str;
+  int n = 0;
+  //    while (ps[n] != &amp;apos;\0&amp;apos;) {
+    //或者
+  //while (*(ps + n) != &amp;apos;\0&amp;apos;) {
+      n ++;
+  }
+  printf(&amp;quot;%d\n&amp;quot;,n);//6
+  char strs[3][5] = {&amp;quot;iOS&amp;quot;, &amp;quot;iPad&amp;quot;, &amp;quot;iMac&amp;quot;};
+  // strs本质是二维数组
+  // strs存储的数组元素是字符数组(字符数组中存储的是字符串，常量字符串的副本)
+  // strs[0]  第一个字符数组的首元素地址，可以访问字符数组
+  // strs[1]  第二个字符数组的首元素地址
+  // strs[2]  第三个字符数组的首元素地址
+  printf(&amp;quot;%s\n&amp;quot;, strs[0]);
+  printf(&amp;quot;%s\n&amp;quot;, strs[1]);
+  printf(&amp;quot;%s\n&amp;quot;, *strs);
+  printf(&amp;quot;%s\n&amp;quot;, *(strs + 1));
+  strs[0] = &amp;quot;mac&amp;quot;;  // strs[0]访问的是字符数组，必能直接赋值
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;指针与字符串数组&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;//指针数组  数组中的元素都是指针
+   char * strs[3] = {&amp;quot;iOS&amp;quot;, &amp;quot;iPad&amp;quot;, &amp;quot;iMac&amp;quot;};
+ //    strs本质是一维数组
+ //    strs存储的数组元素是字符指针(字符指针指向常量字符串)
+ //    strs[0]  第一个字符指针，指向常量区的&amp;quot;iOS&amp;quot;
+ //    strs[1]  第二个字符指针，指向常量区的&amp;quot;iPad&amp;quot;
+ //    strs[2]  第三个字符指针，指向常量区的&amp;quot;iMac&amp;quot;
+   // 访问
+   printf(&amp;quot;%s\n&amp;quot;, strs[0]);
+   printf(&amp;quot;%s\n&amp;quot;, strs[1]);
+   printf(&amp;quot;%s\n&amp;quot;, *strs);
+   printf(&amp;quot;%s\n&amp;quot;, *(strs + 1));
+   // 修改
+   strs[0] = &amp;quot;Symbian&amp;quot;;  // strs[0]访问的是字符指针，指针的重新指向另一个常量字符串
+   printf(&amp;quot;%s\n&amp;quot;, strs[0]);
+    // 为什么地址的差值为8?  因为指针占用八个字节，反过来印证了数组里面的元素是指针。
+   printf(&amp;quot;%p\n&amp;quot;, strs);
+   printf(&amp;quot;%p\n&amp;quot;, strs + 1);
+   printf(&amp;quot;%p\n&amp;quot;, strs + 2);
+&lt;/code&gt;&lt;/pre&gt;&lt;h1&gt;指针与函数&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;/*
  思考 如何用指针 实习两个数交换函数
