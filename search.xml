@@ -8,7 +8,7 @@
       <url>http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%83%E8%AE%B2/</url>
       <content type="html"><![CDATA[<p><center><h1>C语言第七讲《C语言基础》</h1></center></p>
 <p><center><h1>结构体定义、声明与应用 结构体内存占用 结构体嵌套 结构体数组 </h1></center><br>回顾昨天所学 </p>
-<pre><code>函数 函数的定义 函数声明 函数调用 参数 返回值 参数为数组的函数 函数嵌套使用 
+<pre><code>函数 函数的定义 函数声明 函数调用 参数 返回值 参数为数组的函数 函数嵌套使用  
 </code></pre><p></p><h1>1·结构体定义、声明与应用</h1><br>1)什么是结构体 如何描述坐标系内一个点(x,y) 如何描述一个矩形 (长，宽) 如何保存一个student信息<br>   结构体 标识 struct<p></p>
 <pre><code>struct student{ //struct 结构体名称
 char name[20]; //类型说明符 成员名(姓名)
@@ -69,39 +69,57 @@ students stu;
 char classname[20];
 };
 </code></pre><p></p><h1>4·结构体数组</h1><br>很简单 跟int的数组一样可以用角标表示数组里某一个结构体（学生）<br><p></p>
-<pre><code>//    students stu[10] = {0};
-// 跟int 一样的定义 也是可以通过下标访问结构体变量
-//    例子
-//    Student stus[5] = {
-          {1, &quot;lixiwen&quot;, &apos;f&apos;, 91},
-//        {2, &quot;yangguozhen&quot;, &apos;m&apos;, 94.5},
-//        {3, &quot;wangdashuai&quot;, &apos;m&apos;, 97},
-//        {4, &quot;qihuanling&quot;, &apos;f&apos;, 95},
-//        {5, &quot;houxiaolan&quot;, &apos;f&apos;, 98}
-            };
-//    Student s = {0};
-//    for (int i = 0; i &lt; 5; i++) {
-//        if (s.score &lt; stus[i].score) {
-//            s = stus[i];
-//        }
-//    }
-//    printf(&quot;%d  %s  %c  %.1f\n&quot;, s.num, s.name, s.gender, s.score);
+<pre><code>    students stu[10] = {0};
+ //跟int 一样的定义 也是可以通过下标访问结构体变量
+ //例子
+    Student stus[5] = {
+        {1, &quot;lixiwen&quot;, &apos;f&apos;, 91},
+        {2, &quot;yangguozhen&quot;, &apos;m&apos;, 94.5},
+        {3, &quot;wangdashuai&quot;, &apos;m&apos;, 97},
+        {4, &quot;qihuanling&quot;, &apos;f&apos;, 95},
+        {5, &quot;houxiaolan&quot;, &apos;f&apos;, 98}
+        };
+    Student s = {0};
+    for (int i = 0; i &lt; 5; i++) {
+        if (s.score &lt; stus[i].score) {
+            s = stus[i];
+        }
+    }
+    printf(&quot;%d  %s  %c  %.1f\n&quot;, s.num, s.name, s.gender, s.score);
 //例子
-// 练习：对上述5名学生数组，按成绩 从高到低 排序，并输出
-//    for (int i = 0; i &lt; (5 - 1); i++) {
-//        for (int j = 0; j &lt; 5 - (i + 1); j++) {
-//            if (stus[j].score &lt; stus[j+1].score) {
-//
-//                Student temp = stus[j];
-//                stus[j] = stus[j+1];
-//                stus[j+1] = temp;
-//            }
-//        }
-//    }
-//    for (int i = 0; i &lt; 5; i++) {
-//        printf(&quot;%d  %s  %c  %.1f\n&quot;, stus[i].num, stus[i].name, stus[i].gender, stus[i].score);
-//    }
-</code></pre>]]></content>
+//练习：对上述5名学生数组，按成绩 从高到低 排序，并输出
+    for (int i = 0; i &lt; (5 - 1); i++) {
+        for (int j = 0; j &lt; 5 - (i + 1); j++) {
+            if (stus[j].score &lt; stus[j+1].score) {
+
+                Student temp = stus[j];
+                stus[j] = stus[j+1];
+                stus[j+1] = temp;
+            }
+        }
+    }
+    for (int i = 0; i &lt; 5; i++) {
+        printf(&quot;%d  %s  %c  %.1f\n&quot;, stus[i].num, stus[i].name, stus[i].gender, stus[i].score);
+    }
+</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言七讲已经结束。谢谢大家! 加油！！！</h2></center></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
     </entry>
     
     <entry>
@@ -219,7 +237,7 @@ return a;
 
     return result;
 }
-</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！</h2></center></p>]]></content>
+</code></pre><p><center><h2>孙悟空三大白骨精！ 感谢各位学习我的博客 C语言六讲已经结束。谢谢大家! 加油！！！</h2></center></p>]]></content>
     </entry>
     
     <entry>

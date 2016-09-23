@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tongxiaohao.cn" rel="hub"/>
   <link href="http://www.tongxiaohao.cn/"/>
-  <updated>2016-09-23T06:31:37.000Z</updated>
+  <updated>2016-09-23T06:44:44.000Z</updated>
   <id>http://www.tongxiaohao.cn/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%83%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/09/23/基础C语言第七讲/</id>
     <published>2016-09-23T05:51:43.000Z</published>
-    <updated>2016-09-23T06:31:37.000Z</updated>
+    <updated>2016-09-23T06:44:44.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第七讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;h1&gt;结构体定义、声明与应用 结构体内存占用 结构体嵌套 结构体数组 &lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;函数 函数的定义 函数声明 函数调用 参数 返回值 参数为数组的函数 函数嵌套使用 
+&lt;pre&gt;&lt;code&gt;函数 函数的定义 函数声明 函数调用 参数 返回值 参数为数组的函数 函数嵌套使用  
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;1·结构体定义、声明与应用&lt;/h1&gt;&lt;br&gt;1)什么是结构体 如何描述坐标系内一个点(x,y) 如何描述一个矩形 (长，宽) 如何保存一个student信息&lt;br&gt;   结构体 标识 struct&lt;p&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;struct student{ //struct 结构体名称
 char name[20]; //类型说明符 成员名(姓名)
@@ -117,7 +117,25 @@ char classname[20];
     for (int i = 0; i &amp;lt; 5; i++) {
         printf(&amp;quot;%d  %s  %c  %.1f\n&amp;quot;, stus[i].num, stus[i].name, stus[i].gender, stus[i].score);
     }
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言七讲已经结束。谢谢大家! 加油！！！&lt;/h2&gt;&lt;/center&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</content>
     
     <summary type="html">
     
@@ -141,7 +159,7 @@ char classname[20];
     <link href="http://www.tongxiaohao.cn/2016/05/12/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%85%AD%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/05/12/基础C语言第六讲/</id>
     <published>2016-05-12T08:22:34.000Z</published>
-    <updated>2016-09-08T09:41:53.000Z</updated>
+    <updated>2016-09-23T06:43:57.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第六讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;h1&gt;预编译 宏定义 函数 递归&lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
@@ -255,7 +273,7 @@ return a;
 
     return result;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言五讲已经结束。谢谢大家! 加油！！！&lt;/h2&gt;&lt;/center&gt;&lt;/p&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;center&gt;&lt;h2&gt;孙悟空三大白骨精！ 感谢各位学习我的博客 C语言六讲已经结束。谢谢大家! 加油！！！&lt;/h2&gt;&lt;/center&gt;&lt;/p&gt;</content>
     
     <summary type="html">
     
