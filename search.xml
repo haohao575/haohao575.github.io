@@ -4,6 +4,107 @@
   
     
     <entry>
+      <title><![CDATA[基础C语言第七讲]]></title>
+      <url>http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%83%E8%AE%B2/</url>
+      <content type="html"><![CDATA[<p><center><h1>C语言第七讲《C语言基础》</h1></center></p>
+<p><center><h1>结构体定义、声明与应用 结构体内存占用 结构体嵌套 结构体数组 </h1></center><br>回顾昨天所学 </p>
+<pre><code>函数 函数的定义 函数声明 函数调用 参数 返回值 参数为数组的函数 函数嵌套使用 
+</code></pre><p></p><h1>1·结构体定义、声明与应用</h1><br>1)什么是结构体 如何描述坐标系内一个点(x,y) 如何描述一个矩形 (长，宽) 如何保存一个student信息<br>   结构体 标识 struct<p></p>
+<pre><code>struct student{ //struct 结构体名称
+char name[20]; //类型说明符 成员名(姓名)
+int age; //（年龄）
+char sex; //（性别）
+};
+typedef struct student students;//给结构体起别名
+//结构体 第二种
+struct{ //定义结构体
+char name[20];
+int age;
+}teacher1 = {&quot;tongxiaohao&quot;,22};  //直接赋值
+//结构体写在main函数之外
+int main(int argc, const char * argv[]) {
+//结构体定义 struct 加 结构体名称 就是结构体类型 stu 一个成员名 直接对应赋值{};
+students stu1 = {&quot;还好吧&quot;,22,&apos;M&apos;};
+//结构体成员用.点出来 和普通变量一样 可以直接赋值
+stu1.age = 10;
+#warning ~~~~~~
+//    printf(&quot;%ld&quot;,);
+//    char a[20] = &quot;aaa&quot;; //数组不能直接赋值
+//    stu1.name = {&apos;a&apos;,&apos;\0&apos;};
+//    stu1.name = &quot;aaa&quot;;
+printf(&quot;%s %d %c \n&quot;,stu1.name,stu1.age,stu1.sex);
+//匿名结构体
+printf(&quot;%s&quot;,teacher1.name);
+typedef int inther; //typedef 其别名 类型明 新类型名
+inther a = 0;
+printf(&quot;%d&quot;,a);
+    return 0;
+}
+</code></pre><p></p><h1>2·结构体内存占用</h1><br>规则：<br><br>1，以最大成员变量类型所占空间为分配空间(数组不算)<br><br>2，自上到下分配<br><br>3，变量空间不足时创建新空间<br><br>例子<br><p></p>
+<pre><code>struct student{ //struct 结构体名称
+char name[20]; //char类型数组 实质上就是20个char 
+int age; //（年龄）int类型 4个字节
+char sex; //（性别）char类型 1个字节
+};
+//计算 20 + 4 + 4 = 28 因为遇到了int是最大字节 以4字节为开辟单位
+//每4个字节开辟 20字节开辟了 5个可以放下 int自己开辟4个 char以4字节开辟 所以
+//20 + 4 + 4 = 28
+//使用 sizeof 字节运算符 输出结果28 
+printf(&quot;%lu\n&quot;,sizeof(struct student));
+//如果int 变double呢 以每8个字节分配 计算 20 / 8 = 2余4； 所以3个8才够放下 20字节
+//3 * 8 + 8 + 8 = 40
+//再次输出
+printf(&quot;%lu\n&quot;,sizeof(struct student));
+//结果40.
+</code></pre><p></p><h1>3·结构体嵌套</h1><br>就是在结构体定义时 内部还有其他结构体<p></p>
+<pre><code>//例子
+struct teacher { //老师结构体
+struct student stu[30]; //里面有30个学生结构体
+char classname[20]; //还有班级名称
+};
+//如果学生结构体有别名可以
+struct teacher {
+students stu; 
+//学生结构体 这表示就一个学生可以将  struct student 直接改为别名students
+char classname[20];
+};
+</code></pre><p></p><h1>4·结构体数组</h1><br>很简单 跟int的数组一样可以用角标表示数组里某一个结构体（学生）<br><p></p>
+<pre><code>//    students stu[10] = {0};
+// 跟int 一样的定义 也是可以通过下标访问结构体变量
+//    例子
+//    Student stus[5] = {
+          {1, &quot;lixiwen&quot;, &apos;f&apos;, 91},
+//        {2, &quot;yangguozhen&quot;, &apos;m&apos;, 94.5},
+//        {3, &quot;wangdashuai&quot;, &apos;m&apos;, 97},
+//        {4, &quot;qihuanling&quot;, &apos;f&apos;, 95},
+//        {5, &quot;houxiaolan&quot;, &apos;f&apos;, 98}
+            };
+//    Student s = {0};
+//    for (int i = 0; i &lt; 5; i++) {
+//        if (s.score &lt; stus[i].score) {
+//            s = stus[i];
+//        }
+//    }
+//    printf(&quot;%d  %s  %c  %.1f\n&quot;, s.num, s.name, s.gender, s.score);
+//例子
+// 练习：对上述5名学生数组，按成绩 从高到低 排序，并输出
+//    for (int i = 0; i &lt; (5 - 1); i++) {
+//        for (int j = 0; j &lt; 5 - (i + 1); j++) {
+//            if (stus[j].score &lt; stus[j+1].score) {
+//
+//                Student temp = stus[j];
+//                stus[j] = stus[j+1];
+//                stus[j+1] = temp;
+//            }
+//        }
+//    }
+//    for (int i = 0; i &lt; 5; i++) {
+//        printf(&quot;%d  %s  %c  %.1f\n&quot;, stus[i].num, stus[i].name, stus[i].gender, stus[i].score);
+//    }
+</code></pre>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[基础C语言第六讲]]></title>
       <url>http://www.tongxiaohao.cn/2016/05/12/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E5%85%AD%E8%AE%B2/</url>
       <content type="html"><![CDATA[<p><center><h1>C语言第六讲《C语言基础》</h1></center></p>
@@ -741,6 +842,12 @@ scanf(&quot;%d&quot;,&amp;a);
     </entry>
     
     <entry>
+      <title><![CDATA[分类]]></title>
+      <url>http://www.tongxiaohao.cn/categories/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于]]></title>
       <url>http://www.tongxiaohao.cn/about/index.html</url>
       <content type="html"><![CDATA[<center><span id="myspan" background-color="#ccc"></span><br><br><br><br><iframe style="text-align:center" frameborder="yes" border="1" marginwidth="0" marginheight="0" width="320" height="450" src="http://music.163.com/outchain/player?type=0&id=32695983&auto=1&height=430"></iframe><br><br><br><br>人生总有些不经意的事情，最不经意的事情可以让你走向成功，也可能走向失败。不要把一切放在一定，或是不可能！因为不经意间的你，已经偏离了原来的轨迹。—童小浩<br><br><br></center>
@@ -821,12 +928,6 @@ scanf(&quot;%d&quot;,&amp;a);
     };
     }
 </script>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[分类]]></title>
-      <url>http://www.tongxiaohao.cn/categories/index.html</url>
-      <content type="html"></content>
     </entry>
     
     <entry>

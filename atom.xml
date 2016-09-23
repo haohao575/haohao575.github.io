@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tongxiaohao.cn" rel="hub"/>
   <link href="http://www.tongxiaohao.cn/"/>
-  <updated>2016-09-08T09:41:53.000Z</updated>
+  <updated>2016-09-23T06:26:55.000Z</updated>
   <id>http://www.tongxiaohao.cn/</id>
   
   <author>
@@ -14,6 +14,127 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基础C语言第七讲</title>
+    <link href="http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%83%E8%AE%B2/"/>
+    <id>http://www.tongxiaohao.cn/2016/09/23/基础C语言第七讲/</id>
+    <published>2016-09-23T05:51:43.000Z</published>
+    <updated>2016-09-23T06:26:55.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第七讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;结构体定义、声明与应用 结构体内存占用 结构体嵌套 结构体数组 &lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;函数 函数的定义 函数声明 函数调用 参数 返回值 参数为数组的函数 函数嵌套使用 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;1·结构体定义、声明与应用&lt;/h1&gt;&lt;br&gt;1)什么是结构体 如何描述坐标系内一个点(x,y) 如何描述一个矩形 (长，宽) 如何保存一个student信息&lt;br&gt;   结构体 标识 struct&lt;p&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;struct student{ //struct 结构体名称
+char name[20]; //类型说明符 成员名(姓名)
+int age; //（年龄）
+char sex; //（性别）
+};
+typedef struct student students;//给结构体起别名
+//结构体 第二种
+struct{ //定义结构体
+char name[20];
+int age;
+}teacher1 = {&amp;quot;tongxiaohao&amp;quot;,22};  //直接赋值
+//结构体写在main函数之外
+int main(int argc, const char * argv[]) {
+//结构体定义 struct 加 结构体名称 就是结构体类型 stu 一个成员名 直接对应赋值{};
+students stu1 = {&amp;quot;还好吧&amp;quot;,22,&amp;apos;M&amp;apos;};
+//结构体成员用.点出来 和普通变量一样 可以直接赋值
+stu1.age = 10;
+#warning ~~~~~~
+//    printf(&amp;quot;%ld&amp;quot;,);
+//    char a[20] = &amp;quot;aaa&amp;quot;; //数组不能直接赋值
+//    stu1.name = {&amp;apos;a&amp;apos;,&amp;apos;\0&amp;apos;};
+//    stu1.name = &amp;quot;aaa&amp;quot;;
+printf(&amp;quot;%s %d %c \n&amp;quot;,stu1.name,stu1.age,stu1.sex);
+//匿名结构体
+printf(&amp;quot;%s&amp;quot;,teacher1.name);
+typedef int inther; //typedef 其别名 类型明 新类型名
+inther a = 0;
+printf(&amp;quot;%d&amp;quot;,a);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;2·结构体内存占用&lt;/h1&gt;&lt;br&gt;规则：&lt;br&gt;&lt;br&gt;1，以最大成员变量类型所占空间为分配空间(数组不算)&lt;br&gt;&lt;br&gt;2，自上到下分配&lt;br&gt;&lt;br&gt;3，变量空间不足时创建新空间&lt;br&gt;&lt;br&gt;例子&lt;br&gt;&lt;p&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;struct student{ //struct 结构体名称
+char name[20]; //char类型数组 实质上就是20个char 
+int age; //（年龄）int类型 4个字节
+char sex; //（性别）char类型 1个字节
+};
+//计算 20 + 4 + 4 = 28 因为遇到了int是最大字节 以4字节为开辟单位
+//每4个字节开辟 20字节开辟了 5个可以放下 int自己开辟4个 char以4字节开辟 所以
+//20 + 4 + 4 = 28
+//使用 sizeof 字节运算符 输出结果28 
+printf(&amp;quot;%lu\n&amp;quot;,sizeof(struct student));
+//如果int 变double呢 以每8个字节分配 计算 20 / 8 = 2余4； 所以3个8才够放下 20字节
+//3 * 8 + 8 + 8 = 40
+//再次输出
+printf(&amp;quot;%lu\n&amp;quot;,sizeof(struct student));
+//结果40.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;3·结构体嵌套&lt;/h1&gt;&lt;br&gt;就是在结构体定义时 内部还有其他结构体&lt;p&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//例子
+struct teacher { //老师结构体
+struct student stu[30]; //里面有30个学生结构体
+char classname[20]; //还有班级名称
+};
+//如果学生结构体有别名可以
+struct teacher {
+students stu; 
+//学生结构体 这表示就一个学生可以将  struct student 直接改为别名students
+char classname[20];
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;4·结构体数组&lt;/h1&gt;&lt;br&gt;很简单 跟int的数组一样可以用角标表示数组里某一个结构体（学生）&lt;br&gt;&lt;p&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//    students stu[10] = {0};
+// 跟int 一样的定义 也是可以通过下标访问结构体变量
+//    例子
+//    Student stus[5] = {
+          {1, &amp;quot;lixiwen&amp;quot;, &amp;apos;f&amp;apos;, 91},
+//        {2, &amp;quot;yangguozhen&amp;quot;, &amp;apos;m&amp;apos;, 94.5},
+//        {3, &amp;quot;wangdashuai&amp;quot;, &amp;apos;m&amp;apos;, 97},
+//        {4, &amp;quot;qihuanling&amp;quot;, &amp;apos;f&amp;apos;, 95},
+//        {5, &amp;quot;houxiaolan&amp;quot;, &amp;apos;f&amp;apos;, 98}
+            };
+//    Student s = {0};
+//    for (int i = 0; i &amp;lt; 5; i++) {
+//        if (s.score &amp;lt; stus[i].score) {
+//            s = stus[i];
+//        }
+//    }
+//    printf(&amp;quot;%d  %s  %c  %.1f\n&amp;quot;, s.num, s.name, s.gender, s.score);
+//例子
+// 练习：对上述5名学生数组，按成绩 从高到低 排序，并输出
+//    for (int i = 0; i &amp;lt; (5 - 1); i++) {
+//        for (int j = 0; j &amp;lt; 5 - (i + 1); j++) {
+//            if (stus[j].score &amp;lt; stus[j+1].score) {
+//
+//                Student temp = stus[j];
+//                stus[j] = stus[j+1];
+//                stus[j+1] = temp;
+//            }
+//        }
+//    }
+//    for (int i = 0; i &amp;lt; 5; i++) {
+//        printf(&amp;quot;%d  %s  %c  %.1f\n&amp;quot;, stus[i].num, stus[i].name, stus[i].gender, stus[i].score);
+//    }
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第七讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;h1&gt;结构体定义、声明与应用 结构体内存占用 结构体嵌套 结构体数组 &lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;函数 函数
+    
+    </summary>
+    
+      <category term="讲义" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/"/>
+    
+      <category term="C语音" scheme="http://www.tongxiaohao.cn/categories/%E8%AE%B2%E4%B9%89/C%E8%AF%AD%E9%9F%B3/"/>
+    
+    
+      <category term="C语言" scheme="http://www.tongxiaohao.cn/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>基础C语言第六讲</title>
