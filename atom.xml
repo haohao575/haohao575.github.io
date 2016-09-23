@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.tongxiaohao.cn" rel="hub"/>
   <link href="http://www.tongxiaohao.cn/"/>
-  <updated>2016-09-23T06:26:55.000Z</updated>
+  <updated>2016-09-23T06:31:37.000Z</updated>
   <id>http://www.tongxiaohao.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.tongxiaohao.cn/2016/09/23/%E5%9F%BA%E7%A1%80C%E8%AF%AD%E8%A8%80%E7%AC%AC%E4%B8%83%E8%AE%B2/"/>
     <id>http://www.tongxiaohao.cn/2016/09/23/基础C语言第七讲/</id>
     <published>2016-09-23T05:51:43.000Z</published>
-    <updated>2016-09-23T06:26:55.000Z</updated>
+    <updated>2016-09-23T06:31:37.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;center&gt;&lt;h1&gt;C语言第七讲《C语言基础》&lt;/h1&gt;&lt;/center&gt;&lt;/p&gt;
 &lt;p&gt;&lt;center&gt;&lt;h1&gt;结构体定义、声明与应用 结构体内存占用 结构体嵌套 结构体数组 &lt;/h1&gt;&lt;/center&gt;&lt;br&gt;回顾昨天所学 &lt;/p&gt;
@@ -85,38 +85,38 @@ students stu;
 char classname[20];
 };
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;h1&gt;4·结构体数组&lt;/h1&gt;&lt;br&gt;很简单 跟int的数组一样可以用角标表示数组里某一个结构体（学生）&lt;br&gt;&lt;p&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;//    students stu[10] = {0};
-// 跟int 一样的定义 也是可以通过下标访问结构体变量
-//    例子
-//    Student stus[5] = {
-          {1, &amp;quot;lixiwen&amp;quot;, &amp;apos;f&amp;apos;, 91},
-//        {2, &amp;quot;yangguozhen&amp;quot;, &amp;apos;m&amp;apos;, 94.5},
-//        {3, &amp;quot;wangdashuai&amp;quot;, &amp;apos;m&amp;apos;, 97},
-//        {4, &amp;quot;qihuanling&amp;quot;, &amp;apos;f&amp;apos;, 95},
-//        {5, &amp;quot;houxiaolan&amp;quot;, &amp;apos;f&amp;apos;, 98}
-            };
-//    Student s = {0};
-//    for (int i = 0; i &amp;lt; 5; i++) {
-//        if (s.score &amp;lt; stus[i].score) {
-//            s = stus[i];
-//        }
-//    }
-//    printf(&amp;quot;%d  %s  %c  %.1f\n&amp;quot;, s.num, s.name, s.gender, s.score);
+&lt;pre&gt;&lt;code&gt;    students stu[10] = {0};
+ //跟int 一样的定义 也是可以通过下标访问结构体变量
+ //例子
+    Student stus[5] = {
+        {1, &amp;quot;lixiwen&amp;quot;, &amp;apos;f&amp;apos;, 91},
+        {2, &amp;quot;yangguozhen&amp;quot;, &amp;apos;m&amp;apos;, 94.5},
+        {3, &amp;quot;wangdashuai&amp;quot;, &amp;apos;m&amp;apos;, 97},
+        {4, &amp;quot;qihuanling&amp;quot;, &amp;apos;f&amp;apos;, 95},
+        {5, &amp;quot;houxiaolan&amp;quot;, &amp;apos;f&amp;apos;, 98}
+        };
+    Student s = {0};
+    for (int i = 0; i &amp;lt; 5; i++) {
+        if (s.score &amp;lt; stus[i].score) {
+            s = stus[i];
+        }
+    }
+    printf(&amp;quot;%d  %s  %c  %.1f\n&amp;quot;, s.num, s.name, s.gender, s.score);
 //例子
-// 练习：对上述5名学生数组，按成绩 从高到低 排序，并输出
-//    for (int i = 0; i &amp;lt; (5 - 1); i++) {
-//        for (int j = 0; j &amp;lt; 5 - (i + 1); j++) {
-//            if (stus[j].score &amp;lt; stus[j+1].score) {
-//
-//                Student temp = stus[j];
-//                stus[j] = stus[j+1];
-//                stus[j+1] = temp;
-//            }
-//        }
-//    }
-//    for (int i = 0; i &amp;lt; 5; i++) {
-//        printf(&amp;quot;%d  %s  %c  %.1f\n&amp;quot;, stus[i].num, stus[i].name, stus[i].gender, stus[i].score);
-//    }
+//练习：对上述5名学生数组，按成绩 从高到低 排序，并输出
+    for (int i = 0; i &amp;lt; (5 - 1); i++) {
+        for (int j = 0; j &amp;lt; 5 - (i + 1); j++) {
+            if (stus[j].score &amp;lt; stus[j+1].score) {
+
+                Student temp = stus[j];
+                stus[j] = stus[j+1];
+                stus[j+1] = temp;
+            }
+        }
+    }
+    for (int i = 0; i &amp;lt; 5; i++) {
+        printf(&amp;quot;%d  %s  %c  %.1f\n&amp;quot;, stus[i].num, stus[i].name, stus[i].gender, stus[i].score);
+    }
 &lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
